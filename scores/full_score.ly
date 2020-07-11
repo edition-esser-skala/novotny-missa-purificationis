@@ -6,7 +6,11 @@
 
 \include "../definitions.ly"
 
-\paper { #(define (page-post-process layout pages) (ly:create-toc-file layout pages)) }
+\paper {
+	% #(set-paper-size "a4" 'landscape)
+	% indent = 1\cm
+	% #(define (page-post-process layout pages) (ly:create-toc-file layout pages))
+}
 
 #(set-global-staff-size 15.87)
 
@@ -17,31 +21,23 @@
 			title = "K Y R I E"
 		}
 		\paper { indent = 3\cm }
-		\tocSection "1" "Kyrie"
+		% \tocSection "1" "Kyrie"
 		\score {
 			<<
-				\new StaffGroup <<
-					\new GrandStaff <<
-						\set GrandStaff.instrumentName = "in C"
-						\new Staff {
-							\set Staff.instrumentName = "Clarino I"
-							% \transpose c c
-							\KyrieClarinoI
-						}
-						\new Staff {
-							\set Staff.instrumentName = "Clarino II"
-							% \transpose c c
-							\KyrieClarinoII
-						}
-					>>
+				\new StaffGroup \with { \smallGroupDistance } <<
+					\set StaffGroup.instrumentName = \markup \center-column { "Clarino I, II" "in D" }
+					\new Staff {
+						% \transpose c d
+						\partcombine \KyrieClarinoI \KyrieClarinoII
+					}
 				>>
 				\new Staff {
-					\set Staff.instrumentName = \markup \center-column { "Timpani" "in C–G" }
-					% \transpose c c
+					\set Staff.instrumentName = \markup \center-column { "Timpani" "in D–A" }
+					% \transpose c d
 					\KyrieTimpani
 				}
 				\new StaffGroup <<
-					\new GrandStaff \with { \smallGroupDistance } <<
+					\new GrandStaff <<
 						\set GrandStaff.instrumentName = "Violino"
 						\new Staff {
 							\set Staff.instrumentName = "I"
@@ -94,7 +90,7 @@
 				\new FiguredBass { \KyrieBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 90 }
+			\midi { \tempo 4 = 80 }
 		}
 	}
 }
