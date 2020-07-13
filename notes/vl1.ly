@@ -37,6 +37,39 @@ KyrieViolinoI = {
 	}
 }
 
+ChristeViolinoI = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \tempoChriste
+			\set Score.currentBarNumber = #27
+		R1
+		r2 r16 e'\f cis h a e' a cis,
+		d h gis fis e e' h' d, cis( d) d( dis) \sbOn \tuplet 3/2 8 { e dis e fis d h } \sbOff
+		gis( a) a( ais) \appoggiatura ais32 h16 d cis h \sbOn \tuplet 3/2 8 { cis d e fis fis, h } a?8 gis\trill %30
+		\appoggiatura { a'16[ h] } cis8.( h32 a) \tuplet 3/2 8 { gis16 a fis e fis d cis d e fis e d cis h a } h8\trill \sbOff
+		a4 r r2
+		R1*4 %36
+		r16 h\f gis fis e h' e gis, a fis dis cis h h' fis' a,
+		gis( a) a( ais) \sbOn \tuplet 3/2 8 { h ais h cis a? fis } \sbOff dis( e) e( eis) \appoggiatura eis32 fis16 a gis fis
+		\sbOn \tuplet 3/2 8 { gis a h cis h a } gis8 fis\trill \appoggiatura { e'16[ fis] } gis8.( fis32 e) \tuplet 3/2 8 { dis16 e cis h cis a }
+		\tuplet 3/2 8 { gis a h cis h a gis fis e } fis8\trill \sbOff \appoggiatura fis e4 r %40
+		R1
+		r2 r8 \once \tieDashed a'~\p a16( g) g( fis)
+		\appoggiatura fis8 e4^\critnote r r8 \once \tieDashed g~ g16( fis) fis( e)
+		\appoggiatura e8 d4^\critnote r r2
+		r r16 h(\pp gis fis) e h' e gis, %45
+		a fis dis cis h h' fis' a, \appoggiatura a8 gis4 r
+		r2 r8 a16(\f cis) h( d) cis( e)
+		d( fis) e32( d cis h) a8 g\trill fis16 d' fis e d cis h a
+		gis( a) a( ais) \appoggiatura ais8 h4 r2
+		R1*3 %52
+		r16 e cis h a e' a cis, d h gis fis e e' h' d,
+		cis( d) d( dis) \sbOn \tuplet 3/2 8 { e dis e fis d? h } \sbOff gis( a) a( ais) \appoggiatura ais32 h16( d cis h)
+		\sbOn \tuplet 3/2 8 { cis d e fis fis, h } a8 gis\trill \appoggiatura { a'16[ h] } cis8.( h32 a) \tuplet 3/2 8 { gis16 a fis e fis d } %55
+		\tuplet 3/2 8 { cis d e fis e d cis h a } h8\trill a4 r\fermata \bar "||" %56 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble
