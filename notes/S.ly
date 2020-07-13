@@ -77,6 +77,81 @@ KyrieSopranoLyrics = \lyricmode {
 	son. %26 finis
 }
 
+KyrieIISopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoKyrieII
+			\set Score.currentBarNumber = #57
+		r8 \mvTr d'4\fE^\tutti d8 cis4( h
+		a) r8 g' fis4 e
+		d cis h2
+		a4 r r8 d4 cis8 %60
+		d4 r r8 g4 fis8~
+		fis e4 d8~ d4 cis!
+		d8 fis4( e16[ d)] e[ d cis e] d[ cis h d]
+		cis4 h8 h' a16[ g fis a] g[ fis e g]
+		fis[ e d fis] e[ d cis e] d[ cis h cis] d4 %65
+		cis8 a4( h16[ cis)] d8 d, r4
+		R1*2
+		r8 d'4 d8 cis4( h
+		a16[ h)] cis([ d)] e[ cis d e] d[ cis h a] g4 %70
+		fis16([ g)] a([ h)] c([ d e c)] h8 g16([ a)] h[ a h cis?]
+		d[ a] d4 cis8 d4 r16 d([ e fis)]
+		g[( d] g4 fis8) g8 g,16([ a)] h[ cis! d e]
+		cis[ d e cis] h[ cis d h] a4 r8 g'
+		fis16([ g fis e] d[ e d cis)] h8 e d16[ e fis8] %75
+		d4\trill e16[ d cis h] a8 a4 a8
+		h16([ a)] g([ h)] cis![ h a cis] d[ cis h d] e[ d cis e]
+		a,8 fis'4 fis8 e16([ fis g e] cis[ d e cis]
+		a8) fis'4 fis8 e4( d
+		cis h8) h' a16[( g fis a] g[ fis e g] %80
+		fis8) d r16 d([ e fis)] g[ d] g4 fis8~
+		fis e4 d8~ d4 cis!
+		d fis8. fis16 e([ d)] cis([ e)] d[( cis h d])
+		cis8 fis4( e16[ g)] a([ g fis a] g[ fis e g)]
+		fis8 fis16([ e)] d4 cis8 a4 a8 %85
+		h16([ cis)] d([ h)] cis[ d e cis] d[ e fis d] e[ fis g e]
+		fis[ g a fis] g[ fis e d] cis[ a] d4 cis8
+		d4 d d2~
+		d d4 r\fermata \bar "|." %89 FINIS
+	}
+}
+
+KyrieIISopranoLyrics = \lyricmode {
+	Ky -- ri -- e __ %57
+	e -- lei -- _
+	_ _ _
+	son, Ky -- ri -- %60
+	e e -- lei --
+	_ _ _
+	son, e -- lei -- _
+	_ son, e -- lei -- _
+	_ _ _ _ %65
+	son, e -- lei -- son,
+
+	Ky -- ri -- e __ %69
+	e -- lei -- _ _ %70
+	son, e -- lei -- son, e -- lei --
+	_ _ _ son, e --
+	lei -- son, e -- lei --
+	_ _ son, e --
+	lei -- son, e -- lei -- %75
+	_ _ son, Ky -- ri --
+	e e -- lei -- _ _
+	son, Ky -- ri -- e, __
+	Ky -- ri -- e __
+	e -- lei -- %80
+	son, e -- lei -- _ _
+	_ _ _
+	son, Ky -- ri -- e e -- lei --
+	son, e -- lei --
+	son, e -- lei -- son, Ky -- ri -- %85
+	e e -- lei -- _ _
+	_ _ _ _ _
+	son, e -- lei --
+	son. %89 FINIS
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

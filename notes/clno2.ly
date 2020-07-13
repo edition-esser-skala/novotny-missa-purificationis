@@ -33,3 +33,36 @@ KyrieClarinoII = {
 		c16 g e c g'4-\critnote c, r\fermata \bar "||" %26 finis
 	}
 }
+
+KyrieIIClarinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoKyrieII
+			\set Score.currentBarNumber = #57
+		R1*9 %65
+		r8 g'\fE g g c4 d
+		c r r2
+		R1
+		r8 c c c g4 g
+		g8 g g g c4 g %70
+		e r r8 c c c
+		c4 r r2
+		R1
+		r8 g' c4 g r
+		r8 c c c d4 c %75
+		f e g, r
+		R1
+		r8 c c c g4 r
+		r8 c c c g4 c-\critnote
+		g r e' d %80
+		c c,8 c c4 r
+		r2 e4 g
+		c8 c c c g4 r
+		r2 e'4 d
+		c8 c c c g4 r %85
+		g, r r2
+		g4 r r2
+		c8 r c r c r c c
+		c4-\critnote c8 c e4 r\fermata \bar "|." %89 FINIS
+	}
+}

@@ -27,3 +27,23 @@ KyrieTimpani = {
 		c8 r g r c4 r\fermata \bar "||" %26 finis
 	}
 }
+
+KyrieIITimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoKyrieII
+			\set Score.currentBarNumber = #57
+		R1*12 %68
+		r8 c\fE c c g4 r
+		R1*8 %77
+		r8 c c c g4 r
+		R1*4 %82
+		r8 c c c g4 r
+		R1
+		r8 c c c g4 r %85
+		g r r2
+		g4 r r2
+		c4 r r c
+		c16 c c c c c c c c4 r\fermata \bar "|." %89 FINIS
+	}
+}

@@ -71,6 +71,72 @@ KyrieTenoreLyrics = \lyricmode {
 	son. %26 finis
 }
 
+KyrieIITenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \major \time 4/4 \autoBeamOff \tempoKyrieII
+			\set Score.currentBarNumber = #57
+		R1*6 %62
+		r8 \mvTr d4\fE^\tutti d8 cis4( h
+		a) r8 g' fis4 e
+		d cis h2 %65
+		a4 r r8 d4 cis8
+		d4 r r8 g4 fis8~
+		fis e4 d8~ d4 cis
+		d8 cis16([ h)] a[ g a h] cis[ h a cis] d[ cis h d]
+		cis[ d e d] cis[ h a8]~ a4 h8 e %70
+		a,16([ d cis h] a4) h8 h16([ cis)] d4~
+		d8[ a h e] a,4 r
+		r2 r8 g4 g8
+		a16([ h cis a] d[ cis)] h([ d)] cis[( d e d] cis[ d e cis])
+		a4 d g,8[( cis!16 h] a8[ d16 cis]) %75
+		h8 e e4 a,8 a a4
+		g4 r r2
+		r8 d'4 d8 cis16([ d)] e([ cis)] a[ h cis a]
+		d[ e fis d] a4 a8 e fis([ h)]
+		e,4 r r8 a h([ e)] %80
+		a,4 r r8 d e[ c]
+		d16[ c h8] c16[ h a8] h16[ cis d8] e16[ d e8]
+		a,4 r r2
+		r8 cis d( e4 d cis8)
+		d fis,16([ g)] a[( g a h]) a8 cis4 cis8 %85
+		d16([ cis)] h([ d)] e[ d cis e] fis[ e d8] cis16[ d e cis]
+		d[ e fis d] e[ fis] g4 fis8 e4
+		d d d2
+		\appoggiatura c?8 h4 a8[ g] a4 r\fermata \bar "|." %89 FINIS
+	}
+}
+
+KyrieIITenoreLyrics = \lyricmode {
+	Ky -- ri -- e __ %63
+	e -- lei -- _
+	_ _ _ %65
+	son, Ky -- ri --
+	e e -- lei --
+	_ _ _
+	son, e -- lei -- _ _
+	_ _ son, e -- %70
+	lei -- son, e -- lei --
+	son,
+	Ky -- ri --
+	e __ e -- lei --
+	son, e -- lei -- %75
+	son, e -- lei -- son, e -- lei --
+	son,
+	Ky -- ri -- e e -- lei --
+	_ _ son, e -- lei --
+	son, e -- lei -- %80
+	son, e -- lei --
+	_ _ _ _
+	son,
+	e -- lei --
+	son, e -- lei -- son, e -- lei -- %85
+	son, e -- lei -- _ _
+	_ _ son, e -- lei --
+	son, e -- lei --
+	_ _ son. %89 FINIS
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

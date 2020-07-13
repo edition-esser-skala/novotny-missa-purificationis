@@ -60,6 +60,66 @@ KyrieBassoLyrics = \lyricmode {
 	son. %26 finis
 }
 
+KyrieIIBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \autoBeamOff \tempoKyrieII
+			\set Score.currentBarNumber = #57
+		R1*9 %65
+		r8 \mvTr a'4\fE^\tuttiE a8 fis4( e
+		d) r8 c' h4 a
+		g fis e2\trill
+		d8 d16([ e)] fis([ e fis g)] a8 a4 gis8
+		a a,16([ h)] cis([ a h cis)] d8 d4 cis8 %70
+		d4 r g4. g8
+		fis4( e d) r8 c'
+		h16([ c d h] a[ h c a]) g4 r
+		r8 a4 gis8 a4 r
+		r8 d,4 d8 e4 fis %75
+		g16[( fis e d] cis[ a h cis]) d4 r
+		g8. g16 a([ g)] fis([ a)] h[ a g h] cis[ h a cis]
+		d[ cis h a] g[ fis e d] a4 r
+		r8 d4 d8 cis4( h
+		a) r8 g' fis4 e %80
+		d16[ e fis g] a[ h c a] h[ c d h] a[ h c a]
+		g[ a h g] fis[ g a fis] e[ fis g fis] e4\trill
+		d8 d'4 d8 cis16([ d e cis)] h([ cis d h)]
+		a[ h cis a] g[ a h g] fis[ g a fis] e[ fis g e]
+		d8 d16([ e)] fis([ e fis g)] a4 a, %85
+		a1~
+		a
+		d16([ e)] fis([ d)] g[ a h g] fis[ d e fis] g8[ fis]
+		g2 d4 r\fermata \bar "|." %89 FINIS
+	}
+}
+
+KyrieIIBassoLyrics = \lyricmode {
+	Ky -- ri -- e __ %66
+	e -- lei -- _
+	_ _ _
+	son, e -- lei -- son, Ky -- ri --
+	e e -- lei -- son, Ky -- ri -- %70
+	e, Ky -- ri --
+	e __ e --
+	lei -- son,
+	Ky -- ri -- e,
+	Ky -- ri -- e e -- %75
+	lei -- son,
+	Ky -- ri -- e e -- lei -- _
+	_ _ son,
+	Ky -- ri -- e __
+	e -- lei -- _ %80
+	_ _ _ _
+	_ _ _ _
+	son, Ky -- ri -- e __ e --
+	lei -- _ _ _
+	son, e -- lei -- son, e -- %85
+	lei --
+
+	son, e -- lei -- _ _
+	_ son. %89 FINIS
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

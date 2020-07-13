@@ -70,6 +70,47 @@ ChristeViolinoI = {
 	}
 }
 
+KyrieIIViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoKyrieII
+			\set Score.currentBarNumber = #57
+		r8 d'4\fE-! d8-! cis16 d e cis h cis d h
+		a h cis d e fis g e fis g a fis e fis g e
+		d e fis d cis d e cis h cis d cis h4\trill
+		a8 a16 h cis a h cis d a d4 cis8 %60
+		d4 r16 d e fis g d g4 fis8~
+		fis e4 d8~ d8. cis16 cis4\trill
+		d16 e fis g fis( e d) d-! e d cis e d cis h d
+		cis d e fis g a h g a g fis a g fis e g
+		fis e d fis e d cis e d cis h cis d fis e d %65
+		cis h a h cis a h cis d a d4 cis8
+		d d, r4 r2
+		R1
+		r8 d'4 d8 cis16 d e cis h cis d h
+		a h cis d e cis d e fis a g fis e fis g e %70
+		d8 a16 h c d e c h8 g16 a h a h cis?
+		d e fis a g fis e g fis g a h a(g) e( fis)
+		g d g4 fis8 g g,16 a h cis! d e
+		cis d e cis h cis d h a h cis d e fis g e
+		fis g fis e d e d cis h e e8\trill d16 e fis e %75
+		d8. d16 e d cis h a8 a4 a8
+		h16 a g h cis! h a cis d cis h d e d cis e
+		a,8 fis'4 fis8 e16 fis g e cis d e cis
+		a8 fis'4 fis8 e16 d cis e d cis h d
+		cis d e fis g a h g a g fis a g fis e g %80
+		fis g a g fis d e fis g d g4 fis8~
+		fis e4 d8~ d8. cis16 cis4\trill
+		d8.[ d16 fis8. fis16] e d cis e d cis h d
+		cis8 fis4 e16 g a g fis a g fis e g
+		fis d fis e d cis d e \appoggiatura d cis8 a4 a8 %85
+		h16 cis d h cis d e cis d e fis d e fis g e
+		fis g a fis g fis e d cis e fis d' e, cis' cis8\trill
+		d-! r d-! r d r d d
+		d4 d8 d d4 r\fermata \bar "|." %89 FINIS
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

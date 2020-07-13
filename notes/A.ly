@@ -132,6 +132,78 @@ ChristeAltoLyrics = \lyricmode {
 	son. %53 finis
 }
 
+KyrieIIAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoKyrieII
+			\set Score.currentBarNumber = #57
+		R1*3 %59
+		r8 \mvTr a'4\fE^\tutti a8 fis4( e %60
+		d) r8 c' h4 a
+		g fis e2
+		d4 r r8 a'4 gis8
+		a4 r r8 d4 cis8~
+		cis h4 a8~ a4 gis %65
+		a8 e4( fis16[ g)] a[ g fis a] g[ fis e g]
+		fis4 e8 e' d16[ c h d] c[ h a c]
+		h[ a g h] a[ g fis a] g[ fis e fis] g4\trill
+		fis8 fis16([ g)] a8.([\trill g32 fis)] e4 r
+		r8 a4 a8 fis4( e %70
+		d16[ e)] fis([ g)] a([ h c a)] g8 d g16[ fis g8]
+		a16[ g fis a] g[ fis e g] fis[( g]) a([ h)] c[ h a c]
+		d[ c h d] c[ h a c] h[ a g8]~ g8.[ fis16]
+		e4 fis8 h e,8. e16 a4~
+		a16 h([ a g)] fis[ e fis a] g[ fis e g] a[ g fis a] %75
+		h[ a g fis] e8 a16([ g)] fis8[( c16 d] e[ d e fis])
+		g8. fis16 e8 fis4 g a16[ g]
+		fis[ g] a4 a,8 r4 a'8. a16
+		fis([ g)] a([ fis)] d([ e fis g)] a8 a4 gis8
+		a4 r r8 d4 cis8 %80
+		d a16([ h)] c[ h a c] d[ c h d] c[ h a c]
+		h[ a g h] a[ g fis a] g[ fis e fis] g[ h a g]
+		fis8 a4 a8 a16([ e)] a4 g!8~
+		g fis h16([ a g h)]
+		a4( h8[ e]) a, a16([ g)] fis4 e a8. a16 %85
+		gis4 g fis16([ g] a4) a8
+		a4 g!16([ a h8)] a8 a a4
+		fis16([ g)] a([ fis)] h[ a g h] a[ fis g a] h8[ a]
+		\appoggiatura a8 g4 fis8[ e] fis4 r\fermata \bar "|." %89 FINIS
+	}
+}
+
+KyrieIIAltoLyrics = \lyricmode {
+	Ky -- ri -- e __ %60
+	e -- lei -- _
+	_ _ _
+	son, Ky -- ri --
+	e e -- lei --
+	_ _ _ %65
+	son, e -- lei -- _
+	_ son, e -- lei -- _
+	_ _ _ _
+	son, e -- lei -- son,
+	Ky -- ri -- e __ %70
+	e -- lei -- son, e -- lei --
+	_ _ \xE son, e -- \x lei --
+	_ _ _
+	_ _ son, Ky -- ri -- e __
+	e -- lei -- _ _ %75
+	_ son, e -- lei --
+	son, e -- lei -- _ _ _
+	_ _ son, Ky -- ri --
+	e e -- lei -- son, Ky -- ri --
+	e, Ky -- ri -- %80
+	e e -- lei -- _ _
+	_ _ _ _
+	son, Ky -- ri -- e e -- lei --
+	son, e -- lei --
+	son, e -- lei -- son, Ky -- ri -- %85
+	e e -- lei -- son,
+	e -- lei -- son, e -- lei --
+	son, e -- lei -- _ _
+	_ _ son. %89 FINIS
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

@@ -69,3 +69,44 @@ ChristeViolinoII = {
 		\tuplet 3/2 8 { cis d e fis e d cis h a } h8\trill a4 r\fermata \bar "||" %56 finis
 	}
 }
+
+KyrieIIViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoKyrieII
+			\set Score.currentBarNumber = #57
+		r8 d'4\fE-! d8-! cis16 d e cis h cis d h
+		a h cis d e fis g e fis g a fis e fis g e
+		d e fis d cis d e cis h cis d cis h4\trill
+		a8 a4 a8 fis16 g a fis e fis g e %60
+		d e fis g a h c a h c d h a h c a
+		g a h g fis g a fis e fis g fis e4\trill
+		d8 fis16 e d e fis g a a, a'4 gis8
+		a4 r r8 d4 cis8~
+		cis h4 a8~ a4 gis %65
+		a8 e4 fis16 g a g fis a g fis e g
+		fis g a h c d e c d c h d c h a c
+		h a g h a g fis a g fis e fis g h a g
+		fis8 fis16 g a8.(\trill g32 fis) e8 a,16 cis d cis h d
+		cis8 a'4 a8 d16 cis h a g4\trill %70
+		fis16( g) fis( g) a h c a g8 d g16 fis g8
+		a d4 cis8 d8. d16 c h a c
+		d c h d c h a c h( a) g8~ g8. fis16
+		e8. e16 fis8 h e,8. e16 a4~
+		a16 h a g fis e fis a g( fis e g) a( g fis a) %75
+		h a g fis e8 a16 g fis8 c16 d e d e fis
+		g8. fis16 e8 fis4 g a16 g
+		fis g a4 a8 r a4 a8
+		fis16 g a fis d e fis g a e a4 gis?8
+		a4 r r8 d4 cis8 %80
+		d a16 h c h a c d c h d c h a c
+		h a g h a g fis a g fis e fis g h a g
+		fis8 a4 a8 a16 e a4 g!8~
+		g fis h16 a g h a8 d h e
+		a,16 fis a g fis4 e a8. a16 %85
+		gis4 g fis8 a~ a4~
+		a g!16 a h8 a8. a16 a8 e'
+		fis16 g a fis h a g h a fis g a h8 a
+		g4\trill fis8 e fis4 r\fermata \bar "|." %89 FINIS
+	}
+}

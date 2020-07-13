@@ -130,6 +130,90 @@ ChristeBassFigures = \figuremode {
 	r8 <6 5> \bo <[6] 4> \bc <[5] 3> r2 %56 finis
 }
 
+KyrieIIOrgano = {
+	\relative c {
+		\clef treble
+		\key d \major \time 4/4 \tempoKyrieII
+			\set Score.currentBarNumber = #57
+		r8 \mvTr d''4-!\fE-\tutti d8-! cis16-! d-! e-! cis-! h-! cis-! d-! h-!
+		a-! h-! cis-! d-! e-! fis-! g-! e-! fis-! g-! a-! fis-! e-! fis-! g-! e-!
+		d-! e-! fis-! d-! cis-! d-! e-! cis-! h-! cis-! d-! cis-! h4\trill
+		<< {
+			a r r8 d4 cis8 %60
+			d4 r r8 g4 fis8~
+			fis e4 d8~ d4 cis
+			d8
+		} \\ {
+			r8 a4 a8 fis16 g a fis e fis g e %60
+			d e fis g a h c a h c d h a h c a
+			g a h g fis g a fis e fis g fis e4\trill
+			d8
+		} >> \clef "treble_8" d4 d8 cis16 d e cis h cis d h
+		a h cis d e fis g e fis g a fis e fis g e
+		d e fis d cis d e cis h cis d cis h4\trill %65
+		a8 \clef bass a4 a8 fis16 g a fis e fis g e
+		d e fis g a h c a h c d h a h c a
+		g a h g fis g a fis e fis g fis e4\trill
+		d8 d16 e fis e fis g a8 a4 gis8
+		a a,16 h cis a h cis d8 d4 cis8 %70
+		d16 \clef "treble_8" d' cis h a4 \clef bass g4. g8
+		fis16 g a fis e fis g e d e fis g a h c a
+		h c d h a h c a g8 \clef "treble_8" g4 g8
+		a \clef bass a4 gis8 a4 \clef "treble_8" cis16 d e cis
+		a8 \clef bass d,4 d8 e16 d cis e fis e d fis %75
+		g fis e d cis a h cis d8 \clef "treble_8" a'4 a8
+		\clef bass g8. g16 a g fis a << { h^\org a g h cis h a cis } \\ { h,_\bassi a g h cis h a cis } >>
+		<< { d' cis h a } \\ { d, cis h a } >> g' fis e d a4 \clef "treble_8" a'16 h cis a
+		d8 \clef bass d,4 d8 cis16 d e cis h cis d h
+		a h cis d e fis g e fis g a fis e fis g e %80
+		d e fis g << { a^\org h c a h c d h a h c a } \\ { a,_\bassi h c a h c d h a h c a } >>
+		<< { g' a h g } \\ { g, a h g  } >> fis' g a fis e fis g fis e4\trill
+		d16 e fis g << { a^\org h cis d cis d e cis h cis d h } \\ { a,_\bassi h cis d cis d e cis h cis d h } >>
+		a' h cis a g a h g fis g a fis e fis g e
+		d8 d16 e fis e fis g a4 a,~-\tasto %85
+		a1~
+		a
+		d16 e fis d g a h g fis d e fis g8 fis
+		g2 d4 r\fermata \bar "|." %89 FINIS
+	}
+}
+
+KyrieIIBassFigures = \figuremode {
+	r1 %57
+	r
+	r
+	r %60
+	r
+	r
+	r8 <5>4. <6>4 <7>8 <6\\>
+	<5>4 <5 [_!]> <6> <7>8 <6\\>
+	<7> <6> <7> <6> <7>4 <6\\> %65
+	<5>8 q4. <6>4 <7>8 <6>
+	<5>4 <5 [_!]> <6> \bo <7 [_!]>8 \bc <6 [\t]>
+	<7> <6> <7> <6> <7>4 <6\\>
+	<5> <6> r8 <3> <4 2> <6>
+	r4 <6> <5>8 <5 3> <[4] 2> <6> %70
+	<5>4 \bo <5 [_!]>8 \bc <6\\ [\t]> <5>2
+	<6>4 <7>8 <6\\> <5>4 <5 [_!]>
+	<6> \bo <7 [_!]>8 \bc <6 [\t]> r <5>4 <6>8
+	<5 [_+]> <3> <4 2> <6> r4 <10>16 q q q
+	<6 [4]>8 <5>4. <5>8 <8> <5> <8> %75
+	<5>4 <6>8. <5>16 r8 <5 _!>4 <6\\ \t>8
+	<5>4 <5 _+>8 <8> <5> <8> <5> <8>
+	<5>4.. \bassFigureExtendersOn q16 \bassFigureExtendersOff <5>4 <10>16 q q q
+	<5>8 q4. <6>4 <7>8 <6\\>
+	<5>4 <5 [_!]> <6> <7>8 <6> %80
+	<5>4 <5 [_!]> <6> \bo <7 [_!]>8 \bc <6 [\t]>
+	<7> <6> \bo <7 [5!]> \bc <6 [\t]> <7>4 <6\\>
+	<5>4.. \bassFigureExtendersOn q16 \bassFigureExtendersOff <6>4 <7>8 <6!>
+	<7> <6> <7> <6> <7> <6> <7> <6>
+	r4 <6> <5>2 %85
+	r1
+	r
+	<10 8>16 \bassFigureExtendersOn <10\! 8> \bo <[10\!] 8> \bc q \bassFigureExtendersOff r4 <6>4. q8
+	\bo <9 [4!]>4 \bc <8 [3]> <5 3>2 %89 FINIS
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass
@@ -139,4 +223,4 @@ ChristeBassFigures = \figuremode {
 %
 % BassFigures = \figuremode {
 %
-%
+% }
