@@ -152,6 +152,74 @@ KyrieIISopranoLyrics = \lyricmode {
 	son. %89 FINIS
 }
 
+GloriaSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoGloria
+		\mvTr d'4\fE^\tutti r8 d h g r e'
+		cis a r e' fis([ d e)] cis
+		fis4 d d4. d8
+		d4 e e4. e8
+		e4 r8 e fis([ d e)] cis %5
+		fis r d r e r cis r
+		fis r d r e e fis fis16 fis
+		e8 fis e d d[ e] \appoggiatura d cis4
+		d r r2
+		R1*11 %20
+		r2 \mvTr d4\pE^\solo d16[( a]) g([ fis)]
+		h8 a r h( \tuplet 3/2 8 { a16[ h cis)] d([ cis h)] } a8([ g)]\trill
+		\appoggiatura g fis4 a8 d h16[ d cis h] cis[ e d cis]
+		d[\trill a d fis] e[ g fis e] fis[ g fis g] \tuplet 3/2 8 { a[( g fis]) } e([ d)]
+		cis8. d16 e4 r e16([ cis)] h([ a)] %25
+		fis'[ d cis h] a[ g' fis e] fis[ e fis g] a8[ cis,]
+		\tuplet 3/2 8 { d16[ e fis] g([ fis e)] } d e e8\trill d4 r
+		R1
+		r2 r8 \mvTr d4\fE^\tutti h16 h
+		e8 e dis dis g8. g16 fis8.[( e16]) %30
+		d8.[ c16] h[ d e fis] g8.[ fis16] e[ d c8]~
+		c16[ e fis g] a8.[ g16] fis[ e d8]~ d16[ c h8]~
+		h8 a h4\trill a d8 d16 d
+		h8 h e e cis! cis cis d16 e
+		fis8[ g fis e] d4. e16[ fis] %35
+		g8[ a g fis] e4. fis16[ g]
+		a8[ h a g] fis[ g16 fis] e8[ d]
+		cis d4 cis8 d4 r
+		R1*2 %40
+		R1\fermataMarkup \bar "||" %41 finis
+	}
+}
+
+GloriaSopranoLyrics = \lyricmode {
+	Et in ter -- ra, in
+	ter -- ra, in ter -- ra
+	pax, in ter -- ra
+	pax, in ter -- ra
+	pax, in ter -- ra %5
+	pax, pax, pax, pax,
+	pax, pax, pax ho -- mi -- ni -- bus
+	bo -- nae vo -- lun -- ta -- _
+	tis.
+
+	Do -- mi -- ne %21
+	De -- us, Rex __ coe -- le --
+	stis, De -- us Pa -- _
+	_ _ _ ter o --
+	mni -- po -- tens, De -- us %25
+	Pa -- _ _ _
+	_ ter o -- mni -- po -- tens.
+
+	Do -- mi -- ne
+	Fi -- li u -- ni -- ge -- ni -- te, __ %30
+	Je -- _ _ _
+	_ _
+	su Chri -- ste, Do -- mi -- ne
+	De -- us, A -- gnus De -- i, Fi -- li -- us
+	Pa -- _ _ %35
+	_ _ _
+	_ _ _
+	_ _ _ tris. %38 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

@@ -110,3 +110,51 @@ KyrieIIViolinoII = {
 		g4\trill fis8 e fis4 r\fermata \bar "|." %89 FINIS
 	}
 }
+
+GloriaViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoGloria
+		r32 d(\fE e fis g a h cis) d16 a fis d h'32-! e,( fis g a h cis d) e16 h g? e
+		cis'32-\parenthesize-! a( h cis d e fis g) a16 e cis a fis'-! d( cis d) a32( h cis d e fis g a)
+		fis16-! d( cis d) d,32( e fis g a h cis d) h16-! g( fis g) d( fis a d)
+		h-! g( fis g) e32( fis gis a h cis d e) cis16-! a( gis a) \once \slurDashed e( gis h e)
+		cis-! a( gis? a) a32( h cis d e fis g a) fis16-! d( cis d) e32( d cis h a g fis e) %5
+		d( e fis g a h cis d) h16-! g( fis g) e32( fis g a h cis d e) cis16-! a( g a)
+		\once \slurDashed fis32( g a h cis d e fis) d16-! h( ais h) a32( h cis d e fis g a) d,( e fis g a h cis d)
+		e16( cis) d( fis,) e( cis') d( a) h32( a g fis) g( fis e d) e16 cis' cis8\trill
+		d16 d, fis a d32( cis h a g fis e d) h'( a g fis) g( fis e dis) e16( h) e( g)
+		a32( g fis e) fis( e d cis) d16( a) d( fis) g32( fis e d) e( d cis h) cis( h a g) a( g fis e) %10
+		fis16 a d g, fis( d') e,( cis') \appoggiatura cis d8 d, r4
+		R1
+		r16 d-\parenthesize-! \slurDashed fis( a) d( fis) a( cis,) \slurSolid \appoggiatura cis8 d4 r
+		r2 r8 fis\p e16 d cis h
+		\sbOn a8-\parenthesize-! \tuplet 3/2 8 { cis16 h cis d cis d e d e } a,8-\parenthesize-! \tuplet 3/2 8 { d16 cis d e d e fis e fis } \sbOff %15
+		h,4 r r16 a cis e a8 a,
+		r2 r4 r16 cis-! e( cis)
+		\appoggiatura cis h8. cis16 \sbOn d32( cis d e) fis16( d) \sbOff d8\trill cis r4
+		r2 r8 fis32(\f e fis g) a16( fis e d)~
+		\sbOn d cis g'32( fis g a) \sbOff h16( g fis e) fis-! d'( cis h) \sbOn \tuplet 3/2 8 { a g a h g e } \sbOff %20
+		\slurDashed cis( a) d( g,) \slurSolid fis8 e\trill d4 r
+		r8 r16 a'\p d( a) h( g) \appoggiatura gis8 a4 r
+		r r8 fis \slurDashed d16( fis e d) e( g fis e) \slurSolid
+		fis8 d' cis16( e d cis) \appoggiatura cis8 d4 r
+		r16 a-! cis( e) a e fis d \appoggiatura dis e8 a, r4 %25
+		R1
+		r2 r8 fis'32(\f e fis g) a16( fis e d)~
+		\sbOn d cis g'32( fis g a) \sbOff h16( g fis e) fis-\parenthesize-! d'( cis h) \sbOn \tuplet 3/2 8 { a g a h g e } \sbOff
+		cis( a) d( g,) fis8 e\trill d32( e fis g a h cis d) h16-! g( fis g)
+		e32( fis g a h cis dis e) dis16-! h( ais h) g32( a h c d e fis g) fis16-! d( c \once \tieDashed d)~ %30
+		d( e32 fis g a h cis) d16( c h a) g( a g fis) e( fis e d)
+		c( d32 e fis g a h) c16( h a g) fis( g fis e) d( e d c)
+		h( c? h a) g32( a h c? d e fis g) fis16-! d( fis a) d32( c? h a g fis e d)
+		d'( c? h a) h( a g fis) e( fis g fis e d cis h) cis( a h cis d e fis g) a16 e cis a
+		fis'16( g a g) fis( g fis e) d8 \once \slurDashed h16( cis) d( e) e( fis) %35
+		g8 h16 a g( a g fis) e8\trill cis16( d) e8\trill fis16( g)
+		a8 cis16( h) a( h a g) fis8.\trill( g32 a) h32( a g fis) g( fis e d)
+		cis16( e) fis( d') e, cis' cis8\trill d-! fis,32( e fis g) a16( fis e d)~
+		\sbOn d cis g'32( fis g a) \sbOff h16( g fis e) fis-\parenthesize-! d'( cis h) \sbOn \tuplet 3/2 8 { a g a h g e } \sbOff
+		cis a d g fis8 e\trill d16( b a gis) \appoggiatura gis a8 cis,\trill %40
+		\appoggiatura cis d4 r r2\fermata \bar "||" %41 finis
+	}
+}

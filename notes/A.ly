@@ -204,6 +204,68 @@ KyrieIIAltoLyrics = \lyricmode {
 	_ _ son. %89 FINIS
 }
 
+GloriaAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoGloria
+		\mvTr fis4\fE^\tutti r8 fis d d r g
+		e e a4 a4. a8
+		a4 r8 a h([ g a)] fis
+		h4 r8 h cis([ a h)] gis
+		cis([ h)] a4 a4. a8 %5
+		a r h r g r e r
+		a r fis r e a a a16 a
+		a8 a a a h([ g] e4)
+		fis r r2
+		R1*6 %15
+		r2 \mvTr e8.\pE^\solo d16 cis4
+		d8([ e16 d)] cis8 h cis a a' a
+		a16([ gis)] gis8 h h h16([ a)] a8 a8.([ g16]
+		fis[ a)] h g fis8([ e)]\trill d4 r
+		R1*9 %28
+		r2 r8 \mvTr d4\fE^\tutti d16 d
+		g8 g fis fis h8. h16 a8 d,16[ e] %30
+		fis8.[ g32 a] h8.[ a16] g[ fis] e4 fis16[ g]
+		a4~ a16[ g fis8]~ fis[ e16 fis] g4~
+		g8 fis g4 fis fis8 fis16 fis
+		d8 d g g e e r4
+		fis4. g16 a h8[ cis h a] %35
+		g4. a16[ h] cis8[ d cis h]
+		a4. h16[ cis] d8[ cis] h16[ g h8]
+		a2 a4 r
+		R1*2 %40
+		R1\fermataMarkup \bar "||" %41 finis
+	}
+}
+
+GloriaAltoLyrics = \lyricmode {
+	Et in ter -- ra, in
+	ter -- ra, in ter -- ra
+	pax, in ter -- ra
+	pax, in ter -- ra
+	pax, in ter -- ra %5
+	pax, pax, pax, pax,
+	pax, pax, pax ho -- mi -- ni -- bus
+	bo -- nae vo -- lun -- ta --
+	tis.
+
+	Gra -- ti -- as %16
+	a -- gi -- mus ti -- bi pro -- pter
+	ma -- gnam, pro -- pter ma -- gnam glo --
+	ri -- am tu -- am.
+
+	Do -- mi -- ne %29
+	Fi -- li u -- ni -- ge -- ni -- te, Je -- %30
+	_ _ _ _ _
+	_ _
+	su Chri -- ste, Do -- mi -- ne
+	De -- us, A -- gnus De -- i,
+	Fi -- li -- us Pa -- %35
+	_ _ _
+	_ _ _ _
+	_ tris. %38 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

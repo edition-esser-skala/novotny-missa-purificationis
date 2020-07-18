@@ -111,6 +111,54 @@ KyrieIIViolinoI = {
 	}
 }
 
+GloriaViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoGloria
+		r32 d(\fE e fis g a h cis) d16 a fis d h'32-! e,( fis g a h cis d) e16 h g? e
+		cis'32-\parenthesize-! a( h cis d e fis g) a16 e cis a fis'-! d( cis d) a32( h cis d e fis g a)
+		fis16-! d( cis d) d,32( e fis g a h cis d) h16-! g( fis g) d( fis a d)
+		h-! g( fis g) e32( fis gis a h cis d e) cis16-! a( gis a) \once \slurDashed e( gis h e)
+		cis-! a( gis? a) a32( h cis d e fis g a) fis16-! d( cis d) e32( d cis h a g fis e) %5
+		d( e fis g a h cis d) h16-! g( fis g) e32( fis g a h cis d e) cis16-! a( g a)
+		\once \slurDashed fis32( g a h cis d e fis) d16-! h( ais h) a32( h cis d e fis g a) d,( e fis g a h cis d)
+		e16( cis) d( fis,) e( cis') d( a) h32( a g fis) g( fis e d) e16 cis' cis8\trill
+		d16 d, fis a d32( cis h a g fis e d) h'( a g fis) g( fis e dis) e16( h) e( g)
+		a32( g fis e) fis( e d cis) d16( a) d( fis) g32( fis e d) e( d cis h) cis( h a g) a( g fis e) %10
+		fis16 a d g, fis( d') e,( cis') \appoggiatura cis d8 d, r4
+		R1
+		r16 d-! fis( a) d( fis) a( cis,) \appoggiatura cis8 d4 r
+		r2 r8 fis\p e16 d cis h
+		\sbOn a8-! \tuplet 3/2 8 { cis16 h cis d cis d e d e } a,8-! \tuplet 3/2 8 { d16 cis d e d e fis e fis } \sbOff %15
+		h,4 r r16 a cis e a8 a,
+		r2 r4 r16 cis-! e( cis)
+		\appoggiatura cis h8. cis16 \sbOn d32( cis d e) fis16( d) \sbOff d8\trill cis r4
+		r2 r8 fis32(\f e fis g) a16( fis e d)~
+		\sbOn d cis g'32( fis g a) \sbOff h16( g fis e) fis-! d'( cis h) \sbOn \tuplet 3/2 8 { a g a h g e } \sbOff %20
+		cis( a) d( g,) fis8 e\trill d4 r
+		r8 r16 a'\p d( a) h( g) \appoggiatura gis8 a4 r
+		r r8 d h16( d cis h) cis( e d cis)
+		d( a d fis) e( g fis e) \appoggiatura e8 fis4 r
+		r16 a,-\parenthesize-! cis( e) a e fis d \appoggiatura dis e8^\critnote a, r4 %25
+		R1
+		r2 r8 fis'32(\f e fis g) a16( fis e d)~
+		\sbOn d cis g'32( fis g a) \sbOff h16( g fis e) fis-\parenthesize-! d'( cis h) \sbOn \tuplet 3/2 8 { a g a h g e } \sbOff
+		cis( a) d( g,) fis8 e\trill d32( e fis g a h cis d) h16-! g( fis g)
+		e32( fis g a h cis dis e) dis16-! h( ais h) g32( a h c d e fis g) fis16-! d( c d)~ %30
+		d( e32 fis g a h cis) d16( c h a) g( a g fis) e( fis e d)
+		c( d32 e fis g a h) c16( h a g) fis( g fis e) d( e d c)
+		h( c? h a) g32( a h c? d e fis g) fis16-! d( fis a) d32( c? h a g fis e d)
+		d'( c? h a) h( a g fis) e( fis g fis e d cis h) cis( a h cis d e fis g) a16 e cis a
+		fis8 d16( e) fis8 g16( a) h8 d16( cis) h( cis h a) %35
+		g8 e16( fis) g8 a16( h) cis8 e16( d) cis( d cis h)
+		a8 cis16( h) a8 h16( cis) \sbOn \tuplet 3/2 8 { d e fis } g a \sbOff h32( a g fis) g( fis e d)
+		cis16( e) fis( d') e, cis' cis8\trill d-! fis,32( e fis g) a16( fis e d)~
+		\sbOn d cis g'32( fis g a) \sbOff h16( g fis e) fis-\parenthesize-! d'( cis h) \sbOn \tuplet 3/2 8 { a g a h g e } \sbOff
+		cis a d g fis8 e\trill d16( b a gis) \appoggiatura gis a8^\critnote cis,\trill %40
+		\appoggiatura cis d4 r r2\fermata \bar "||" %41 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

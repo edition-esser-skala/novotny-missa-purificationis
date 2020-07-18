@@ -137,6 +137,68 @@ KyrieIITenoreLyrics = \lyricmode {
 	_ _ son. %89 FINIS
 }
 
+GloriaTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \major \time 4/4 \autoBeamOff \tempoGloria
+		\mvTr a4\fE^\tutti r8 a h h r h
+		cis cis r a fis([ a)] a4
+		a d d4. d8
+		d4 e e4. e8
+		e4 r8 a, fis( a4) a8 %5
+		a r g r h r cis r
+		cis r d r a a a a16 a
+		a8 a cis d h4.( a8)
+		a4 r r2
+		R1*6 %15
+		r2 \mvTr cis8.\pE^\solo h16 a4
+		h8([ cis16 h)] a8 gis a a r4
+		r d8 d d16([ cis)] cis8 cis16[( a h cis])
+		d8 d d([ cis)] d4 r
+		R1*9 %28
+		r2 r8 \mvTr a([\fE^\tutti h)] h16 h
+		h8 h h h16([ cis)] d!8. d16 d8 a %30
+		h16[ a g8]~ g16[ h c d] e[ d c d] e8.[ d16]
+		c[ h a8]~ a16[ c d e] a,8 h16([ c)] d4~
+		d8 d d4 d a8 a16 a
+		g8 g h h a a a h16 cis
+		d8[ e d cis] h4. cis16[ d] %35
+		e8[ fis e d] cis4. d16[ e]
+		fis8[ g fis e] d[ e16 fis] g8[ fis]
+		e[ fis] e4 d r
+		R1*2 %40
+		R1\fermataMarkup \bar "||" %41 finis
+	}
+}
+
+GloriaTenoreLyrics = \lyricmode {
+	Et in ter -- ra, in
+	ter -- ra, in ter -- ra
+	pax, in ter -- ra
+	pax, in ter -- ra
+	pax, in ter -- ra %5
+	pax, pax, pax, pax,
+	pax, pax, pax ho -- mi -- ni -- bus
+	bo -- nae vo -- lun -- ta --
+	tis.
+
+	Gra -- ti -- as %16
+	a -- gi -- mus ti -- bi
+	pro -- pter ma -- gnam glo --
+	ri -- am tu -- am.
+
+	Do -- mi -- ne %29
+	Fi -- li u -- ni -- ge -- ni -- te, Je -- %30
+	_ _ _
+	_ _ su, Je --
+	su Chri -- ste, Do -- mi -- ne
+	De -- us, A -- gnus De -- i, Fi -- li -- us
+	Pa -- _ _ %35
+	_ _ _
+	_ _ _
+	_ _ tris. %38 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"
