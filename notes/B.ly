@@ -186,6 +186,94 @@ GloriaBassoLyrics = \lyricmode {
 	_ _ tris. %38 finis
 }
 
+QuiTollisBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \dorian \time 3/2 \autoBeamOff \tempoQuiTollis
+			\set Score.currentBarNumber = #42
+		R1.*10 %49
+		\mvTr d2\pE^\tutti d d4^\critnote d %52
+		b1 b2
+		a a r
+		R1. %55
+		b1\fE b'2
+		gis1 gis2
+		a a, a4 a
+		d1 dis2~
+		dis e1 %60
+		a,2 r r
+		R1.
+		g'
+		f2 f f
+		f1 f2 %65
+		e e e4 e
+		d2. d4 d d
+		c2 a' f
+		dis e e,
+		a r r %70
+		R1.*2
+		a2 a a4 a
+		b2. b4 b2
+		h1. %75
+		a2 r r
+		R1.
+		r2 d d
+		d4( cis) c1
+		h!2( b1) %80
+		a2 r r
+		R1.
+		r2 d d
+		d4 cis c1~
+		c4 h! b1 %85
+		a2 a' a
+		g1 g2
+		a( a,1)
+		d2 r r
+		R1.*5 %94
+		R1.\fermataMarkup \bar "||" %95 finis
+	}
+}
+
+QuiTollisBassoLyrics = \lyricmode {
+	Qui tol -- lis pec -- %52
+	ca -- ta
+	mun -- di:
+	%55
+	Mi -- se --
+	re -- re
+	no -- bis, mi -- se --
+	re -- re __
+	no -- %60
+	bis.
+
+	Qui
+	tol -- lis pec --
+	ca -- ta %65
+	mun -- di: De -- pre --
+	ca -- ti -- o -- nem
+	no -- _ _
+	_ _ _
+	stram. %70
+
+	Qui se -- des ad %73
+	dex -- te -- ram
+	Pa --  %75
+	tris:
+
+	Mi -- se --
+	re -- re
+	no -- %80
+	bis,
+
+	mi -- se --
+	re -- _ _
+	re no -- %85
+	bis, mi -- se --
+	re -- re
+	no --
+	bis. %89 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

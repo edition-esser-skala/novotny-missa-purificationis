@@ -158,3 +158,65 @@ GloriaViolinoII = {
 		\appoggiatura cis d4 r r2\fermata \bar "||" %41 finis
 	}
 }
+
+QuiTollisViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \dorian \time 3/2 \tempoQuiTollis
+			\set Score.currentBarNumber = #42
+		d4-.\pp d-. d-. d-. d-. d-.
+		d-. d-. d-. d-. cis-. cis-.
+		d( g) f( b) a( g)
+		f( e) d( g) f( b) %45
+		a( d) e( cis) d( h)
+		cis8( h) a2~ a4 g( c)
+		b( a8) b cis4( f) e( d)
+		cis d2 cis8 h cis2\trill
+		d4-! d,-!\pE d'( a) f'( d) %50
+		e( g,) e'( cis) g'( e)
+		f( a,) d( a) f'( d)
+		r b-! d( b) f'( d)
+		r a-! cis( a) e'(\ppE cis)
+		a2~ a4( gis) gis( g) %55
+		f(\fE b) d( b) f'( d)
+		r h d( h) f'( d)
+		r a! c( a) e'( c)
+		r f-! d( b) a( fis)
+		r fis-! e( c) d( h) %60
+		a(\p d) c( f) e( d)
+		c( h) a( d) c( d)
+		e-\parenthesize-! cis'-\parenthesize-!\f e( cis) g'( e)
+		d( a) f'( d) a'( f)
+		r a, c( dis) a'( dis,) %65
+		e-! e, gis( h) e( h)
+		r gis-! h( d) f( d)
+		r e-! e( c) c( a)~
+		a fis a2 gis
+		a4 e-\parenthesize-!\p d( c) h( b) %70
+		a8( h cis4) d2 g8 f e4
+		\once \slurDashed a( g) f8 g a4 d2\trill
+		cis4(\f a) cis( e) a e
+		d-! b d( b) f'( d)
+		r h \slurDashed d( h) f'( d) \slurSolid %75
+		r a cis( e) a( a,)
+		\once \slurDashed a( gis) g2 g
+		fis f4 g a2~
+		a e4 d e( f8 e)
+		d4 e f g a b %80
+		e,2~ e4 d e fis
+		g d g f8 e d2~
+		d f4 g a2~
+		a a g~
+		g g f %85
+		e4 a e d e fis?
+		g d g f e d
+		cis d2 cis8 h cis2\trill
+		d4(\p g) \slurDashed f( b) a( g) \slurSolid
+		f( e) d( g) f( b) %90
+		a( d) e( cis) \once \slurDashed d( h)
+		cis8 h a2~ a4 g( c)
+		b a8 h \once \slurDashed cis4( f) e( d) \slurSolid
+		cis d2 cis8 h cis2\trill
+		d r r\fermata \bar "||" %95 finis
+	}
+}

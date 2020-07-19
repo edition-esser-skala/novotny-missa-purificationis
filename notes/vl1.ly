@@ -159,6 +159,68 @@ GloriaViolinoI = {
 	}
 }
 
+QuiTollisViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \dorian \time 3/2 \tempoQuiTollis
+			\set Score.currentBarNumber = #42
+		R1.
+		e4-.\pp e-. e-. e-. e-. e-.
+		f( b) a( d) cis( e)
+		d( g) f( b) a( d) %45
+		cis( b) gis( a) fis( g)~
+		g( f) e( d) cis( f)
+		e( a) g( b) a( g)
+		\appoggiatura g8 f4 e8 d e2.\trill e4
+		d4-! d,-!\pE d'( a) \once \slurDashed f'( d) %50
+		e( g,) e'( cis) g'( e)
+		f( a,) d( a) f'( d)
+		r b-! d( b) f'( d)
+		r a-! cis( a) e'8(\pp cis) a4~
+		a4( b) b( h) h( cis) %55
+		\once \slurDashed d(\f b) d( b) f'( d)
+		r h d( h) f'( d)
+		r a! c( a) e'( c)
+		r f-! d( b) a( fis)
+		r fis-! e( c) d( h) %60
+		c(\p f) e( a) gis( h)
+		a( d) c( f) e( d)
+		cis-! cis-!\f e( cis) g'( e)
+		d( a) f'(^\critnote d) a'( f)
+		r a, c( dis) a'( dis,) %65
+		e-! e, gis( h) e( h)
+		r gis-! h( d) f( d)
+		r e-! e( c) c( a)~
+		a h c2 h\trill
+		a4 e-!\p f( fis) g( gis) %70
+		a-! a-! b( h) c!( cis)
+		d( e) f( fis) g( gis)
+		\once \slurDashed a(\f a,) cis( e) a( e)
+		d-\parenthesize-! b^\critnote d( b) f'( d)
+		r^\critnote h d( h) f'( d) %75
+		r a \slurDashed cis( e) a( a,) \slurSolid
+		a( gis) g2 e'4 e~
+		e d d1
+		e2 a, r
+		r f' d~ %80
+		d4 cis c1~
+		c4 h! b1
+		a2. h8 cis? d2
+		e a,4 r r2
+		r d d~ %85
+		d4 cis c1~
+		c4 h! b1
+		a a2
+		f4(\p b) a( d) cis( e)
+		d( g) f( b) a( d) %90
+		cis( b) gis( a) fis( g)~
+		g( f) e( d) cis( f)
+		e( a) g( b) a( g)
+		\appoggiatura g8 f4 e8( d) e1\trill
+		d2 r r\fermata \bar "||" %95 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

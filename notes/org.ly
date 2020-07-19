@@ -306,6 +306,120 @@ GloriaBassFigures = \figuremode {
 	<5 _+>1 %41 finis
 }
 
+QuiTollisOrgano = {
+	\relative c {
+		\clef bass
+		\key d \dorian \time 3/2 \tempoQuiTollis
+			\set Score.currentBarNumber = #42
+		\mvTrr d2\pp-\solo-\markup \remark "con pedale" r b
+		g r a
+		d r r
+		R1.*2 %46
+		a4( d) cis( f) e( a)
+		g f e d cis b
+		a d a'2 a,
+		\mvTr d\p-\tutti r b %50
+		g r a
+		d d d
+		b b b
+		a a \mvTrr a\pp-\tasto
+		a1. %55
+		b2\f b b
+		gis gis gis
+		a a a
+		d d dis
+		dis e e, %60
+		a r r
+		R1.
+		g'2 g g
+		f f f
+		<< { \mvTrh f^\org } \\ { \mvTrh f,_\bassi } >> f' f %65
+		<< { \mvTrh e^\org } \\ { \mvTrh e,_\bassi } >> e' e
+		<< { \mvTrh d^\org } \\ { \mvTrh d,_\bassi } >> d' d
+		c a' f
+		dis e e,
+		a r r %70
+		r4 a'-\solo g f e a
+		f cis d c h b
+		a2-\tutti a << { \mvTrh a'^\bassi } \\ { \mvTrh a,_\org } >>
+		b << { \mvTrh b'^\bassi } \\ { \mvTrh b,_\org } >> b
+		h h h %75
+		a a a
+		b b cis
+		d << { \mvTrh d^\org } \\ { \mvTrh d,_\bassi } >> d'
+		d4 cis c1
+		h!2 b1 %80
+		a2 \clef "treble_8" a' \clef treble << { c'~ c4 h! } \\ { e, fis g2 } >>
+		\clef "treble_8" g,2 g~
+		g4 fis \clef bass d2 d~
+		d4 cis c1~
+		c4 h! b1 %85
+		a2 a a
+		g g g
+		a << { \mvTrh a'^\bassi } \\ { \mvTrh a,_\org } >> a
+		d r r
+		R1.*2 %91
+		\mvTr a4(\p-\solo d) cis( f) e( a)
+		g f e d cis b
+		a d a'2 a,
+		d^\critnote r r\fermata \bar "||" %95 finis
+	}
+}
+
+QuiTollisBassFigures = \figuremode {
+	r1. %42
+	<6 5 [_-]>1 <_+>2
+	r1.*3 %46
+	<5 _+>4 <_!> <6> q <6\\> <6>
+	<6 _-> <3> <6\\> <6-> <6> <6>
+	<6 _+> <5> <5 4>2 <\t _+>
+	r1 <5>2 %50
+	<6 5 [_-]>1 <_+>2
+	<5>1.
+	<6\\ 5!>
+	<_+>
+	r %55
+	<5 3>
+	<7 _!>
+	<_!>
+	<6->2 <\t> <7 _+>
+	<\t \t> <5 4> <\t _+> %60
+	<_!>1.
+	r
+	<4+ _->
+	<6>
+	<6\\ 5> %65
+	<_+>
+	<4+ _!>
+	<6>2 <5> q
+	<7 [_+]> <6 4> <5 _+>
+	<_!>1. %70
+	r4 <_+> <_-> <4!> <6!> <_+>
+	<6> <[5]> <_!> <4+> <6> <6\\>
+	<5 _+>1.
+	<6\\ 5!>
+	<\t \t> %75
+	<4>2 <_+>1
+	<7>4 <6\\> <6!>2 <5>
+	<9 _+>4 <8 \t> <8 _!>1
+	<5 2>1 \bassFigureExtendersOn q4 q \bassFigureExtendersOff
+	<7>4 <6\\> <6!>1 %80
+	<4>4 <_+> <_!>1
+	r2 <5 _->1
+	<5 2>4 <\t \t> <5 _!>1
+	<5 2>4 <[\t \t]> <6>2 <5>
+	<5 2>4 \bo <[\t \t]> <6>2 \bc <[5 \l]> %85
+	<5 4>4 <\t _+> <_!>2 <5 _!>4 <6\\ \t>
+	<6- 4> <5 _!> <_->2 \bo <6 [_-]>4 \bc <5 [\t]>
+	<5 _+> <6 4> <5 4> \bassFigureExtendersOn <5 _+>8 <5 2> <5 _+>2 \bassFigureExtendersOff
+	<5>1.
+	r1.*2 %91
+	<5 _+>4 <_!> <6> q <6\\> <6>
+	<6 _-> <3> <6\\> <6-> <6> q
+	<6 _+> <5> <5 4>2 <\t _+>
+	<5>1. %95 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

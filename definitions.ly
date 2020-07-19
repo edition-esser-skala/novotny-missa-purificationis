@@ -664,6 +664,7 @@ tempoChriste = \tempoMarkup "Andante"
 tempoKyrieII = \tempoMarkup "Presto"
 
 tempoGloria = \tempoMarkup "Allegro"
+tempoQuiTollis = \tempoMarkup "Largo"
 
 
 \include "notes/clno1.ly"

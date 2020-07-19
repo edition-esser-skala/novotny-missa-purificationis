@@ -199,6 +199,96 @@ GloriaTenoreLyrics = \lyricmode {
 	_ _ tris. %38 finis
 }
 
+QuiTollisTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \dorian \time 3/2 \autoBeamOff \tempoQuiTollis
+			\set Score.currentBarNumber = #42
+		R1.*8 %49
+		\mvTr d1.\pE^\tutti %50
+		d2 d cis
+		d a a
+		gis1 gis2
+		a a r
+		R1. %55
+		d1\fE d2
+		h!1 h2
+		c! a c4 c
+		d1 c2~
+		c h1 %60
+		a2 r r
+		R1.
+		b2 b b4 b
+		a1 a2
+		c1( f2) %65
+		h,! h h4 h
+		h2. h4 h h
+		c( d e2 f)
+		fis e1
+		e2 r r %70
+		R1.*2
+		e2 e e4 e
+		d2.( c!4) b a
+		gis1 d'2~ %75
+		d cis r
+		R1.*2
+		r2 a a
+		a4( gis) g1 %80
+		a2 a r
+		r g g
+		g4( fis) f2.( g4)
+		a4.( h8 c!4 d e c)
+		d2. c4( d) b? %85
+		e4. d8 c!4 h c d
+		es d8[ c] b4 a g( f!)
+		e( f e1)
+		d2 r r
+		R1.*5 %94
+		R1.\fermataMarkup \bar "||" %95 finis
+	}
+}
+
+QuiTollisTenoreLyrics = \lyricmode {
+	Qui %50
+	tol -- lis pec --
+	ca -- ta, pec --
+	ca -- ta
+	mun -- di:
+
+	Mi -- se --
+	re -- re
+	no -- bis, mi -- se --
+	re -- re __
+	no -- %60
+	bis.
+
+	Qui tol -- lis pec --
+	ca -- ta
+	mun -- %65
+	di: Su -- sci -- pe
+	de -- pre -- ca -- ti --
+	o --
+	nem no --
+	stram. %70
+
+	Qui se -- des ad %73
+	dex -- te -- ram
+	Pa -- _ %75
+	tris:
+
+	Mi -- se -- %79
+	re -- re %80
+	no -- bis,
+	mi -- se --
+	re -- re __
+	no --
+	bis, mi -- se -- %85
+	re -- _ _ _ _ _
+	_ _ _ _ re
+	no --
+	bis. %89 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"
