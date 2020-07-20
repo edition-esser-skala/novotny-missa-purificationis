@@ -275,62 +275,119 @@
 	% 		\midi { \tempo 4 = 80 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		subtitle = "Q U I   T O L L I S"
+	% 	}
+	% 	\tocSubsection "2.2" "Qui tollis"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\QuiTollisViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\QuiTollisViolinoII
+	% 					}
+	% 				>>
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \QuiTollisSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \QuiTollisSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \QuiTollisAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \QuiTollisAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \QuiTollisTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \QuiTollisTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \QuiTollisBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \QuiTollisBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\QuiTollisOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \QuiTollisBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 2 = 60 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			subtitle = "Q U I   T O L L I S"
+			subtitle = "Q U O N I A M"
 		}
-		% \tocSubsection "2.2" "Qui tollis"
+		\tocSubsection "2.3" "Quoniam"
+		\paper {
+			system-system-spacing.basic-distance = #17
+			system-system-spacing.minimum-distance = #17
+			top-system-spacing.basic-distance = #11
+			top-system-spacing.minimum-distance = #11
+			top-markup-spacing.basic-distance = #1
+			top-markup-spacing.minimum-distance = #1
+			markup-system-spacing.basic-distance = #10
+			markup-system-spacing.minimum-distance = #10
+			systems-per-page = #2
+		}
 		\score {
 			<<
 				\new StaffGroup <<
-					\new GrandStaff <<
+					\new GrandStaff \with { \smallGroupDistance } <<
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\QuiTollisViolinoI
+							\QuoniamViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\QuiTollisViolinoII
+							\QuoniamViolinoII
 						}
 					>>
 				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \QuiTollisSopranoNotes }
-					}
-					\new Lyrics \lyricsto Soprano \QuiTollisSopranoLyrics
-
-					\new Staff {
-						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \QuiTollisAltoNotes }
-					}
-					\new Lyrics \lyricsto Alto \QuiTollisAltoLyrics
-
-					\new Staff {
 						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \QuiTollisTenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \QuoniamTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \QuiTollisTenoreLyrics
+					\new Lyrics \lyricsto Tenore \QuoniamTenoreLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \QuiTollisBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \QuoniamBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \QuiTollisBassoLyrics
+					\new Lyrics \lyricsto Basso \QuoniamBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\QuiTollisOrgano
+						\QuoniamOrgano
 					}
 				>>
-				\new FiguredBass { \QuiTollisBassFigures }
+				\new FiguredBass { \QuoniamBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 2 = 60 }
+			\midi { \tempo 2 = 80 }
 		}
 	}
 }

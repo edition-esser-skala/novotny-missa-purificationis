@@ -420,6 +420,173 @@ QuiTollisBassFigures = \figuremode {
 	<5>1. %95 finis
 }
 
+QuoniamOrgano = {
+	\relative c {
+		\clef bass
+		\key d \major \time 2/2 \tempoQuoniam
+			\set Score.currentBarNumber = #96
+		\mvTr d2.\fE-\solo fis4
+		e e a, a
+		d2. e8 fis
+		g4 g e g
+		a a,2 cis4 %100
+		h h e e
+		cis2 a
+		d2. d4
+		e2. e4
+		fis fis gis gis %105
+		a2. a,4
+		h h cis cis
+		d2 r4 d
+		a2 r4 a'
+		d,2 r %110
+		d r
+		r4 fis g a
+		b g\ppE a a,
+		d2.\pE fis4
+		e e a, a %115
+		d2. e8 fis
+		g4 g gis gis
+		a a,2 a4
+		h h e e
+		cis2 a %120
+		d2. d4
+		e4. fis8 gis4 e
+		fis fis gis gis
+		a a,2 a4
+		h h cis cis %125
+		d d fis d
+		a a cis a
+		h cis d2
+		e4 fis d e
+		a,2\fE r4 a' %130
+		e2 r4 e
+		a,2 r
+		a r
+		r4 cis d e
+		a,2.\pE cis4 %135
+		h h e e
+		cis2 a
+		e' d
+		a'4 e a g
+		fis e fis d %140
+		e2. fis8 g
+		a2. a,4
+		d2. d4
+		g2 g~
+		g4 e8 fis g a h4 %145
+		a e cis e
+		a,2 r4 a'
+		e2 r4 e
+		a g! fis e
+		d2 r4 d %150
+		a2 r4 a
+		d2 r4 d
+		e2. d8 e
+		fis2. e8 fis
+		g2 g, %155
+		a2. a4
+		h h cis cis
+		d2. d4
+		e e fis fis
+		g g,2 g4 %160
+		a2 d
+		g4. fis8 e4. d8
+		cis4 e d2~
+		d e
+		a,4 d g a %165
+		d, g a2
+		d,\fE r4 d
+		a2 r4 a'
+		d,2 r
+		d r %170
+		r4 fis g a
+		b g\pE a a,
+		d2 r\fermata \bar "||" %173 finis
+	}
+}
+
+QuoniamBassFigures = \figuremode {
+	r2. <[6]>4 %96
+	<7> <[6]> <7>2
+	<[9]>4 <8>2.
+	\bo <[7]>4 \bc <[6]> <8> <5>
+	q2. <[6]>4 %100
+	<7> <[6\\]> <7 [_+]>2
+	<[7]>4 <6>2.
+	<[7]>4 <6>2 <5>4
+	<[_+]>1
+	<7>4 <6\\> <5!>2 %105
+	\bo <[4]>4 \bc <[3]>2.
+	<7>4 <6\\> <5!>2
+	\bo <[9]>4 \bc <[8]>2.
+	r1
+	r %110
+	<1>
+	r4 <6> <6 5> <_+>
+	<5!> <6 5 _-> <[6!] 4> <5 3>
+	<[_+]>2. <6>4
+	<7>4 <[6]> <7>2 %115
+	\bo <[9]>4 \bc <[8]>2.
+	<7>4 <6> <\t> <5>
+	r1
+	<7>4 <[6\\]> <7 [_+]>2
+	<[7]>4 <6>2. %120
+	<7>4 <6>2 <5>4
+	<[_+]>2 <6>
+	<7>4 <6\\> <5!>2
+	\bo <[4]>4 \bc <[3]>2.
+	<7>4 <6\\> <5!>2 %125
+	\bo <[4]>4 \bc <[3]> <6>2
+	\bo <[4]>4 \bc <[3]> <6> q
+	\bo <[9]>4 \bc <[7]> <6> <5>
+	<[_+]> <5> <6 5> <_+>
+	r1 %130
+	<[_+]>
+	r
+	<1>
+	r4 <6> <6 5> <[_+]>
+	r2. <6>4 %135
+	<7> <[6\\]> <7 [_+]>2
+	<[7]>4 <6>2.
+	<5 [_!]>4 <6> <5>2
+	\bo <[6] 4> \bc <[5] 3>
+	<6>1 %140
+	<7 _+>2. <6\\ \t>4
+	<7!>2. <6>4
+	<7>2. <6\\>4
+	<7>2. <6\\>4
+	<6> <5>2. %145
+	<3>1
+	r
+	<[_+]>
+	<3>4 <4> <6> <[6]>
+	r1 %150
+	r
+	r
+	<7>4 <6>2.
+	<7>4 <6>2.
+	<7>4 <6> <\t> <5> %155
+	\bo <[4]>4 \bc <[3]>2.
+	<7>4 <6\\> <5!>2
+	\bo <[4]>4 \bc <[3]>2.
+	<7>4 <6> <5!>2
+	\bo <[4!]>4 \bc <[3]>2 <6>8 <5> %160
+	<_+>1
+	r2 <5>
+	<7>4 <6> <3>2
+	r <9>4 <8>
+	<[7]>2 <6 5> %165
+	r4 <6 5> <4> <3>
+	r1
+	r
+	r
+	<1> %170
+	r4 <6> <6 5>2
+	<5!>4 <6 5 _-> \bo <[6!] 4> \bc <[5] 3>
+	<[_+]>1 %173 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

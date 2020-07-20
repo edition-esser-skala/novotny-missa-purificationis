@@ -274,6 +274,100 @@ QuiTollisBassoLyrics = \lyricmode {
 	bis. %89 finis
 }
 
+QuoniamBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \major \time 2/2 \autoBeamOff \tempoQuoniam
+			\set Score.currentBarNumber = #96
+		R1*22 %117
+		\mvTr e2\pE^\solo a2~
+		a4 gis8([ a)] h2~
+		h4 a8([ h)] cis2~ %120
+		cis8([ h) d( cis)] h([ a)] gis([ fis)]
+		gis4 e r2
+		R1
+		r4 e a2~
+		a8[ gis] gis4 a,8([ cis)] e([ g)] %125
+		g fis fis4 r fis
+		e2~ e8[ a] fis cis
+		d4 e fis2
+		e4 d8([ cis)] h2
+		a r %130
+		R1*9 %139
+		r2 r4 d %140
+		gis1\trillE
+		g4 fis8[ g] a[ g] fis([ e)]
+		fis1~
+		fis4 h \appoggiatura a g4 dis
+		e g2 fis4 %145
+		e2 r
+		R1*2
+		r2 r4 a
+		a1~\startTrillSpan_\cresc %150
+		\once \tieDashed a~
+		a4\stopTrillSpan\! fis d fis
+		g2. fis8([ g)]
+		a2. g8([ a)]
+		h2_( \grace a8 g2) %155
+		e4 e a2~
+		a8[ gis] gis4 a,8([ cis)] e([ g)]
+		g fis fis4 r2
+		R1*2 %160
+		e4 a8 g fis4. e8
+		d4 g8([ fis)] e2~
+		e4 g fis g8[ e]
+		fis2~ fis8([ e) e( d)]
+		cis4 d g8([ fis] e4 %165
+		fis8[ h)] a([ g)] a4( a,)
+		d2 r
+		R1*5 %172
+		R1\fermataMarkup \bar "||" %173 finis
+	}
+}
+
+QuoniamBassoLyrics = \lyricmode {
+	Quo -- niam __ %118
+	tu so --
+	lus, so -- %120
+	_ lus
+	san -- ctus,
+
+	tu so --
+	lus, so -- lus %125
+	Do -- mi -- nus, tu
+	so -- lus al --
+	tis -- si -- mus,
+	Je -- su Chri --
+	ste. %130
+
+	Tu %140
+	so --
+	_ _ _ lus
+	Do --
+	_ _ _
+	_ _ mi -- %145
+	nus,
+
+	tu %149
+	so -- %150
+
+	_ _ lus
+	Do -- mi --
+	nus, tu
+	so -- %155
+	lus, tu so --
+	lus, so -- lus
+	Do -- mi -- nus,
+
+	so -- lus al -- tis -- si -- %161
+	mus, al -- tis --
+	si -- mus, Je --
+	_
+	_ su, Je -- %165
+	su Chri --
+	ste. %167 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

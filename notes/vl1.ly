@@ -221,6 +221,66 @@ QuiTollisViolinoI = {
 	}
 }
 
+QuoniamViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 2/2 \tempoQuoniam
+			\set Score.currentBarNumber = #96
+		r4 a'\fE d2~
+		d4 cis8 d e2~
+		e4 d8 e fis2~
+		fis8( e) h'( a) \appoggiatura a16 g8( fis) \appoggiatura fis16 e8( d)
+		\appoggiatura d4 cis2.\trill h8 cis %100
+		d2.\trill cis8 d
+		e2.\trill d8 e
+		fis4. e8 \appoggiatura e16 d8( cis) \appoggiatura cis16 h8( a)
+		\appoggiatura a gis4 h e2~
+		e8( dis) dis4 h'8( gis e d)~ %105
+		d( cis) cis4~ cis8 a h cis
+		d4. cis16 h a4 e'~
+		e8 a,-! h( cis) d( fis) a( fis)
+		e-! a,-! cis-! e-! g( e) h'( g)
+		fis-! a,-! h( cis) d( g) fis( h) %110
+		a( d cis h) a( g fis e)
+		d2 e\trill
+		d4 r8 b-!\pp a( f) g( e)
+		d2 r
+		R1*15 %129
+		r8 e(\f fis gis) a( cis) e( cis) %130
+		\appoggiatura cis16 h8-! e,-! gis-! h-! d( h) fis'( d)
+		\appoggiatura d16 cis8 e,-\parenthesize-! \once \slurDashed fis( gis) a( d) cis( fis)
+		e( a gis fis) e( d cis h)
+		a2 h\trill
+		\appoggiatura h4 a2^\critnote r4 e'\pp %135
+		d d gis,? gis
+		e'2. d8 cis
+		h4 cis d2~
+		d4 cis8 h cis a h cis
+		d d, fis a d4 r %140
+		R1*6 %146
+		r8 e,(\p fis gis) a( cis) e( cis)
+		\appoggiatura cis16 h8 e,-! gis-! h-! d( h) fis'( d)
+		\appoggiatura d4 cis2 r
+		r8 a( h cis) d( fis) a( fis) %150
+		\appoggiatura fis16 e8-! a,-! cis-! e-! g( e) h'( g)
+		\appoggiatura g4 fis2 r
+		R1*3 %155
+		r2 cis
+		d4.\trill cis16 d e4.\trill d16 e
+		a,2 r
+		g4.\trill fis16 g a4.\trill g16 a
+		d,2 r %160
+		R1*6 %166
+		r8 a'(\f h cis) d( fis) a( fis)
+		e-! a,-! cis-! e-! g( e) h'( g)
+		fis a,( h cis) d( g) fis( h)
+		a( d cis h) a( g fis e) %170
+		d2 e\trill
+		d4 r8 b-!\p a( f) g( e)
+		\appoggiatura e4 d2 r\fermata \bar "||" %173 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

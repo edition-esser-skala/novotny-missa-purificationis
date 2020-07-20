@@ -220,3 +220,49 @@ QuiTollisViolinoII = {
 		d r r\fermata \bar "||" %95 finis
 	}
 }
+
+QuoniamViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 2/2 \tempoQuoniam
+			\set Score.currentBarNumber = #96
+		R1*4 %99
+		r4 e\fE a2~ %100
+		a4 gis8 a h2~
+		h4 a8 h cis2~
+		cis8( h) d( cis) h( a) \once \slurDashed gis?( fis)
+		e2 r
+		R1 %105
+		r4 e a2~
+		a8( gis) gis4 e'8( cis a g)
+		fis-! fis( g e) fis-! d'-! fis( d)
+		cis( a) a( cis) e( cis) g'( e)
+		\appoggiatura e16 d8 fis,-! g( e) fis( e') d( g) %110
+		fis( d) e( g) \appoggiatura g fis4 r
+		r a, h cis
+		d r8 g,-\parenthesize-!\ppE f( d) e( cis)
+		d2 r
+		R1*15 %129
+		r8 cis-!\f d( h) cis( a') cis( a) %130
+		gis( e) e( gis) h( gis) d'( h)
+		a cis,-! d( h) cis( h') a( d)
+		cis( a) h( d) \appoggiatura d cis4 r
+		r e, fis gis
+		\appoggiatura gis a2 r %135
+		R1*11 %146
+		r8 cis,-!\p d( h) cis( a') cis( a)
+		gis( e) e( gis) h( gis) d'( h)
+		\appoggiatura h4 a2 r
+		r8 fis-! g( e) fis( d') fis( d) %150
+		cis( a) a( cis) e( cis) g'( e)
+		\appoggiatura e4 d2 r
+		R1*14 %166
+		r8 fis,-!\f g( e) fis( d') fis( d)
+		cis( a) a( cis) e( cis) g'( e)
+		\appoggiatura e16 d8( fis,) g( e) fis( e') d( g)
+		fis( d) e( g) \appoggiatura g fis4 r %170
+		r a, h cis
+		d r8 g,-\parenthesize-!\pE f( d) e( cis)
+		\appoggiatura cis4 d2-\critnote r\fermata \bar "||" %173 finis
+	}
+}
