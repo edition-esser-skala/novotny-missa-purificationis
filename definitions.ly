@@ -666,6 +666,8 @@ tempoKyrieII = \tempoMarkup "Presto"
 tempoGloria = \tempoMarkup "Allegro"
 tempoQuiTollis = \tempoMarkup "Largo"
 tempoQuoniam = \tempoMarkup "Andante un poco"
+tempoCumSancto = \tempoMarkup "Adagio / Largo molto"
+	tempoInGloria = \tempoMarkup "Moderato"
 
 
 \include "notes/clno1.ly"

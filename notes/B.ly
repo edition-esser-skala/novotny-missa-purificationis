@@ -368,6 +368,94 @@ QuoniamBassoLyrics = \lyricmode {
 	ste. %167 finis
 }
 
+CumSanctoBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \autoBeamOff \tempoCumSancto
+			\set Score.currentBarNumber = #174
+		\mvTr a2\fE^\tutti e'4. e8
+		d4. cis8 h h h' a %175
+		gis4 a8 a a4( gis) \noBreak
+		a2 r\fermata \bar "||"
+		\time 2/1 \tempoInGloria \set Staff.timeSignatureFraction = 2/2
+			d,1 g2. g4 \noBreak
+		fis4( g8[ a]) h2~ h4 a g fis
+		e fis8[ g] a2~ a4 g fis e %180
+		d e fis gis a e a4 g?
+		fis d8[ e] fis4 g a g fis g8[ a]
+		h2. a4 g2. fis4
+		e fis8[ g] a4 g fis e d cis
+		h g8[ a] h4 cis d e8[ fis] g2~ %185
+		g4 fis e fis8[ g] a4 g fis e
+		d2. e8[ fis] g4 fis8[ e] d4 e8[ d]
+		cis4 a a' g! fis d8[ e] fis4 g
+		a g fis e d2. e8[ fis]
+		g4 fis e d cis h'^\critnote a g %190
+		fis2 d r1
+		R\breve
+		a1 d2. d4
+		cis( d8[ e]) fis2~ fis4 d8([ e)] fis4( g
+		a g fis) e d2. e8[ fis] %195
+		g4 fis e fis8[ g] a2 r
+		R\breve
+		d,1 g2. g4
+		fis( g8[ a]) h2~ h4 a g fis
+		e( fis8[ g] a4) g fis( e) d2 %200
+		r1 a2 d4. d8
+		h4( cis8[ d)] e4 d cis( h) a2
+		a'2. h8[ cis] d4 cis h a
+		g fis e d cis cis'8[ h] a4 g
+		fis e d cis h h'8[ a] g4 fis %205
+		e d cis h a2 a
+		a2. a4 a2 a~
+		a a a1
+		a a
+		h2 fis'(^\critnote g a) %210
+		d,\breve\fermata \bar "|." %211 FINIS
+	}
+}
+
+CumSanctoBassoLyrics = \lyricmode {
+	Cum San -- cto %174
+	Spi -- ri -- tu in glo -- ri -- %175
+	a De -- i Pa --
+	tris.
+	in glo -- ri --
+	a __ De -- _ _ i
+	Pa -- _ _ _ _ tris, %180
+	a -- _ _ _ _ _ _ _
+	men, a -- _ _ _ _ _ _
+	_ _ _ men,
+	a -- _ _ _ _ _ _ _
+	_ _ _ _ _ _ _ %185
+	_ _ _ _ _ _ _
+	men, a -- _ _ _ _
+	_ men, a -- _ _ _ _ _
+	_ _ _ _ men, a --
+	_ _ _ _ _ _ _ _ %190
+	_ men,
+
+	in glo -- ri --
+	a __ De -- i Pa --
+	tris, a -- _ %195
+	_ _ _ _ men,
+
+	in glo -- ri --
+	a __ De -- _ _ i
+	Pa -- tris, a -- men, %200
+	in glo -- ri --
+	a __ De -- i Pa -- tris,
+	a -- _ _ _ _ _
+	_ _ _ _ men, a -- _ _
+	_ _ _ _ men, a -- _ _ %205
+	_ _ _ _ men, in
+	glo -- ri -- a De --
+	i Pa --
+	tris, a --
+	men, a -- %210
+	men. %211 FINIS
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

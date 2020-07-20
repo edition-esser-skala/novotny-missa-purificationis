@@ -71,3 +71,27 @@ GloriaTimpani = {
 		c4 r r2\fermata \bar "||" %41 finis
 	}
 }
+
+CumSanctoTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoCumSancto
+			\set Score.currentBarNumber = #174
+		g4\fE g r2
+		R1*2 \noBreak %175
+		g4 r r2\fermata \bar "||"
+		\time 2/1 \tempoInGloria \set Staff.timeSignatureFraction = 2/2
+			R\breve*10 %187
+		r2 g c r
+		R\breve*9 %197
+		r2 c c c
+		c r r1
+		R\breve*6 %205
+		r1 g2 g
+		g r g r
+		g r g r
+		g r g r
+		c r g2. g4 %210
+		\mvTrr c\breve\fermata^\critnote \bar "|." %211 FINIS
+	}
+}

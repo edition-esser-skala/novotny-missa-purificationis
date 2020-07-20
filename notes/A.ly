@@ -356,6 +356,84 @@ QuiTollisAltoLyrics = \lyricmode {
 	bis. %89 finis
 }
 
+CumSanctoAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoCumSancto
+			\set Score.currentBarNumber = #174
+		r4 \mvTr a'\fE^\tuttiE a g
+		fis4. e8 d e fis g16 a %175
+		h4 e, fis( h) \noBreak
+		e,2 r\fermata \bar "||"
+		\time 2/1 \tempoInGloria \set Staff.timeSignatureFraction = 2/2
+			R\breve*6 %183
+		r1 r2 d
+		g2. g4 fis( g8[ a)] h2~ %185
+		h4 a g fis e fis8[ g] a2~
+		a4 g fis e d e fis gis
+		a g8[ fis] e4 fis8[ g] a4 fis a g8[ fis]
+		e4 fis8[( g]) a2~ a4 g fis e
+		d e8[ fis] g4 fis8[ g] a2 e4 d8[ e] %190
+		fis2. e8[ fis] g2 d4 e8[ fis]
+		g4 fis8[ e] d2~ d4 e fis gis
+		a e a g fis d8[ e] fis4 gis
+		a e a g fis4. g8 a4 g8[ fis]
+		e4 fis8[( g]) a2~ a4 g fis e %195
+		d e8[ fis] g4 fis e d cis d8[ e]
+		fis4 d fis1 e2
+		fis r d1
+		a'2. g4 fis g8[ a] h4 a
+		g2 r d1 %200
+		g2. fis4 e( fis8[ g)] fis4 e
+		d e8[ fis] g4 fis e fis8[ g] a4 g8[ fis]
+		e2. e4 fis2. g8[ a]
+		h4 a g a8[ h] cis2. h4
+		a g fis g8[ a] h2. a4 %205
+		g fis e fis8[ g] a2 r
+		fis a4. a8 a4( h8[ cis)] \once \tieDashed d2~
+		d4 cis h a g( a) h2
+		a\breve
+		fis2^\critnote a( h a) %210
+		a\breve\fermata \bar "|." %211 FINIS
+	}
+}
+
+CumSanctoAltoLyrics = \lyricmode {
+	Cum San -- cto %174
+	Spi -- ri -- tu in glo -- \xE ri -- a
+	De -- i Pa --
+	tris. \x
+
+	In %184
+	glo -- ri -- a __ De -- %185
+	_ _ i Pa -- _ _
+	_ _ tris, a -- _ _ _
+	_ _ _ _ _ _ _ _
+	_ men, a -- _ _ _
+	_ _ _ _ men, a -- _ %190
+	_ _ men, a -- _
+	_ _ _ _ _ _
+	_ _ _ _ _ _ _ _
+	_ men, a -- _ _ _ _ _
+	_ men, a -- _ _ _ %195
+	_ _ _ _ _ _ _ _
+	_ _ _ _
+	men, in
+	glo -- _ _ _ _ ri --
+	a, in %200
+	glo -- ri -- a __ De -- i
+	Pa -- _ _ _ _ _ _ _
+	_ tris, a -- _
+	_ _ _ _ _ _
+	_ _ _ _ _ _ %205
+	_ _ _ _ men,
+	in glo -- ri -- a __ De --
+	_ _ i Pa -- tris,
+	a --
+	men, a -- %210
+	men. %211 FINIS
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

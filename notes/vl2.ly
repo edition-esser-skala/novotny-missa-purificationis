@@ -266,3 +266,45 @@ QuoniamViolinoII = {
 		\appoggiatura cis4 d2-\critnote r\fermata \bar "||" %173 finis
 	}
 }
+
+CumSanctoViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoCumSancto
+			\set Score.currentBarNumber = #174
+		r16 a(\fE cis e) a( e cis a) r e'( g h) e( cis g e)
+		r fis( a cis) d( e fis e) d-! d,( fis h) d( e) cis( d) %175
+		h4 e, fis h \noBreak
+		e,2 r\fermata \bar "||"
+		\time 2/1 \tempoInGloria \set Staff.timeSignatureFraction = 2/2
+			R\breve*6 %183
+		r1 r2 d
+		g2. g4 fis g8 a h2~ %185
+		h4 a g fis e fis8 g a2~
+		a4 g fis e d e fis gis
+		a g8 fis e4 fis8 g a4 fis a g8 fis
+		e4 fis8 g a2~ a4 g fis e
+		d e8 fis g4 fis8 g a2 e4 d8 e %190
+		fis2. e8 fis g2 d4 e8 fis
+		g4 fis8 e d2~ d4 e fis gis
+		a e a g fis d8 e fis4 gis
+		a e a g fis4. g8 a4 g8 fis
+		e4 fis8 g a2~ a4 g fis e %195
+		d e8 fis g4 fis e d cis d8 e
+		fis4 d fis1 e2
+		fis r d1
+		a'2. g4 fis g8 a h4 a
+		g2 r d1 %200
+		g2. fis4 e fis8 g fis4 e
+		d e8 fis g4 fis e fis8 g a4 g8 fis
+		e4 g' a8([ h) g( a)] fis( g) e( fis) d[ d'( cis d)]
+		h([ cis) a( h)] g( a) fis( g) e([ fis) d( e)] cis cis'( h cis)
+		a([ h) g( h)] fis( g) e( fis) d([ e) cis( d)] h h'( a h) %205
+		g( a) fis( g) e([ fis) d( e)] cis2 r
+		fis, a~ a4 h8 cis d2~
+		d4 cis h a g a h2
+		g4 fis2 e8 d e2. e4
+		d2 fis' e2. e4 %210
+		\mvTrr fis\breve\fermata^\critnote \bar "|." %211 FINIS
+	}
+}

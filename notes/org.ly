@@ -587,6 +587,101 @@ QuoniamBassFigures = \figuremode {
 	<[_+]>1 %173 finis
 }
 
+CumSanctoOrgano = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \tempoCumSancto
+			\set Score.currentBarNumber = #174
+		\mvTr a'2\fE-\tutti e
+		d4. cis8 h4 h'8 a %175
+		gis4 a2 gis4 \noBreak
+		a2 r\fermata \bar "||"
+		\time 2/1 \tempoInGloria \set Staff.timeSignatureFraction = 2/2
+			d,1-! g\trill \noBreak
+		fis4-! g8-! a-! h2~-! h4 a-! g-! fis-!
+		e-! fis8-! g-! a2~-! a4 g-! fis-! e-! %180
+		d-! e-! fis-! gis-! a-! e-! << {
+			a2
+			d1\trill cis4 d8 e fis2~
+			fis4 e d cis h cis8 d e2~
+			e4 d cis h8 cis d2 s
+		} \\ {
+			a4 g?
+			fis d8 e fis4 g a g fis g8 a
+			h2. a4 g2. fis4
+			e fis8 g a4 g fis e d cis
+		} >>
+		h g8 a h4 cis d e8 fis g2~ %185
+		g4 fis e fis8 g a4 g fis e
+		d2. e8 fis g4 fis8 e d4 e8 d
+		cis4 a a' g! fis d8 e fis4 g
+		a g fis e d2. e8 fis
+		g4 fis e d cis h a g %190
+		fis2 d \clef "treble_8" g'4 d g fis
+		e fis g a h cis d2
+		\clef bass a,1 d
+		cis4 d8 e fis2~ fis4 d8 e fis4 g
+		a g fis e d2. e8 fis %195
+		g4 fis e fis8 g a2 \clef "treble_8" a4 h8 cis
+		d4. cis8 h4 a g1
+		\clef bass d g
+		fis4 g8 a h2~ h4 a g fis
+		e fis8 g a4 g fis e d2 %200
+		\clef "treble_8" h'4 a g a8 h \clef bass a,2 d
+		h4 cis8 d e4 d cis h a2
+		a'2. h8 cis d4 cis h a
+		g fis e d <cis cis'> h' a g
+		fis e d cis <h h'> a' g fis %205
+		e d cis h a1~-\tasto
+		a\breve~
+		a~
+		a
+		h2 fis' g a %210
+		d,\breve\fermata \bar "|." %211 FINIS
+	}
+}
+
+CumSanctoBassFigures = \figuremode {
+	r2 <5 4>4 <6 3> %174
+	r2 <5>4. <\t>8 %175
+	<6 5>4 <3> <2> <6>
+	r1
+	r\breve
+	r
+	r %180
+	r
+	r
+	r
+	r1. <8 5>2
+	<6>2. <[6 5]>4 <5>2 q %185
+	<6> <5> q <6>
+	r1 <5>2. <_+>4
+	<6>1 q
+	<5>2 <6>1.
+	<5>2 q <6>1 %190
+	q <5>2. <\t>4
+	<8 5>2 <[5]> <6>4 <[6 5]> \bo <5 [3]> \bc <6 [4+]>
+	r1 <3>2. <4+>4
+	<6>2 <5> <6> q
+	r <5>1. %195
+	<5>2 <8>4 <6> <5 3>2 <6 3>4 \bassFigureExtendersOn <6 3\!>8 q \bassFigureExtendersOff
+	r2 <5> <7> <6>
+	<5>1 <3>2. <4>4
+	<6>2 <5>1 <[5]>4 <6>
+	<[5]>1 <6> %200
+	q\breve
+	<6>2 <5> <6>1
+	<5>1 q2 q
+	q q q q
+	q q q q %205
+	q <6>1.
+	r\breve
+	r
+	r
+	<8 5>2 <6> <6 5>1 %210
+	r\breve %211 FINIS
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

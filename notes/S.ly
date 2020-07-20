@@ -307,6 +307,76 @@ QuiTollisSopranoLyrics = \lyricmode {
 	bis. %88 finis
 }
 
+CumSanctoSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoCumSancto
+			\set Score.currentBarNumber = #174
+		\mvTr a'2\fE^\tuttiE h4 cis
+		d8 a a h16([ cis)] d4 d8 d %175
+		e([ d)] cis4 h2 \noBreak
+		a r\fermata \bar "||"
+		\time 2/1 \tempoInGloria \set Staff.timeSignatureFraction = 2/2
+			R\breve*10 %187
+		r2 a d2. d4
+		cis( d8[ e)] fis2~ fis4 e d cis
+		h cis8[ d] e2~ e4 d cis h8([ cis)] %190
+		d4 a d cis h2. cis8[ d]
+		e4 d8[ cis] h4 cis d cis8[ h] a4 h
+		cis2 cis, r1
+		r2 a' d2. d4
+		cis( d8[ e)] fis2~ fis4 e d cis %195
+		h( cis8[ d] e4) d cis d8[ e] fis2~
+		fis4. e8 d4 cis h1\trill
+		a4 h8[ cis] d4 cis h g8[ a] h4 cis
+		d2 r d g~
+		g4 g e( fis8[ g)] a4 g fis e %200
+		d cis h cis8[ d] e2 a,
+		d4. d8 h4( cis8[ d)] e4 d cis d
+		e fis8[ g] a4 g fis e d2~
+		d4 e8[ fis] g4 fis e d cis2~
+		cis4 d8[ e] fis4 e d cis h2~ %205
+		h4 cis8[ d] e4 d cis2 cis
+		fis4. fis8 e4( fis8[ g)] a4 g fis e
+		d e8[ fis] g4 fis e d8[ cis] h4 cis
+		d a d2~ d4 cis8[ h] cis2
+		d2 d1( cis2) %210
+		d\breve\fermata \bar "|." %211 FINIS
+	}
+}
+
+CumSanctoSopranoLyrics = \lyricmode {
+	Cum San -- cto %174
+	Spi -- ri -- tu in glo -- ri -- a
+	De -- i Pa --
+	tris.
+
+	In glo -- ri -- %188
+	a __ De -- _ _ i
+	Pa -- _ _ _ _ tris, %190
+	a -- _ _ _ _ _
+	_ _ _ _ _ _ _ _
+	_ men,
+	in glo -- ri --
+	a __ De -- _ _ i %195
+	Pa -- tris, a -- _ _
+	_ _ _ _
+	men, a -- _ _ _ _ _ _
+	men, in glo --
+	ri -- a __ De -- i Pa -- _ %200
+	_ _ _ _ tris, in
+	glo -- ri -- a __ De -- i Pa -- tris,
+	a -- _ _ _ _ _ _
+	_ _ _ _ _ _
+	_ _ _ _ _ _ %205
+	_ _ _ men, in
+	glo -- ri -- a __ De -- i Pa -- _
+	_ _ _ _ _ _ _ tris,
+	a -- men, a -- _ _
+	men, a -- %210
+	men. %211 FINIS
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

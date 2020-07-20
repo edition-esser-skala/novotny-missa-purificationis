@@ -281,6 +281,44 @@ QuoniamViolinoI = {
 	}
 }
 
+CumSanctoViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoCumSancto
+			\set Score.currentBarNumber = #174
+		r16 a(\fE cis e) a( e cis a) r e'( g h) \once \slurDashed e( cis g e)
+		r fis( a cis) d( e fis e) d-! d,( fis h) d( e) cis( d) %175
+		e8( d) cis4 h2\trill \noBreak
+		a r\fermata \bar "||"
+		\time 2/1 \tempoInGloria \set Staff.timeSignatureFraction = 2/2
+			R\breve*10 %187
+		r2 a d2. d4
+		cis d8 e fis2~ fis4 e d cis
+		h cis8 d e2~ e4 d cis h8 cis %190
+		d4 a d cis h2. cis8 d
+		e4 d8 cis h4 cis d cis8 h a4 h
+		cis2 cis, r1
+		r2 a' d2. d4
+		cis d8 e fis2~ fis4 e d cis %195
+		h cis8 d e4 d cis d8 e fis2~
+		fis4. e8 d4 cis h1\trill
+		a4 h8 cis d4 cis h g8 a h4 cis
+		d2 r d g~
+		g4 g e fis8 g a4 g fis e %200
+		d cis h cis8 d e2 a,
+		d4. d8 h4 cis8 d e4 d cis d
+		e fis8 g a([ h) g( a)] fis( g) e( fis) d[ d'( cis d)]
+		h([ cis) a( h)] g( a) fis( g) e([ fis) d( e)] cis cis'( h cis)
+		a([ h) g( h)] fis( g) e( fis) d([ e) cis( d)] h h'( a h) %205
+		g( a) fis( g) e([ fis) d( e)] cis2 cis
+		fis e4 fis8 g a4 g fis e
+		d e8 fis g4 fis e d8 cis h4 cis
+		d a d2. cis8 h cis2\trill
+		d d'\trill e,\trill cis'\trill %210
+		\mvTrr d\breve\fermata^\critnote \bar "|." %211 FINIS
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

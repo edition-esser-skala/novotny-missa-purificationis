@@ -405,6 +405,90 @@ QuoniamTenoreLyrics = \lyricmode {
 	ste. %167 finis
 }
 
+CumSanctoTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \major \time 4/4 \autoBeamOff \tempoCumSancto
+			\set Score.currentBarNumber = #174
+		\mvTr cis2\fE^\tutti h4 e
+		a,8. g16 fis8 fis fis4 d'8 d %175
+		h4 cis d2 \noBreak
+		cis r\fermata \bar "||"
+		\time 2/1 \tempoInGloria \set Staff.timeSignatureFraction = 2/2
+			R\breve*3 %180
+		r1 r2 a
+		d2. d4 cis( d8[ e)] fis2~
+		fis4 e d cis h cis8[ d] e2~
+		e4 d cis h8([ cis)] d2 a4 h8[ cis]
+		d4 h d cis8[ h] a4 d2 cis4 %185
+		h cis8[ d] e4 d cis h a h8[ cis]
+		d2. cis4 h cis d cis8[ d]
+		e4. d8 cis4 d8[ e] fis2 a,4 h
+		cis h a g fis2. g8[ a]
+		h4 a g fis e2 cis' %190
+		a2. g8[ a] g4 d g fis
+		e fis g a h cis d2
+		e4. d8 cis4 h a h cis d
+		e( d cis h) a2 r
+		r a d4. d8 a2 %195
+		h4 a g( a8[ h] cis4) h a h8[ cis]
+		d4. cis8 h4 a g1\trill
+		fis2 d r1
+		a'2 d2. d4 h( cis8[ d)]
+		e4( d cis) h a( h8[ cis] d4) cis %200
+		h a g a8[ h] cis4 h a2
+		g2. a8[ h] cis4 d e d
+		cis2. d8[ e] a,4 h8[ cis] d4 cis
+		h2 r g1
+		a2. a4 fis( g8[ a)] h2~ %205
+		h cis4 d e2 a,
+		d4. d8 cis4( d8[ e)] fis4( e d) cis
+		h cis8[ d] e2~ e4 fis g2~
+		g4 fis2( e8[ d] e1)\trill
+		d2 fis( e1)\trill %210
+		d\breve\fermata \bar "|." %211 FINIS
+	}
+}
+
+CumSanctoTenoreLyrics = \lyricmode {
+	Cum San -- cto %174
+	Spi -- ri -- tu in glo -- ri -- a %175
+	De -- i Pa --
+	tris.
+
+	In %181
+	glo -- ri -- a __ De --
+	_ _ i Pa -- _ _
+	_ _ _ tris, a -- _
+	_ _ _ _ men, a -- _ %185
+	_ _ _ _ _ _ _ _
+	_ _ _ _ _ _
+	_ _ _ _ men, a -- _
+	_ _ _ _ _ _
+	_ _ _ _ _ men, %190
+	a -- _ _ _ _ _
+	_ _ _ _ _ _ _
+	_ _ _ _ _ _ _ men,
+	a -- men,
+	in glo -- ri -- a %195
+	De -- i Pa -- tris, a -- _
+	_ _ _ _ _
+	_ men,
+	in glo -- ri -- a __
+	De -- i Pa -- tris, %200
+	a -- _ _ _ _ _ men,
+	a -- _ _ _ _ _
+	_ _ _ _ _ _
+	men, in
+	glo -- ri -- a __ De -- %205
+	_ i Pa -- tris,
+	glo -- ri -- a __ De -- i
+	Pa -- _ _ _ tris, __
+	a --
+	men, a -- %210
+	men. %211 FINIS
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

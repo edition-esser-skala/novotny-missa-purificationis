@@ -98,3 +98,39 @@ GloriaClarinoII = {
 		c4 r r2\fermata \bar "||" %41 finis
 	}
 }
+
+CumSanctoClarinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoCumSancto
+			\set Score.currentBarNumber = #174
+		r4 g'\fE d'2
+		g,4 r r e %175
+		r2_\critnote r4 c \noBreak
+		g' r r2\fermata \bar "||"
+		\time 2/1 \tempoInGloria \set Staff.timeSignatureFraction = 2/2
+			R\breve*10 %187
+		r1 e2. e4
+		g2 e'4 d c g e2
+		c r r1 %190
+		R\breve*2
+		r2 g' c2. c4
+		g2 r r c
+		g2~ g4 d' c g e2
+		e d'4 c g2 r
+		R\breve
+		r2 c, c c
+		c r c' r
+		g2. g4 c2 r %200
+		R\breve*2
+		g2 r c r
+		c, r g'2. g4
+		g2 r c2. c4 %205
+		d2. d4 g,2 g,
+		g r g r
+		g r g r
+		g r g r
+		e' c' g1\trill %210
+		\mvTrr e\breve\fermata_\critnote \bar "|."
+	}
+}
