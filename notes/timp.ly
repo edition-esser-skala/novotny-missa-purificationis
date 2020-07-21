@@ -95,3 +95,27 @@ CumSanctoTimpani = {
 		\mvTrr c\breve\fermata^\critnote \bar "|." %211 FINIS
 	}
 }
+
+CredoTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoCredo
+		c8\fE c r c g g r g
+		c c r c c4 r
+		r r8 g c4 r
+		r g8 g c4 r
+		R1*13 %17
+		c8\fE c r c g g r g
+		c4 c r g8 g
+		c4 r8 c g4 r %20
+		r2 c4 r8 c
+		g4 r16 g g g c4 r
+		R1*2
+		r2 r8 c g g %25
+		c4 r r2
+		r r4 g8 g
+		c c r c g g r16 g g g
+		c4 c r g16 g g g
+		c4 r r2\fermata \bar "||" %30 finis
+	}
+}

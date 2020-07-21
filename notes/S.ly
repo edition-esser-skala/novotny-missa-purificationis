@@ -377,6 +377,60 @@ CumSanctoSopranoLyrics = \lyricmode {
 	men. %211 FINIS
 }
 
+CredoSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoCredo
+		\mvTr d'8\fE^\tutti d16 d d8 d cis cis16 cis cis8 cis
+		d4 d8 d h h e e
+		cis cis16 cis e8. e16 fis4 fis8 fis
+		e e cis8. cis16 d4 r
+		R1*3 %7
+		\mvTr e8\pE^\solo cis16([ h)] a8 a gis gis h cis16([ d)]
+		cis8 cis16 cis e8[ fis16 g] fis4~ fis16[ d g fis]
+		e4~ e16[ cis fis e] d4~ d16[ h] e([ d)] %10
+		cis8.([ d16)] e([ d)] cis h ais8 ais16([ h)] cis([ e)] d cis
+		d cis h8 h16([ d)] cis([ h)] cis8 dis16 eis fis4~
+		fis16[ d] cis([ h)] a8([ gis)]\trill fis4 r
+		R1*6 %19
+		r8 \mvTr d'\fE^\tutti d d16 d cis8. cis16 h8 h %20
+		a a h h16 h a8 h16 cis d4
+		cis8 cis cis[ d16 e] fis[ a32( g) fis16 e] d[ fis32( e) d16 cis]
+		h8.[ a16] g8 g'16([ fis)] e[ g32( fis) e16 d] cis[ e32( d) cis16 h]
+		a8.[ g16] fis8 fis'16([ e)] d[ fis32( e) d16 cis] h[ d32( cis) h16 a]
+		g8.[ fis16] e8 e'16([ d)] cis([ a] d4 cis8) %25
+		d8 d d16[ fis32( e) d16 cis] h[ d32( cis) h16 a] g8 g'16([ fis)]
+		e[ g32( fis) e16 d] cis[ e32( d) cis16 h] a8 h a4
+		a r r2
+		R1
+		R\fermataMarkup \bar "||" %30 finis
+	}
+}
+
+CredoSopranoLyrics = \lyricmode {
+	Pa -- trem o -- mni -- po -- ten -- tem, fa -- cto -- rem
+	coe -- li et ter -- rae, vi -- si --
+	bi -- li -- um o -- mni -- um et in --
+	vi -- si -- bi -- li -- um.
+
+	Et ex Pa -- tre na -- tum an -- te %8
+	o -- mni -- a sae -- _
+	_ _ cu -- %10
+	la, __ De -- um de De -- o, lu -- men de
+	lu -- mi -- ne, De -- um ve -- rum de De --
+	o ve -- ro.
+
+	Qui pro -- pter nos ho -- mi -- nes et %20
+	pro -- pter no -- stram sa -- lu -- tem de -- scen --
+	dit, de -- scen -- _ _
+	_ dit, de -- scen -- _
+	_ dit, de -- scen -- _
+	_ dit de coe -- %25
+	lis, de -- scen -- _ dit de
+	coe -- _ lis, de coe --
+	lis. %28 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

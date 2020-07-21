@@ -489,6 +489,60 @@ CumSanctoTenoreLyrics = \lyricmode {
 	men. %211 FINIS
 }
 
+CredoTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \major \time 4/4 \autoBeamOff \tempoCredo
+		\mvTr a8\fE^\tutti a16 a a8 a a a16 a a8 a
+		a4 a8 a h h h h
+		cis cis16 cis cis8. cis16 a4 d8 d
+		h h cis8. cis16 a4 r
+		R1*8 %12
+		r2 r8 \mvTr fis'4\pE^\solo e8
+		d d16([ fis)] fis([ e) e( d)] \appoggiatura d8 cis4 e8 e
+		fis4~ fis16([ e)] e([ d)] e4~ e16([ d)] d([ cis)] %15
+		d4~ d16([ cis) cis( h)] cis4 e16([ cis)] h([ a)]
+		fis'4~ fis16([ e)] d cis h([ g' fis e] d8.) cis16
+		d4 r r2
+		R1
+		r8 \mvTr fis\fE^\tutti fis^\critnote fis16 fis e8. e16 d8 d %20
+		cis cis h d16 d d8 d16 e fis4
+		e8 e e16[ d cis h] a4 h8.[ cis16]
+		h4 h8 h cis8.[ d16] e[ e, fis g]
+		a2\trill h8.[ cis16] d[ d, e fis]
+		g4 a8.[ h16] cis8[ a] a4~ %25
+		a h h2(\trill
+		cis)\trill d8 d d([ cis)]
+		d4 r r2
+		R1
+		R\fermataMarkup \bar "||" %30 finis
+	}
+}
+
+CredoTenoreLyrics = \lyricmode {
+	Pa -- trem o -- mni -- po -- ten -- tem, fa -- cto -- rem
+	coe -- li et ter -- rae, vi -- si --
+	bi -- li -- um o -- mni -- um et in --
+	vi -- si -- bi -- li -- um.
+
+	Ge -- ni -- %13
+	tum non fa -- ctum, con -- sub --
+	stan -- ti -- a -- lem %15
+	Pa -- tri, per quem
+	o -- mni -- a fa -- cta
+	sunt.
+
+	Qui pro -- pter nos ho -- mi -- nes et %20
+	pro -- pter no -- stram sa -- lu -- tem de -- scen --
+	dit, de -- scen -- _ _
+	_ dit de coe -- _
+	_ _ _
+	_ _ _ lis, __ %25
+	de coe --
+	lis, de coe --
+	lis. %28 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

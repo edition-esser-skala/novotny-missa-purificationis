@@ -434,6 +434,54 @@ CumSanctoAltoLyrics = \lyricmode {
 	men. %211 FINIS
 }
 
+CredoAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoCredo
+		\mvTr fis8\fE^\tutti fis16 fis fis8 fis e e16 e e8 e
+		fis4 fis8 fis d d gis gis
+		e e16 e e8. a16 a4 h8 h
+		h g e e16 e \mvTr fis8\pE^\solo d16([ cis)] h8 h
+		ais ais16 ais ais8 h16([ cis)] d8 d d e16 fis %5
+		g!8 g e16([ a)] a([ g)] fis8.[ e16 d8 fis]
+		e8.[\trill fis32 gis?] a4~ a16[ fis e d] cis8. h16\trill
+		a4 r r2
+		R1*11 %19
+		r8 \mvTr a'\fE^\tutti a a16 a a8. a16 fis8 fis %20
+		fis fis d g16 g fis8 fis16 fis fis8([ a)]
+		a a a8.[ g16] fis2\trill
+		d4 e8.[ fis16] g[ fis g8] a8[ a,16 h]
+		cis4 d8.[ e16] fis[ e fis8] g[ g,16 a]
+		h4 cis8.[ d16] e8[ d] e4\trill %25
+		fis16[ a32( g) fis16 e] d4 d e
+		e2 fis8[ e] e4\trill
+		fis r r2
+		R1
+		R\fermataMarkup \bar "||" %30 finis
+	}
+}
+
+CredoAltoLyrics = \lyricmode {
+	Pa -- trem o -- mni -- po -- ten -- tem, fa -- cto -- rem
+	coe -- li et ter -- rae, vi -- si --
+	bi -- li -- um o -- mni -- um et in --
+	vi -- si -- bi -- li -- um. Et in u -- num
+	Do -- mi -- num Je -- sum Chri -- stum, Fi -- li -- um %5
+	De -- i u -- ni -- ge --
+	_ _ _ ni --
+	tum.
+
+	Qui pro -- pter nos ho -- mi -- nes et %20
+	pro -- pter no -- stram sa -- lu -- tem de -- scen --
+	dit de coe -- _
+	_ _ _ _
+	_ _ _ _
+	_ _ _ _ %25
+	_ _ lis, de
+	coe -- _ _
+	lis. %28 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

@@ -308,3 +308,40 @@ CumSanctoViolinoII = {
 		\mvTrr fis\breve\fermata^\critnote \bar "|." %211 FINIS
 	}
 }
+
+CredoViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoCredo
+		r16 d'\f fis a d a fis d r a cis e a e cis a
+		r d, fis a d a fis d r g h d e h gis e
+		r a cis e a e cis a r d fis a d h^\critnote fis d
+		h'32( a g fis) g( fis e d) e( d cis h) cis( h a g) fis16\pp a d e fis d h g
+		r fis ais cis fis cis ais fis r h d fis h fis d h %5
+		r e, g h e cis g e r d fis a d a fis d
+		r a' cis e a fis^\critnote cis a \appoggiatura e'8 fis4 r
+		r16 a, cis e a e cis a r h e gis h gis d^\critnote h
+		r a cis e a e cis a r d fis a d h g d
+		r cis e gis cis a e cis r h d fis h gis d h %10
+		r a cis e g fis e d r fis, ais cis fis cis ais fis
+		r h d fis h gis e d r cis eis? gis a fis d cis
+		\appoggiatura cis8 d4 r r16 fis, a cis fis cis ais? fis
+		r fis h d e h gis e r a cis e a e cis a
+		d,( e32 fis gis? a h cis) d8-! h,-! cis16( d32 e fis gis? a h) cis8-! a,-! %15
+		\once \slurDashed h16( cis32 d e fis gis? a) h8-\parenthesize-! gis,-\parenthesize-! r16 a' cis e a e cis a
+		r d fis a d a fis d r2
+		r16 d\f fis a d a fis d r e a cis e cis a e
+		r d fis a fis h^\critnote fis d h'32( a g fis) g( fis e d) e4\trill
+		r16 d fis a d a fis d r cis e a h fis d h %20
+		r a cis fis g d h g r d' fis a d a fis d
+		r a cis e a e cis a fis'32( g a g fis e d cis) d( e fis e d cis h a)
+		h( cis d cis h a g fis) g8-! h'32( a g fis) e( fis g fis e d cis h) cis( d e d cis h a g)
+		a( h cis h a g fis e) fis8-! a'32( g fis e) d( e fis e d cis h a) h( cis d cis h a g fis)
+		g( a h a g fis e d) e8-! g'32( fis e d) cis16( e) fis( d) e cis'-! cis8\trill %25
+		fis,32( g a g fis e d cis) d16( d') d( cis) h32( cis d cis h a g fis) g( a h a g fis e d)
+		e( fis g fis e d cis h) cis( d e d cis h a g) a16( d) h( g') fis d' e, cis'
+		d d, fis a d a fis d r e a cis e cis a e
+		r d fis a d h^\critnote fis d h'32( a g fis) g( fis e d) e16 cis' cis8\trill
+		d4 r r2\fermata \bar "||" %30 finis
+	}
+}

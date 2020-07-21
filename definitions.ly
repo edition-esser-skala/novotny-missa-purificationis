@@ -669,6 +669,8 @@ tempoQuoniam = \tempoMarkup "Andante un poco"
 tempoCumSancto = \tempoMarkup "Adagio / Largo molto"
 	tempoInGloria = \tempoMarkup "Moderato"
 
+tempoCredo = \tempoMarkup "Allegro molto"
+
 
 \include "notes/clno1.ly"
 \include "notes/clno2.ly"

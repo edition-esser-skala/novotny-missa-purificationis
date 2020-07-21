@@ -134,3 +134,28 @@ CumSanctoClarinoI = {
 		\mvTrr c\breve\fermata^\critnote \bar "|." %211 FINIS
 	}
 }
+
+CredoClarinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoCredo
+		e'8\fE e r e d4 r8 d
+		e4 r8 c c4 r8 \pa d
+		d4 \pd r8 \pao d e4 r8 e
+		d4. d8 c4 r
+		R1*13 %17
+		e4\fE r8 e d4 r8 d
+		e4 r8 e d4. d8
+		c4 r8 e d4 r8 e %20
+		e4 r8 c c4 r8 e
+		d4 r8 d e4 r
+		r2 d4. d8
+		e4 r e f
+		f r r8 e d d %25
+		e2 f
+		g~ g8 e d4
+		e8 e r e d4 r8 d
+		e4 r8 e d4. d8
+		c4 r r2\fermata \bar "||" %30
+	}
+}

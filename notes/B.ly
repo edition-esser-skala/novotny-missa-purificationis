@@ -456,6 +456,46 @@ CumSanctoBassoLyrics = \lyricmode {
 	men. %211 FINIS
 }
 
+CredoBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \autoBeamOff \tempoCredo
+		\mvTr d8\fE^\tutti d16 d d8 d a' a16 a a8 a
+		d,4 d8 d g g e e
+		a a16 a a8. a16 d,4 h'8 h
+		g e a8. a16 d,4 r
+		R1*15 %29
+		r8 \mvTr d\fE^\tutti d d16 d a8. a16 h8. h16 %3ß
+		fis'8 fis g g16 g d8 d16 d d([ e fis g)]
+		a4 r16 a([ h cis)] d8.[ cis16 h8. a16]
+		g[ h32( a) g16 fis] e[ g32( fis) e16 d] cis8 cis'16([ h)] a8.[ g16]
+		fis[ a32( g) fis16 e] d[ fis32( e) d16 cis] h8 h'16([ a)] g8.[ fis16]
+		e[ g32( fis) e16 d] cis[ e32( d) cis16 h] a8 d a'4 %25
+		d8. cis16 h8.[ a16] g[ h32( a) g16 fis] e8.[ d16]
+		cis8 cis'16([ h)] a[ \once \slurDashed cis32( h) a16 g] fis8 g a4
+		d, r r2
+		R1
+		R\fermataMarkup \bar "||" %30 finis
+	}
+}
+
+CredoBassoLyrics = \lyricmode {
+	Pa -- trem o -- mni -- po -- ten -- tem, fa -- cto -- rem
+	coe -- li et ter -- rae, vi -- si --
+	bi -- li -- um o -- mni -- um et in --
+	vi -- si -- bi -- li -- um.
+
+	Qui pro -- pter nos ho -- mi -- nes et %20
+	pro -- pter no -- stram sa -- lu -- tem de -- scen --
+	dit, de -- scen --
+	_ _ dit de coe --
+	_ _ lis, de coe --
+	_ _ lis, de coe -- %25
+	lis, de coe -- _ _
+	lis, de coe -- lis, de coe --
+	lis. %28 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

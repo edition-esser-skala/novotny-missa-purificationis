@@ -682,6 +682,76 @@ CumSanctoBassFigures = \figuremode {
 	r\breve %211 FINIS
 }
 
+CredoOrgano = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \tempoCredo
+		\mvTr d8\fE-\tutti d, r16 d' fis g a e cis a r a cis e
+		d a fis d r d' fis a g d h g r e' gis h
+		a e cis a r a' h cis d a fis d h' fis d h
+		g'8 e a a, d d, r16 \mvTr h'\pE-\solo d e
+		fis cis ais fis r fis' gis? ais h fis d h r h' cis d %5
+		e h g e cis a' h cis d a fis d r d fis gis
+		a e cis a fis' cis a fis d'8 h e e,
+		a' a, r16 a cis d e h gis e r e' gis h
+		a e cis a r cis' d e d a fis d r h' cis d
+		cis gis e cis r a' h cis h fis d h r gis' a h %10
+		a e cis a r e' fis g fis cis ais fis r fis' gis ais
+		h fis d h r gis' a h a fis cis a r fis' gis a
+		h8 gis? cis cis, fis fis, r16 fis' ais cis
+		h fis d h r e gis h a e cis a r a cis e
+		d( e32 fis gis? a h cis) d8 h, cis16( d32 e fis gis? a h) cis8 a, %15
+		h16( cis32 d e fis gis? a) h8 gis, a a' r16 a, cis e
+		d a fis d r d' fis a g8 e a a,
+		d'\fE d, r16 d fis g a e cis a r a' h cis
+		d a fis d h' fis d h g'8 e a a,
+		d-\tutti d, r16 d' fis g a e cis a r h d e %20
+		fis cis a fis r g h cis d a fis d r d' fis g
+		a e cis a r a' h cis d8.[ cis16 h8. a16]
+		g h32 a g16 fis e g32 fis e16 d <cis cis'>8.[ h'16 a8. g16]
+		fis a32 g fis16 e d fis32 e d16 cis <h h'>8.[ a'16 g8. fis16]
+		e g32 fis e16 d cis e32 d cis16 h a8 d a' a, %25
+		d'16 fis32 e d16 cis h d32 cis h16 a g h32 a g16 fis e g32 fis e16 d
+		cis e32 d cis16 h <a a'> cis'32 h a16 g fis8 g a a,
+		d d, r16 d'-\soloE fis g a e cis a r a' h cis
+		d a fis d h' fis d h g'8 e a a,
+		d4 r r2\fermata \bar "||" %30 finis
+	}
+}
+
+CredoBassFigures = \figuremode {
+	r2 <5>
+	r q4 r16 <5 [_+]>8.
+	r4 r16 <5>8. r2
+	<6 5>2. r16 <5>8.
+	<5 [_+]>1 %5
+	<[_!]>4 <6> <5>2
+	<5>4 q <6 5> \bo <[6] 4>8 \bc <[5] _+>
+	r2 <[_+]>
+	<5>4 r16 <6>8. r4 r16 <6>8 <3>16
+	<5>4 r16 <6>8 <3>16 r4 r16 \bo <[6]>8 \bc <[3]>16 %10
+	r4 r16 <6>8 <3>16 <_+>4 r16 \bo <[6]>8 \bc <[3]>16
+	<_!>4 r16 <6>8 <3>16 <6>4 r16 <_!>8.
+	<6+ 5>4 <[6] 4>8 <[4+ _+]> <5 _!>4 r16 <_+>8.
+	<5>4 r16 <5 [_+]>8. <5>2
+	q4. <6\\>8 <[5+]>4. <6>8 %15
+	r4. <6>8 <5>2
+	q2 <[6 5]>4 <4>8 <3>
+	r4 r16 <5>8. r4 r16 q8.
+	q4 q <[6 5]> <4>8 <3>
+	r1 %20
+	r
+	r2 <5>4 q
+	q q q q
+	q q q q
+	q q q \bo <[4]>8 \bc <[3]> %25
+	r4 <5> q q
+	q q <6>8 <6 5> <4> <3>
+	r4 r16 <5>8. q2
+	r4 <5> <6> <4>8 <3>
+	r1 %30 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass
