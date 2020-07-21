@@ -543,6 +543,60 @@ CredoTenoreLyrics = \lyricmode {
 	lis. %28 finis
 }
 
+CrucifixusTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \dorian \time 2/2 \autoBeamOff \tempoCrucifixus
+			\set Score.currentBarNumber = #108
+		R\breve
+		r1 r2 \mvTr a\fE^\tuttiE
+		b1 cis %110
+		d2 a1~ a4 h8[( c)]
+		d4 c h c8[ d] e4 d c h8[ a]
+		g4 d g f e f8[ g] a4 g
+		f e d2 r a'
+		h!1 cis %115
+		d2. c4 b2 r
+		R\breve*3
+		a1 b %120
+		b4 g b c d2 es
+		d2. c4 b( a) b( c)
+		d2 a r1
+		a2. a4 b2 h
+		c cis d1 %125
+		R\breve
+		r1 a2. a4
+		a2 gis a( e')
+		d d e a,
+		a a a2. a4 %130
+		a\breve\fermata \bar "||" %131 finis
+	}
+}
+
+CrucifixusTenoreLyrics = \lyricmode {
+	Cru -- %109
+	ci -- fi -- %110
+	xus e -- ti --
+	am pro no -- _ _ _ _ _
+	bis, pro no -- _ _ _ _ _
+	_ _ bis, cru --
+	ci -- fi -- %115
+	_ _ xus,
+
+	cru -- ci -- %120
+	fi -- _ _ _ _ xus
+	e -- ti -- am __ pro __
+	no -- bis,
+	pas -- sus et se --
+	pul -- tus est, %125
+
+	pas -- sus
+	et se -- pul --
+	tus, se -- pul -- tus
+	est, se -- pul -- tus %130
+	est. %131 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

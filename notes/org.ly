@@ -917,6 +917,72 @@ EtIncarnatusBassFigures = \figuremode {
 	<1>2. %107 finis
 }
 
+CrucifixusOrgano = {
+	\relative c {
+		\clef bass
+		\key d \dorian \time 2/1 \tempoCrucifixus
+			\set Staff.timeSignatureFraction = 2/2
+			\set Score.currentBarNumber = #108
+		\mvTr d1\fE-\tutti-! f-!
+		gis\trill a2-! << {
+			a
+			b1 cis %110
+			d2
+		} \\ {
+			a~
+			a4 g8 fis g2. e4 a g %110
+			f d
+		} >> f e d a d c!
+		h! c8 d e4 d c h a2
+		\clef "treble_8" g'4 d g f e f8 g a4 g
+		\clef bass d1 f
+		gis a4 e a g? %115
+		f e d e8 f g4 d g f
+		e a, a' g f e d2
+		\clef treble << { d''4 c! a h } \\ { d, e f e8 d } >> \clef bass a,1
+		b cis
+		d4 a d c b a g2 %120
+		\clef "treble_8" b'4 g b c d2 es
+		d2. c4 b a b c
+		\clef bass d,2. d4 es2 e
+		f fis g2. f?4
+		e2 es \mvTr d1~\p-\tasto %125
+		d~ d2 r
+		d2. d4 cis2 c
+		h b \mvTrr a1~\pp-\tasto
+		a\breve~
+		a %130
+		d\fermata \bar "||" %131 finis
+	}
+}
+
+CrucifixusBassFigures = \figuremode {
+	r\breve %108
+	r
+	r %110
+	r2 <6 3> <5 _!>1
+	<6\\>2 <5 [_+]> <6>1
+	<_-> <6\\>2 <_+>
+	<5>1 <6>
+	<5>2 <6>4 <5> <_+>1 %115
+	<6> <_->
+	<6\\> <6>
+	r <5>
+	<7>2 <6\\> <5!> <6>4 <5>
+	<5 _!>2 <\t _+> <6> <_-> %120
+	<6>1 <_+>2 <5->
+	<4> <_+>4 <\t> <6>1
+	<_+> <6\\>2 <6!>
+	<5!> <6>4 <5> <_->2 <_!>4 <\t>
+	<6>2 <6\\> r1 %125
+	r\breve
+	<4>2 <_!> <6> <\t>
+	<[7]> <6\\> r1
+	r\breve
+	r %130
+	r %131 finis
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

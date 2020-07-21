@@ -670,6 +670,7 @@ tempoCumSancto = \tempoMarkup "Adagio / Largo molto"
 
 tempoCredo = \tempoMarkup "Allegro molto"
 tempoEtIncarnatus = \tempoMarkup "Largo molto"
+tempoCrucifixus = \tempoMarkup "Allegro a capella"
 
 
 \include "notes/clno1.ly"

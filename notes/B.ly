@@ -496,6 +496,63 @@ CredoBassoLyrics = \lyricmode {
 	lis. %28 finis
 }
 
+CrucifixusBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \dorian \time 2/2 \autoBeamOff \tempoCrucifixus
+			\set Score.currentBarNumber = #108
+			\mvTr d1\fE^\tuttiE f
+			gis a2 a~
+			a4 g8([ fis)] g2. e4 a g %110
+			f d f e d a d c!
+			h! c8[ d] e4 d c h a2
+			R\breve
+			d1 f
+			gis a4 e( a) g? %115
+			f e d e8[ f] g4 d g f
+			e a, a' g f e d2
+			r1 a
+			b cis
+			d4 a d_( c b a) g2 %120
+			R\breve*2
+			d'2. d4 es2 e
+			f fis g2. f?4
+			e2 es d1~ %125
+			d r
+			d2. d4 cis2 c
+			h b a a
+			a\breve~
+			a1. a2 %130
+			d\breve\fermata \bar "||" %131 finis
+	}
+}
+
+CrucifixusBassoLyrics = \lyricmode {
+	Cru -- ci -- %108
+	fi -- xus e --
+	ti -- am pro no -- _ %110
+	_ _ _ _ _ _ _ _
+	_ _ _ _ _ _ bis,
+
+	cru -- ci --
+	fi -- xus e -- ti -- %115
+	am pro no -- _ _ _ _ _
+	_ _ _ _ _ _ bis,
+	cru --
+	ci -- fi --
+	xus \xE pro no -- bis, \x %120
+
+	pas -- sus et se -- %123
+	pul -- tus est, se --
+	pul -- tus est, __ %125
+
+	pas -- sus et se --
+	pul -- tus est, se --
+	pul --
+	tus %130
+	est. %131 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

@@ -531,42 +531,100 @@
 	% 		\midi { \tempo 4 = 80 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		subtitle = "E T   I N C A R N A T U S   E S T"
+	% 	}
+	% 	\tocSubsection "3.2" "Et incarnatus est"
+	% 	\paper { systems-per-page = #2 }
+	% 	\score {
+	% 		<<
+	% 			\new Staff {
+	% 				\set Staff.instrumentName = \markup \center-column { "vla" "solo" }
+	% 				\EtIncarnatusViola
+	% 			}
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup \center-column { "vl" "[1,] 2" }
+	% 					\EtIncarnatusViolinoII
+	% 				}
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \EtIncarnatusAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \EtIncarnatusAltoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\EtIncarnatusOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \EtIncarnatusBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 70 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			subtitle = "E T   I N C A R N A T U S   E S T"
+			subtitle = "C R U C I F I X U S"
 		}
-		% \tocSubsection "3.2" "Et incarnatus est"
-		\paper { systems-per-page = #2 }
+		\tocSubsection "3.3" "Crucifixus"
 		\score {
 			<<
-				\new Staff {
-					\set Staff.instrumentName = \markup \center-column { "vla" "solo" }
-					\EtIncarnatusViola
-				}
 				\new StaffGroup <<
-					\new Staff {
-						\set Staff.instrumentName = \markup \center-column { "vl" "[1,] 2" }
-						\EtIncarnatusViolinoII
-					}
+					\new GrandStaff <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\CrucifixusViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\CrucifixusViolinoII
+						}
+					>>
 				>>
 				\new ChoirStaff <<
 					\new Staff {
-						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \EtIncarnatusAltoNotes }
+						\set Staff.instrumentName = "S"
+						\new Voice = "Soprano" { \dynamicUp \CrucifixusSopranoNotes }
 					}
-					\new Lyrics \lyricsto Alto \EtIncarnatusAltoLyrics
+					\new Lyrics \lyricsto Soprano \CrucifixusSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \CrucifixusAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \CrucifixusAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \CrucifixusTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \CrucifixusTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \CrucifixusBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \CrucifixusBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\EtIncarnatusOrgano
+						\CrucifixusOrgano
 					}
 				>>
-				\new FiguredBass { \EtIncarnatusBassFigures }
+				\new FiguredBass { \CrucifixusBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 70 }
+			\midi { \tempo 2 = 90 }
 		}
 	}
 }
