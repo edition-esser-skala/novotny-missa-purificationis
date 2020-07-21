@@ -345,3 +345,39 @@ CredoViolinoII = {
 		d4 r r2\fermata \bar "||" %30 finis
 	}
 }
+
+EtIncarnatusViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 3/4 \tempoEtIncarnatus
+			\set Score.currentBarNumber = #31
+		R2.*4 %34
+		r4 \mvTrr a\pp-\markup \remark "sempre" h %35
+		a r r
+		R2.*4 %40
+		r8 e' a([ e d cis)]
+		d4 r r
+		r8 e \once \slurDashed a([ e d cis)]
+		d4 r r
+		R2.*8 %52
+		r4 a h
+		a r r
+		R2.*19 %73
+		r4 a h
+		a r r %75
+		r d e
+		a, r r
+		R2.*12 %89
+		a4( g a) %90
+		R2.*2
+		r4 a h
+		a r r
+		R2.*4 %98
+		r8 e' \once \slurDashed a[( e d cis])
+		d4 r r %100
+		r8-\critnote e \once \slurDashed a[( e d cis])
+		d4 r r
+		R2.*4 %106
+		R2.\fermataMarkup \bar "||" %107 finis
+	}
+}

@@ -356,6 +356,80 @@ CredoViolinoI = {
 	}
 }
 
+EtIncarnatusViola = {
+	\relative c' {
+		\clef alto
+		\key d \major \time 3/4 \tempoEtIncarnatus
+			\set Score.currentBarNumber = #31
+		d8(\fE e) fis8. g16 g4\trill
+		a8( fis d cis) \appoggiatura cis d4
+		a16( h cis d) e( fis g a) h( g fis e)
+		\appoggiatura e4 fis2\trill e8 fis16( gis)
+		\appoggiatura h a8 gis16( fis) e8. d16 d4\trill %35
+		\appoggiatura d8 cis4 e16( fis) e( fis) \appoggiatura a g8.(\trill fis32 e)
+		\appoggiatura e8 fis4 a16( h) a( h) \appoggiatura d c8.(\trill h32 a)
+		h16( g fis e) dis( e) fis( e) fis\trill( e fis g)
+		a( fis e d) cis( d) e( d) e\trill( d e fis)
+		\appoggiatura a g8\trill fis e16( fis g a) \appoggiatura { g[ a] } h8 d,~ %40
+		d4\trill cis a'~
+		a16( gis) gis8 d'8.(\trill c32 b) a8 gis\trill
+		\tuplet 3/2 8 { a16 gis? a } a,8 r4 a'~
+		\once \slurDashed a16( gis) gis8 g16( h cis d) e( cis a g)~
+		g( fis) fis8 \sbOn \tuplet 3/2 8 { a16( h a) } h( cis) \sbOff d( a g fis) %45
+		e8( h') h( a) a( cis,)\trill
+		\appoggiatura cis d4 r16 f( g a) b( g es d)
+		cis!8 d16( g) f4 e\trill
+		\appoggiatura e8 d4 r r
+		R2.*4 %53
+		a8(\p h) cis( d) \appoggiatura fis16 e8.(\trill d32 cis)
+		d8( e) fis( g) a8.(\trill g32 fis) %55
+		\appoggiatura fis8 g4 r r
+		R2.*6 %62
+		a,8(\f h) cis8.( d16) d4\trill
+		e8 cis a gis a4\trill
+		a16( h cis d) e( fis g! a) \appoggiatura cis h8.(\trill a32 g) %65
+		\appoggiatura g fis8. e16 d4 r
+		R2.
+		r4 r h~\p
+		h a4. g8
+		fis16( g) fis( g) a( h) a( h) c8.(\trill h32 a) %70
+		g4 r h
+		a8. h16 cis( d e fis) g( e d cis)
+		\appoggiatura cis8 d4 r r
+		R2.
+		r4 a'\f h8 cis %75
+		\appoggiatura e16 d8.( cis32 h) a8. g16 g4\trill
+		fis r r
+		g16(\p a) g( a) h4 r
+		fis16( g) fis( g) a4 r
+		R2. %80
+		r8 e\p a([ e d cis)]
+		\appoggiatura cis4 d2 r4
+		r8 e a([ e d cis)]
+		\appoggiatura cis4 d2 r4
+		R2.*4 %88
+		d8\f e fis8. g16 g4\trill
+		a8( fis d cis) \appoggiatura cis d4 %90
+		a16( h cis d) e( fis g a) h( g fis e)
+		\appoggiatura e4 fis2\trill e8 fis16( gis?)
+		\appoggiatura h a8 \once \slurDashed gis16( fis) e4 d\trill
+		\appoggiatura d8 cis4 e16( fis) e( fis) g8.(\trill fis32 e)
+		\appoggiatura e8 fis4 a16( h) a( h) c8.(\trill h32 a) %95
+		h16( g fis e) dis( e) fis( e) fis(\trill e fis g)
+		a( fis e d) cis( d) e( d) e(\trill d e fis)
+		\appoggiatura a g8\trill fis e16( fis g a) \appoggiatura { g[ a] } h8 d,~
+		d4\trill cis a'~
+		a16( gis) gis8 d'8.(\trill c32 b) a8( gis)\trill %100
+		\tuplet 3/2 8 { a16 gis? a } a,8 r4 a'~
+		a16( gis) gis8 g16( h cis d) e( cis a g)~
+		g( fis) fis8 \sbOn \tuplet 3/2 4 { a16( h a) } h( cis) \sbOff d( a g fis)
+		e8( h') h( a) \once \slurDashed a(\trill cis,)
+		\appoggiatura cis d4 r16 f( g a) b( g) es( d) %105
+		cis!8 d16( g) f4 e\trill
+		\appoggiatura e4 d2-\critnote r4\fermata \bar "||" %107 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

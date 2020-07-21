@@ -482,7 +482,6 @@ bc =
 	}
 	\context {
 		\ChoirStaff
-		\override SystemStartBracket.collapse-height = #1
 		\override StaffGrouper.staffgroup-staff-spacing =
 		  #'((basic-distance . 15)
          (minimum-distance . 15)
@@ -670,6 +669,7 @@ tempoCumSancto = \tempoMarkup "Adagio / Largo molto"
 	tempoInGloria = \tempoMarkup "Moderato"
 
 tempoCredo = \tempoMarkup "Allegro molto"
+tempoEtIncarnatus = \tempoMarkup "Largo molto"
 
 
 \include "notes/clno1.ly"

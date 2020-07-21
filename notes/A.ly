@@ -482,6 +482,100 @@ CredoAltoLyrics = \lyricmode {
 	lis. %28 finis
 }
 
+EtIncarnatusAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 3/4 \autoBeamOff \tempoEtIncarnatus
+			\set Score.currentBarNumber = #31
+		R2.*18 %48
+		\mvTr d8([\pE^\solo e)] fis8.([ g16)] g4\trill
+		a8([ fis)] d([ cis)] d cis16([ h)] %50
+		a8([ cis)] e([ fis)] g4
+		\appoggiatura a8 g4\trill fis fis8 gis
+		\appoggiatura h16 a8 gis16([ fis)] e8.([ d16)] d4\trill
+		cis8 d e[ fis] g8.[(\trill fis32 e])
+		fis8 g a[( h]) c8.[(\trill h32 a]) %55
+		h16[ g fis e] dis[ e fis e] fis[\trill e fis g]
+		a[ fis e d] cis[ d e d] e[\trill d e fis]
+		\appoggiatura a g8[\trill fis] e16[ fis g a] h8 d,
+		cis e a4. gis8
+		fis[ gis16 a] h8[ fis gis a] %60
+		gis4. gis8 a e
+		\appoggiatura gis?16 fis8 e16([ d)] cis8.([ h16)] h4\trill
+		a r r
+		R2.*2 %65
+		d8([ e)] fis8.([ g16)] g4\trill
+		a8([ fis)] d([ cis)] d cis16([ h)]
+		a8([ cis)] e([ fis)] g4
+		\appoggiatura a8 g4\trill fis fis8 e
+		dis16([ e) dis( e)] fis([ g) fis( g)] a8.^\critnote g32([ fis)] %70
+		g8. fis16 e4 g8 e
+		cis16([ d) cis( d)] e([ fis) g( a)] h([ g)] fis([ e)]
+		fis8. e16 d4 fis8([ gis)]
+		\appoggiatura h16 a8 gis16([ fis)] e8.([ d16)] d4\trill
+		cis r r %75
+		R2.
+		r8 g' a16([ h) a( h)] c8.[(\trill h32 a)]
+		h4 g16([ a) g( a)] h8.([\trill a32 g)]
+		a4 fis16([ g) fis( g)] a8.([\trill g32 fis)]
+		g8 fis e16([ fis g a] \grace { g[ a] } \once \stemUp h8) d, %80
+		\appoggiatura d cis4 r a'
+		a16[( gis]) gis8 d'8.([\trill c32 b)] a8 gis
+		a4 r a
+		a16([ gis)] gis8 g16([ fis g a] h!8.)]\trill a32([ g)]
+		fis4 \sbOn \tuplet 3/2 8 { a16[( h a } h cis)] \sbOff d([ a)] g([ fis)] %85
+		\slurDashed e8[( h') h( a]) \slurSolid a([ cis,)]
+		\appoggiatura cis d4 r16 f([ g a)] b([ g)] es([ d)]
+		cis!8[( d16 g] f8.[ e16)] e4\trill
+		d r r
+		R2.*17 %106
+		R2.\fermataMarkup \bar "||" %107 finis
+	}
+}
+
+EtIncarnatusAltoLyrics = \lyricmode {
+	Et in -- car -- %49
+	na -- tus est de %50
+	Spi -- ri -- tu
+	San -- cto ex Ma --
+	ri -- a Vir -- gi --
+	ne, et ho -- _
+	mo, et ho -- mo %55
+	fa -- _ _
+	_ _ _
+	_ _ _ ctus
+	est, et ho -- mo
+	fa -- _ %60
+	_ ctus est, et
+	ho -- mo fa -- ctus
+	est.
+
+	Et in -- car -- %66
+	na -- tus est de
+	Spi -- ri -- tu
+	San -- cto ex Ma --
+	ri -- _ _ a %70
+	Vir -- gi -- ne, ex Ma --
+	ri -- _ _ a
+	Vir -- gi -- ne, et
+	ho -- mo fa -- ctus
+	est, %75
+
+	et ho -- _
+	mo, ho -- _
+	mo, ho -- _
+	_ mo fa -- ctus %80
+	est, et
+	ho -- mo fa -- _ ctus
+	est, et
+	ho -- mo fa -- ctus
+	est, et __ ho -- mo %85
+	fa -- ctus
+	est, et __ ho -- mo
+	fa -- ctus
+	est. %99 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble
