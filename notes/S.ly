@@ -434,7 +434,8 @@ CredoSopranoLyrics = \lyricmode {
 CrucifixusSopranoNotes = {
 	\relative c' {
 		\clef treble
-		\key d \dorian \time 2/2 \autoBeamOff \tempoCrucifixus
+		\key d \dorian \time 2/1 \autoBeamOff \tempoCrucifixus
+			\set Staff.timeSignatureFraction = 2/2
 			\set Score.currentBarNumber = #108
 		R\breve*4 %111
 		r1 r2 \mvTr a'\fE^\tuttiE
@@ -481,6 +482,87 @@ CrucifixusSopranoLyrics = \lyricmode {
 	et se -- pul -- tus
 	est, se -- pul -- tus %130
 	est. %131 finis
+}
+
+EtResurrexitSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoEtResurrexit
+			\set Score.currentBarNumber = #132
+		\mvTr d'4\fE^\tutti r r r8 d
+		d d d4 d d8 d16 d
+		cis8 cis16 d e8 e16 e a,8 a d d
+		d r d r e r cis r %135
+		a r cis r d r h r
+		g r h r cis r a r
+		fis a d([ cis)] h4 r
+		r2 cis4 d8 d
+		e d16 d d8([ cis)] d4 r %140
+		R1*8 %148
+		r2 \mvTr e8\pE^\solo cis16([ h)] a8 a'16 e
+		fis8 e \appoggiatura e16 d8. d16 cis4 cis16([ d)] d([ e)] %150
+		ais,8([ g')] fis([ e)] \appoggiatura e4 d2\trill
+		cis4 r r8 fis~ fis16([ d)] cis([ h)]
+		g'8 e cis16([ e)] e8\trill fis([ d)] h16([ d)] d8\trill
+		e[ cis] ais16[ cis cis8]\trill \appoggiatura e16 d8[ cis16 h] cis4\trill
+		h r r2 %155
+		R1
+		\mvTr d8\fE^\tutti d d d16 d h8 h16 h e e e e
+		cis8 cis16 cis d8 e fis fis e([ d])
+		cis4 cis8 cis d r d r
+		h r e r e r cis r %160
+		d4.( cis8) d4 r
+		R1*4 %165
+		r2 r8 \mvTr g\pE^\solo g g16 g
+		g8 fis4 e8 d4 cis
+		cis8 d e fis g4. g8
+		fis4~ fis16([ e)] e([ d)] cis8( d4 cis8)
+		d4 r r2 %170
+		R1
+		r8 \mvTr d4\fE^\tutti d8 h h e e
+		cis([ d)] e([ fis)] g4 a8([ g)]
+		fis4 fis f2\trill
+		e4 \tempoMortuorum cis8 cis d2 %175
+		cis r\fermata \bar "||" %176 finis
+	}
+}
+
+EtResurrexitSopranoLyrics = \lyricmode {
+	Et, et %132
+	re -- sur -- re -- xit ter -- ti -- a
+	di -- e se -- cun -- dum Scri -- ptu -- ras, et a --
+	scen -- _ _ _ %135
+	_ _ _ _
+	_ _ _ _
+	dit in coe -- lum,
+	se -- det ad
+	dex -- te -- ram Pa -- tris. %140
+
+	Et in Spi -- ri -- tum %149
+	San -- ctum, Do -- mi -- num et vi -- %150
+	vi -- fi -- can --
+	tem, qui __ ex
+	Pa -- tre Fi -- li -- o -- que pro --
+	ce -- _ _ _
+	dit. %155
+
+	Qui cum Pa -- tre et Fi -- li -- o si -- mul ad -- o --
+	ra -- tur et con -- glo -- ri -- fi -- ca --
+	tur: qui lo -- cu -- tus
+	est per __ _ Pro -- %160
+	phe -- tas.
+
+	Con -- fi -- te -- or %166
+	u -- num ba -- ptis -- ma
+	in re -- mis -- si -- o -- nem
+	pec -- ca -- to --
+	rum. %170
+
+	Et ex -- pe -- cto re -- sur --
+	re -- cti -- o -- nem
+	mor -- tu -- o --
+	rum, mor -- tu -- o -- %175
+	rum. %176 finis
 }
 
 % SopranoNotes = {

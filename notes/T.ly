@@ -546,7 +546,8 @@ CredoTenoreLyrics = \lyricmode {
 CrucifixusTenoreNotes = {
 	\relative c' {
 		\clef "treble_8"
-		\key d \dorian \time 2/2 \autoBeamOff \tempoCrucifixus
+		\key d \dorian \time 2/1 \autoBeamOff \tempoCrucifixus
+			\set Staff.timeSignatureFraction = 2/2
 			\set Score.currentBarNumber = #108
 		R\breve
 		r1 r2 \mvTr a\fE^\tuttiE
@@ -595,6 +596,69 @@ CrucifixusTenoreLyrics = \lyricmode {
 	tus, se -- pul -- tus
 	est, se -- pul -- tus %130
 	est. %131 finis
+}
+
+EtResurrexitTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \major \time 4/4 \autoBeamOff \tempoEtResurrexit
+			\set Score.currentBarNumber = #132
+		\mvTr a4\fE^\tutti r r r8 a
+		h c h4 a a8 a16 h
+		cis8 cis16 cis a8 a16 a a8 a a a
+		h r d r cis r cis r %135
+		cis r cis r h r h r
+		h r h r a r a r
+		a2 h4 r
+		r2 a4 a8 a
+		a a16 a a4 a r %140
+		R1*16 %156
+		\mvTr a8\fE^\tutti a a a16 a h8 h16 h h h h h
+		cis8 cis16 cis a8 a a a a4
+		a a8 a a^\critnote r h r
+		h r h r e r e r %160
+		fis[ e] e4\trill d r
+		R1
+		r2 r8 \mvTr a\pE^\solo d4~
+		d8 h a8.([ g16)] fis([ fis')] d([ h)] a8. g16
+		fis([ g)] g([ a)] a([ h)] h([ c)] c8 d16([ e)] d8 c %165
+		\appoggiatura c16 h8[ a16 g] a8. a16 g4 r
+		R1*5 %171
+		r8 \mvTr a4\fE^\tutti a8 h h h h
+		cis4. cis8 h4 e
+		fis8([ e)] d4 d2
+		cis4 \tempoMortuorum e8 e d2\trill %175
+		e r\fermata \bar "||" %176 finis
+	}
+}
+
+EtResurrexitTenoreLyrics = \lyricmode {
+	Et, et %132
+	re -- sur -- re -- xit ter -- ti -- a
+	di -- e se -- cun -- dum Scri -- ptu -- ras, et a --
+	scen -- _ _ _ %135
+	_ _ _ _
+	_ _ dit in
+	coe -- lum,
+	se -- det ad
+	dex -- te -- ram Pa -- tris. %140
+
+	Qui cum Pa -- tre et Fi -- li -- o si -- mul ad -- o --
+	ra -- tur et con -- glo -- ri -- fi -- ca --
+	tur: qui lo -- cu -- tus
+	est per __ _ Pro -- %160
+	phe -- _ tas.
+
+	Et u --
+	nam san -- ctam ca -- tho -- li --
+	cam et a -- po -- sto -- li -- cam Ec -- %165
+	cle -- _ si -- am.
+
+	Et ex -- pe -- cto re -- sur -- %172
+	re -- cti -- o -- nem
+	mor -- tu -- o --
+	rum, mor -- tu -- o -- %175
+	rum. %176 finis
 }
 
 % TenoreNotes = {

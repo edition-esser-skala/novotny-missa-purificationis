@@ -385,7 +385,8 @@ EtIncarnatusViolinoII = {
 CrucifixusViolinoII = {
 	\relative c' {
 		\clef treble
-		\key d \dorian \time 2/2 \tempoCrucifixus
+		\key d \dorian \time 2/1 \tempoCrucifixus
+			\set Staff.timeSignatureFraction = 2/2
 			\set Score.currentBarNumber = #108
 		R\breve*3 %110
 		r2 d\fE f1
@@ -409,5 +410,56 @@ CrucifixusViolinoII = {
 		a2 gis1 g2
 		fis f e2. e4 %130
 		d\breve\fermata \bar "||" %131 finis
+	}
+}
+
+EtResurrexitViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoEtResurrexit
+			\set Score.currentBarNumber = #132
+		d'32-!\fE d,( e fis g a h cis) d-\parenthesize-! a( h cis d e fis g) a-\parenthesize-! d,( e fis g a h cis) \once \slurDashed d16( a fis d)
+		g( fis32 e d c? h a) g( a h c? d e fis g) fis( d e fis g a h cis) d16( a fis d)
+		cis32( a h cis d e fis g) a16( e cis a) fis'32( e fis g) a( g fis e) d( cis d e) fis( e d cis)
+		h( a h cis) d( cis h a) g( a h cis d e fis g) e( d e fis) g( fis e d) cis( h cis d) e( d cis h) %135
+		a( g a h) cis( h a g) fis( g a h cis d e fis) d( cis d e) fis( e d cis) h( a h cis) d( cis h a)
+		g( fis g a) h( a g fis) e( fis g a h cis d e) cis( h cis d) e( d cis h) a( h cis d e fis g a)
+		fis( e fis g) a( g fis e) d( e fis g a h cis d) h( a h cis) d( cis h a) g( fis g a) h( a g fis)
+		e( d e fis) g( fis e d) cis( h cis d) e( d cis h) a( h cis d e fis g a) d,( e fis g a h cis d)
+		e16( cis) d( fis,) e cis' cis8\trill d8 d, r4 %140
+		R1
+		fis32(\ppE e fis g) a( g fis e) d( cis d e) fis( e d cis) \appoggiatura cis8 h4 r
+		e32( d e fis) g( fis e d) cis( h cis d) e( d cis h) \appoggiatura h8 a4 r
+		d32( cis d e) fis( e d cis) h( a h cis) d( cis h a) \appoggiatura a8 g4 r
+		r2 r16 a-! a( g) g( fis) fis8\trill %145
+		\appoggiatura fis e4 r r2
+		r cis'32(\fE h cis d) e( d cis h) a( gis a h) cis( h a gis)
+		fis16 fis'( e d) cis( h a gis) \appoggiatura gis32 a16 a'( gis fis) e( h cis d)
+		cis( a) fis( h) a8 gis\trill a4 r
+		r a8\pE h e,4 r %150
+		R1
+		ais32( gis ais h) cis( h ais gis) fis( gis ais h cis d e fis) d( cis d e) fis( e d cis) \appoggiatura cis8 h4
+		r16 e8 d16 cis( e) a,8 r16 d8 cis16 h( d) g,8
+		r16 cis8 h16 ais( cis) fis,8 r2
+		d'32(\f cis d e) fis( e d cis) h( cis d e fis g a h) g( fis g a) h( a g fis) e( d e fis) g( fis e d) %155
+		cis( h cis d) e( d cis h) a( g a h) cis( h a g) fis16( d') h( g') fis( e) e8\trill
+		fis32( e fis g) a( g fis e) d( cis d e) fis( e d cis) h16( cis32 dis e fis g a) h( a g fis) g( fis e d?)
+		cis a( h cis d e fis g) a d,( e fis g a h cis) d( cis h a g fis e d) a'16( g32 fis e d cis h)
+		a16( h32 cis d e fis gis) a( gis a h) cis( h a g) fis( e fis g) a( g fis e) d( e fis g a h cis d)
+		h( a h cis) d( cis h a) g( fis g a) h( a g fis) e( d e fis) g( fis e d) cis( h cis d) e( d cis h) %160
+		a16( d) h( g') fis d' e, cis' fis,32( e fis g) a( g fis e) d( cis d e) fis( e d cis)
+		h16 h'( a g) fis( e d cis) d d'( cis h) a( e fis g)
+		fis( d) h( e) d( cis) cis8\trill d4 r
+		R1
+		fis32(\p e fis g) a( g fis e) \appoggiatura e8 d4 r2 %165
+		r h32( a h c) d( c h a) \appoggiatura a8 g4
+		R1*3
+		fis'32(\fE e fis g) a( g fis e) d( cis d e) fis( e d cis) h16 h'( a g) fis( e d cis) %170
+		d d'( cis h) a( e fis g) fis( d) e( h) d( cis) cis8\trill
+		d32( cis d e) fis( e fis g) a( g fis e d cis h a) h16( cis32 d e fis g a) h( a g fis) g( fis e d)
+		cis( a h cis d e fis g) a16-! a( g fis) e( fis32 g a h cis d) e( d cis h) cis( h a g)
+		fis( d e fis g a h cis) d16. fis,32 fis16. fis32 f?16. d32 d16. d32 d16. d32 d16. d32
+		<< { \grace d8 cis2 r } \\ { s4 \tempoMortuorum s2. } >> %175
+		R1\fermataMarkup \bar "||" %176 finis
 	}
 }

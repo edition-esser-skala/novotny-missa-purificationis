@@ -159,3 +159,38 @@ CredoClarinoI = {
 		c4 r r2\fermata \bar "||" %30
 	}
 }
+
+EtResurrexitClarinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoEtResurrexit
+			\set Score.currentBarNumber = #132
+		r8 c'\fE c c e e e e
+		f g g f e4 r8 e
+		d4 r8 d e4 g~
+		g \pa f d f~ %135
+		f e c e~
+		e d \pd d d
+		c c c r
+		\pao d r r8 d e e
+		d e d4 c r %140
+		R1*8 %148
+		r8 g'4\fE fis8 g4 r
+		R1*6 %155
+		r2 r8 f\fE e d
+		c4 r8 c16 c c4 r8 \pa d16 d \pd
+		d4 c8 d e e d c
+		d4 r8 d c4 r
+		R1 %160
+		r8 f e d c4 r
+		R1
+		r8 f e d c4 r
+		R1*7 %170
+		r2 r8 f\fE e d
+		c c c c c4 r
+		d8 d d d d4 r
+		e8 e e e \pao c2^\critnote
+		d4 \tempoMortuorum r r2 %175
+		R1\fermataMarkup \bar "||" %176 finis
+	}
+}

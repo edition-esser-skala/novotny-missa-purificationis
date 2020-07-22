@@ -499,31 +499,32 @@ CredoBassoLyrics = \lyricmode {
 CrucifixusBassoNotes = {
 	\relative c {
 		\clef bass
-		\key d \dorian \time 2/2 \autoBeamOff \tempoCrucifixus
+		\key d \dorian \time 2/1 \autoBeamOff \tempoCrucifixus
+			\set Staff.timeSignatureFraction = 2/2
 			\set Score.currentBarNumber = #108
-			\mvTr d1\fE^\tuttiE f
-			gis a2 a~
-			a4 g8([ fis)] g2. e4 a g %110
-			f d f e d a d c!
-			h! c8[ d] e4 d c h a2
-			R\breve
-			d1 f
-			gis a4 e( a) g? %115
-			f e d e8[ f] g4 d g f
-			e a, a' g f e d2
-			r1 a
-			b cis
-			d4 a d_( c b a) g2 %120
-			R\breve*2
-			d'2. d4 es2 e
-			f fis g2. f?4
-			e2 es d1~ %125
-			d r
-			d2. d4 cis2 c
-			h b a a
-			a\breve~
-			a1. a2 %130
-			d\breve\fermata \bar "||" %131 finis
+		\mvTr d1\fE^\tuttiE f
+		gis a2 a~
+		a4 g8([ fis)] g2. e4 a g %110
+		f d f e d a d c!
+		h! c8[ d] e4 d c h a2
+		R\breve
+		d1 f
+		gis a4 e( a) g? %115
+		f e d e8[ f] g4 d g f
+		e a, a' g f e d2
+		r1 a
+		b cis
+		d4 a d_( c b a) g2 %120
+		R\breve*2
+		d'2. d4 es2 e
+		f fis g2. f?4
+		e2 es d1~ %125
+		d r
+		d2. d4 cis2 c
+		h b a a
+		a\breve~
+		a1. a2 %130
+		d\breve\fermata \bar "||" %131 finis
 	}
 }
 
@@ -551,6 +552,73 @@ CrucifixusBassoLyrics = \lyricmode {
 	pul --
 	tus %130
 	est. %131 finis
+}
+
+EtResurrexitBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \autoBeamOff \tempoEtResurrexit
+			\set Score.currentBarNumber = #132
+		\mvTr d4\fE^\tutti r r r8 d'
+		h fis g4 d d8 d16 d
+		a'8 a16 a a8 a16 a d,8 d fis fis
+		g r h, r cis r e r %135
+		fis r a, r h r d r
+		e r g, r a r cis r
+		d d fis r g4 r
+		r2 a4 fis8 d
+		cis d16 d a'4 d,8 \mvTr d16([\pE^\solo e)] fis([ e)] fis([ g)] %140
+		a8 a h cis d fis,16([ a)] \appoggiatura a g8.\trill g16
+		fis4 r r8 h4 g8
+		e cis r4 r8 a'4 fis8
+		d? h r4 r8 g'4 e8
+		cis a a'8.([ h32 cis)] d8 cis h a %145
+		\appoggiatura a gis4 h16([ gis)] fis([ e)] cis'8 d16 cis h([ a)] gis([ fis)]
+		gis[( e a8] d,[ e]) a,4 r
+		R1*9 %156
+		\mvTr d8\fE^\tutti d d d16 d g8 g16 g e e e e
+		a8 g16 g fis8 e d d cis([ d)]
+		a'4 a,8 a d r h r
+		g' r e r cis r a r %160
+		fis'([ g] a4)\trill d, r
+		R1*10 %171
+		r8 \mvTr d([\fE^\tutti fis)] d g g e g
+		a([ h)] cis([ d)] e([ d)] cis([ h16 a)]
+		d8([ cis)] h([ a)] gis2
+		a4 \tempoMortuorum a,8 a b2 %175
+		a r\fermata \bar "||" %176 finis
+	}
+}
+
+EtResurrexitBassoLyrics = \lyricmode {
+	Et, et %132
+	re -- sur -- re -- xit ter -- ti -- a
+	di -- e se -- cun -- dum Scri -- ptu -- ras, et a --
+	scen -- _ _ _ %135
+	_ _ _ _
+	_ _ _ _
+	dit in coe -- lum,
+	se -- det ad
+	dex -- te -- ram Pa -- tris. Et i -- te -- %140
+	rum ven -- tu -- rus est cum glo -- ri --
+	a iu -- di --
+	ca -- re, iu -- di --
+	ca -- re, iu -- di --
+	ca -- re vi -- vos et mor -- tu -- %145
+	os, cu -- ius re -- gni non e -- rit
+	fi -- nis.
+
+	Qui cum Pa -- tre et Fi -- li -- o si -- mul ad -- o -- %157
+	ra -- tur et con -- glo -- ri -- fi -- ca --
+	tur: qui lo -- cu -- tus
+	est per __ _ Pro -- %160
+	phe -- tas.
+
+	Et ex -- pe -- cto re -- sur -- %172
+	re -- cti -- o -- nem
+	mor -- tu -- o --
+	rum, mor -- tu -- o -- %175
+	rum. %176 finis
 }
 
 % BassoNotes = {

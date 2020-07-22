@@ -579,7 +579,8 @@ EtIncarnatusAltoLyrics = \lyricmode {
 CrucifixusAltoNotes = {
 	\relative c' {
 		\clef treble
-		\key d \dorian \time 2/2 \autoBeamOff \tempoCrucifixus
+		\key d \dorian \time 2/1 \autoBeamOff \tempoCrucifixus
+			\set Staff.timeSignatureFraction = 2/2
 			\set Score.currentBarNumber = #108
 		R\breve*3 %110
 		r2 \mvTr d\fE^\tutti f1
@@ -628,6 +629,71 @@ CrucifixusAltoLyrics = \lyricmode {
 	et se -- pul --
 	_ _ _ tus %130
 	est. %131 finis
+}
+
+EtResurrexitAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoEtResurrexit
+			\set Score.currentBarNumber = #132
+		\mvTr fis4\fE^\tutti r r r8 fis
+		g a a([ g)] fis4 fis8 fis16 fis
+		e8 e16 e cis8 d16 e fis8 fis a a
+		g r g r e r g r %135
+		fis r fis r d r fis r
+		e r e r cis r e r
+		d fis fis([ e)] d4 r
+		r2 e4 fis8 fis
+		g fis16 fis e4 fis r %140
+		R1*16 %156
+		\mvTr fis8\fE^\tutti fis fis fis16 fis d8 d16 d g g g g
+		e8 e16 e fis8 g a a g([ fis)]
+		e4 e8 e fis r fis r
+		g r g r g r a r %160
+		a([ h] a4) a r
+		R1*4 %165
+		r2 r8 \mvTr h\pE^\solo h h16 h
+		h8 a4 g8 fis4 e
+		r2 g8 a h cis
+		d16([ cis)] h([ a)] g8. fis16 e8([ fis] e4)
+		d r r2 %170
+		R1
+		r8 \mvTr fis4\fE^\tutti fis8 d d g g
+		e( a4) a8 g16([ a h8] cis8) h
+		a4 h h2
+		cis4 \tempoMortuorum a8 a a4( gis) %175
+		a2 r\fermata \bar "||" %176 finis
+	}
+}
+
+EtResurrexitAltoLyrics = \lyricmode {
+	Et, et %132
+	re -- sur -- re -- xit ter -- ti -- a
+	di -- e se -- cun -- dum Scri -- ptu -- ras, et a --
+	scen -- _ _ _ %135
+	_ _ _ _
+	_ _ _ _
+	dit in coe -- lum,
+	se -- det ad
+	dex -- te -- ram Pa -- tris. %140
+
+	Qui cum Pa -- tre et Fi -- li -- o si -- mul ad -- o --
+	ra -- tur et con -- glo -- ri -- fi -- ca --
+	tur: qui lo -- cu -- tus
+	est per __ _ Pro -- %160
+	phe -- tas.
+
+	Con -- fi -- te -- or %166
+	u -- num ba -- ptis -- ma
+	in re -- mis -- si -- o -- nem
+	pec -- ca -- to --
+	rum. %170
+
+	Et ex -- pe -- cto re -- sur --
+	re -- cti -- o -- nem
+	mor -- tu -- o --
+	rum, mor -- tu -- o -- %175
+	rum. %176 finis
 }
 
 % AltoNotes = {
