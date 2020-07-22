@@ -149,3 +149,22 @@ EtResurrexitTimpani = {
 		R1\fermataMarkup \bar "||" %176 finis
 	}
 }
+
+EtVitamTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoEtVitam
+			\set Score.currentBarNumber = #177
+		R1*8 %184
+		g4\fE r r2 %185
+		R1*6 %191
+		g4\fE r r2
+		R1*5 %197
+		r2 r4 g8\fE g16 g
+		c4 r r2
+		R1*5 %204
+		g4\fE r r r8 g %205
+		c4 c\pE c r
+		g8\fE c g g c4 r\fermata \bar "|." %207 FINIS
+	}
+}

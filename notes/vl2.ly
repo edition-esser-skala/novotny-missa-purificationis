@@ -463,3 +463,39 @@ EtResurrexitViolinoII = {
 		R1\fermataMarkup \bar "||" %176 finis
 	}
 }
+
+EtVitamViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoEtVitam
+			\set Score.currentBarNumber = #177
+		R1*4 %180
+		r8 a'\fE fis h r g e a
+		r fis d \once \tieDashed g~ g16 a g fis e4\trill
+		d16 e fis g a4~ a16 g fis a d,8. d16
+		e8.(\trill fis32 g) a16 g fis g a8 e d16 fis e d
+		cis8 a'\p fis h r g e a %185
+		r fis d g r g e a
+		fis d' cis a d h g a
+		d,4 r8 a'\f fis h r gis
+		e a r fis gis a4 gis8
+		a e fis8. e16 d4 e8.(\trillE fis32 g) %190
+		a4. h8 gis fis4 e8
+		e4 r16 fis(\p g fis) g4 r16 gis( a gis)
+		a4 r16 ais( h ais) h4 r16 h( cis h)
+		cis4 r16 cis( d cis) d e cis d h8 a
+		g fis e cis d h' g a %195
+		d,4 r8 cis'\fE a d r h
+		g cis r a fis h e, fis
+		g e fis g e fis e4\trill
+		d r16 \slurDashed f(\p g f) g4 r16 g( f g) \slurSolid
+		a8 a fis h r g e a %200
+		r fis d g r g e a
+		fis d' cis a d h g a
+		d, a'\f fis h r h g cis
+		r cis a d r d^\critnote h e~
+		e16 d cis h a8 d cis d e4\trill %205
+		fis32( e fis g) a( g fis e) d( cis d e) fis( e d cis) h16( cis32 d e fis g a) h( a g fis) g( fis e d)
+		cis16( e) fis d' e, d' e, cis' \appoggiatura e,8 fis4 r\fermata \bar "|." %207 FINIS
+	}
+}

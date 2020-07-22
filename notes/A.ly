@@ -696,6 +696,62 @@ EtResurrexitAltoLyrics = \lyricmode {
 	rum. %176 finis
 }
 
+EtVitamAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoEtVitam
+			\set Score.currentBarNumber = #177
+		R1*4 %180
+		r8 \mvTr a'\fE^\tutti fis h r g e a
+		r fis d[ g]~ g16[ a] g([ fis)] e8. e16
+		d([ e)] fis[ g] a4~ a16[ g fis a] d,4
+		e8.([\trill fis32 g)] a16[ g fis g] a8[ e] d16[ fis e d]
+		cis8 a r4 r2 %185
+		R1*2
+		r4 r8 a' fis h r gis
+		e a r fis gis a a gis
+		a e fis8.[ e16] d4 e8.([\trill fis32 g)] %190
+		a4. h8 gis fis4 e8
+		e4 r r2
+		R1*3 %195
+		r4 r8 cis' a d r h
+		g cis r a fis h e,([ fis]
+		g[ e]) fis g e([ fis] e4)
+		d r r2
+		R1*3 %202
+		r8 fis~ fis16[ e d cis] h8[ g']~ g16[ fis e d]
+		cis8[ a']~ a16[ g fis e] d8[ h']~ h16[ a g fis]
+		e8 a4 a8 g([^\critnote fis] e4) %205
+		d r r2
+		e8 fis e4 d r\fermata \bar "|." %207 FINIS
+	}
+}
+
+EtVitamAltoLyrics = \lyricmode {
+	Et vi -- tam ven -- tu -- ri, %181
+	ven -- tu -- ri sae -- cu --
+	li, a -- _ _
+	_ _ _ _
+	_ men, %185
+
+	et vi -- tam ven -- %188
+	tu -- ri, ven -- tu -- ri sae -- cu --
+	li, a -- _ _ _ %190
+	_ _ _ _ _
+	men,
+
+	et vi -- tam ven -- %196
+	tu -- ri, ven -- tu -- ri sae --
+	cu -- li, a --
+	men,
+
+	a -- _ %203
+	_ _
+	men, a -- men, a -- %205
+	men,
+	a -- men, a -- men. %207 FINIS
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

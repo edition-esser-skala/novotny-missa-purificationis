@@ -621,6 +621,69 @@ EtResurrexitBassoLyrics = \lyricmode {
 	rum. %176 finis
 }
 
+EtVitamBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \autoBeamOff \tempoEtVitam
+			\set Score.currentBarNumber = #177
+		r8 \mvTr a'\fE^\tutti fis h r g e a
+		r fis d[ g]~ g16[ a] g([ fis)] e8. e16
+		d16([ e)] fis[ g] a[ g fis a] h[ cis h a] g[ fis e g]
+		a[ h a g] fis[ e d e] fis[ gis] a4 g8~ %180
+		g[ fis16 e] d8 g16[ fis] e[ fis e d] cis[ a a' g]
+		fis[ e d cis] h[ a g a] h[ cis] d4 cis8
+		d cis16[ h] a8[ a'16 g] fis[ e d fis] g[ fis e d]
+		cis[ a a' g] fis[ e d e] fis[ gis] a4 gis8
+		a4 r r2 %185
+		R1*2
+		r8 d, cis fis r d h e
+		r cis a[ d]~ d16[ e] d([ cis)] h8. h16
+		a8 a'16[ g] fis[ e d fis] g[ a g fis] e[ d cis e] %190
+		fis[ g fis e] d[ cis h d] e8 fis d([ e)]
+		a,4 r r2
+		R1*3 %195
+		r4 r8 a' fis h r g
+		e a r fis d( g4) fis8
+		e( a4 g) fis16 g a4
+		d, r r2
+		R1*3 %202
+		r8 d~ d16[ cis h a] g8[ e']~ e16[ d cis h]
+		a8[ fis']~ fis16[ e d cis] h8[ g']~ g16[ fis e d]
+		cis8 a'16[( g] fis[ e fis g] a8) h g([ a)] %205
+		d,4 r r2
+		a'8 d, a4 d r\fermata \bar "|." %207 FINIS
+	}
+}
+
+EtVitamBassoLyrics = \lyricmode {
+	Et vi -- tam ven -- tu -- ri, %177
+	ven -- tu -- ri sae -- cu --
+	li, a -- _ _ _
+	_ _ _ _ _ %180
+	men, a -- _ _
+	_ _ _ _ _
+	men, a -- _ _ _
+	_ _ _ _ _
+	men, %185
+
+	et vi -- tam ven -- tu -- ri, %188
+	ven -- tu -- ri sae -- cu --
+	li, a -- _ _ _ %190
+	_ _ _ men, a --
+	men,
+
+	et vi -- tam ven -- %196
+	tu -- ri, ven -- tu -- ri
+	sae -- cu -- li, a --
+	men,
+
+	a -- _ %203
+	_ _
+	men, a -- men, a -- %205
+	men,
+	a -- men, a -- men. %207 FINIS
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

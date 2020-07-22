@@ -194,3 +194,26 @@ EtResurrexitClarinoI = {
 		R1\fermataMarkup \bar "||" %176 finis
 	}
 }
+
+EtVitamClarinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoEtVitam
+			\set Score.currentBarNumber = #177
+		R1*7 %183
+		r2 r8 d'\fE c d
+		d4 r r2 %185
+		R1*5 %190
+		r2 r4 r8 g16\fE g
+		g4 r r2
+		R1*5 %197
+		r2 r8 e\fE d d
+		c4 r r2
+		R1*3 %202
+		\pa r8 g'\fE e a r a f h
+		r h g c r c a a
+		g4 r r8 c, d4 \pd %205
+		c c\pE c r
+		d8\fE e d d c4 r\fermata \bar "|." %207 FINIS
+	}
+}

@@ -511,6 +511,15 @@ EtResurrexitViolinoI = {
 	}
 }
 
+EtVitamViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoEtVitam
+			\set Score.currentBarNumber = #177
+		s1*31 \bar "|." %207 FINIS
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

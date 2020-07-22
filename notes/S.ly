@@ -565,6 +565,68 @@ EtResurrexitSopranoLyrics = \lyricmode {
 	rum. %176 finis
 }
 
+EtVitamSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoEtVitam
+			\set Score.currentBarNumber = #177
+		R1*6 %182
+		r8 \mvTr d'\fE^\tutti cis fis r d h e
+		r cis a[ \once \tieDashed d]~ d16[ e] d([ cis)] h8. h16
+		a8 \mvTr a'~\pE^\solo a16[ g fis e] d8[ g]~ g16[ fis e d] %185
+		cis8[ fis]~ fis16[ e d cis] h[ d cis h] cis[\trill h cis e]
+		d[ fis e d] e[\trill d e g] \sbOn \tuplet 3/2 8 { fis[ a g fis e d] } \sbOff e4\trill
+		d16 \mvTr fis[\fE^\tutti e d] e[ d cis e] fis[ g fis e] d[ cis h d]
+		e[ fis e d] cis[ h a8] h[ cis]\trill d16[ fis e d]
+		cis8 cis a d r h g cis %190
+		r a fis h h a16 a a8([ gis)]
+		a16 \mvTr a[\pE^\solo h cis] d4~ d16[ dis e dis] e4~
+		e16[ eis fis eis] fis4~ fis16[ fis g fis] g4~
+		g16[ gis a gis] a4 a~ a16([ g) g( fis)]
+		fis([ e) e( d)] cis[ g' fis e] \sbOn \tuplet 3/2 8 { fis[ e d g fis e] } \sbOff d[ e e8]\trill %195
+		d8 \mvTr fis\fE^\tutti e a r fis d g
+		r e cis fis r d cis d
+		e([ cis)] d e cis( d4 cis8)
+		d16 \mvTr a[\pE^\solo h cis] d4~ d16[ d es d] \appoggiatura f? es8[ d]
+		\appoggiatura d16 cis8 a'~ a16[ g fis e] d8[ g]~ g16[ fis e d] %200
+		cis8[ fis]~ fis16[ e d cis] h[ d cis h] cis[\trill h cis e]
+		d[ fis e d] e[\trill d e g] \sbOn \tuplet 3/2 8 { fis[ a g fis e d] } \sbOff e4\trill
+		d8 \mvTr a\fE^\tutti fis h r h g cis
+		r cis a d r d h e
+		e16([ d cis8)] d d cis( d4 cis8) %205
+		d4 r r2
+		cis8( d4 cis8) d4 r\fermata \bar "|." %207 FINIS
+	}
+}
+
+EtVitamSopranoLyrics = \lyricmode {
+	Et vi -- tam ven -- tu -- ri, %183
+	ven -- tu -- ri sae -- cu --
+	li, a -- _ %185
+	_ _ _
+	_ _ _ _
+	men, a -- _ _ _
+	_ _ _ _
+	men, et vi -- tam ven -- tu -- ri, %190
+	ven -- tu -- ri sae -- cu -- li, a --
+	men, a -- _ _
+	_ _
+	men, a --
+	_ _ _ _ %195
+	men, et vi -- tam ven -- tu -- ri,
+	\xE et vi -- tam \x ven -- tu -- ri
+	sae -- cu -- li, a --
+	men, a -- _ _
+	men, a -- _ %200
+	_ _ _
+	_ _ _ _
+	men, et vi -- tam ven -- tu -- ri,
+	et vi -- tam ven -- tu -- ri
+	sae -- cu -- li, a -- %205
+	men,
+	a -- men. %207 FINIS
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

@@ -661,6 +661,66 @@ EtResurrexitTenoreLyrics = \lyricmode {
 	rum. %176 finis
 }
 
+EtVitamTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \major \time 4/4 \autoBeamOff \tempoEtVitam
+			\set Score.currentBarNumber = #177
+		R1*2 %178
+		r8 \mvTr d\fE^\tutti cis fis r d h e
+		r cis a[ d]~ d16[ e] d([ cis]) h8. h16 %180
+		a a[ h cis] d[ cis h8]~ h16[ a g8] a16[ h cis h]
+		a[ g fis8] g16[ a h cis] d8 a g16[ h a g]
+		fis[ g a h] cis[ d cis h] a4 h\trill
+		a r8 a4 a8 h([ e)]
+		e4 r r2 %185
+		R1*2
+		r8 a, cis a r a h h
+		cis4~ cis16[ d e fis] e8. e16 d4
+		\sbOn e16[ d \tuplet 3/2 8 { cis h cis] } \sbOff d8.[ cis16] h4 cis~ %190
+		cis d4. cis8 h4
+		cis r r2
+		R1*3 %195
+		r8 d cis fis r d h e
+		r cis a d r h a4
+		h8([ cis)] h4 a8 a a4
+		a r r2
+		R1*3 %202
+		r8 a h h r h cis cis
+		r cis d d r d e e
+		r a, a a a fis16 fis h8([ a)] %205
+		a4 r r2
+		a8 a a4 a r\fermata \bar "|." %207 FINIS
+	}
+}
+
+EtVitamTenoreLyrics = \lyricmode {
+	Et vi -- tam ven -- tu -- ri, %179
+	ven -- tu -- ri sae -- cu -- %180
+	li, a -- _ _
+	_ _ men, a -- _
+	_ _ _ _
+	men, a -- men, a --
+	men, %185
+
+	et vi -- tam ven -- tu -- ri %188
+	sae -- _ cu -- li,
+	a -- _ _ _ %190
+	_ _ _
+	men,
+
+	et vi -- tam ven -- tu -- ri, %196
+	\xE et vi -- tam \x ven -- tu --
+	ri __ sae -- cu -- li, a --
+	men,
+
+	et vi -- tam ven -- tu -- ri, %203
+	et vi -- tam ven -- tu -- ri,
+	ven -- tu -- ri sae -- cu -- li, a -- %205
+	men,
+	a -- men, a -- men. %207 FINIS
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

@@ -1084,6 +1084,75 @@ EtResurrexitBassFigures = \figuremode {
 	r %176 finis
 }
 
+EtVitamOrgano = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \tempoEtVitam
+			\set Score.currentBarNumber = #177
+		r8 \mvTr a'\fE-\tuttiE-! fis-! h-! r g-! e-! a-!
+		r fis-! d-! g~-! g16 a-! g-! fis-! e4\trill
+		<< {
+			r8 d' cis fis r d h e
+			r cis a d~ d16 e d cis h4\trill %180
+			a8
+		} \\ {
+			d,16 e fis g a g fis a h cis h a g fis e g
+			a h a g fis e d e fis gis a8 a g~ %180
+			g fis16 e
+		} >> d8 g16 fis e fis e d cis h a g
+		<fis fis'> e' d cis h a g a h cis d4 cis8
+		d cis16 h a8 a'16 g fis e d fis g fis e d
+		cis a a' g fis e d e fis gis a4 gis8
+		a4 r r2 %185
+		R1*2
+		r8 d, cis fis r d h e
+		r cis a d~ d16 e d cis h4
+		a8 a'16 g fis e d fis g a g fis e d cis e %190
+		fis g fis e d cis h d e8 fis d e
+		a,4 r r2
+		R1*3 %195
+		r8 \clef "treble_8" d'8[ cis] \clef bass a fis h r g
+		e a r fis d g4 fis8
+		e a4 g fis16 g a8 a,
+		d4 r r2
+		R1*3 %202
+		r8 d~ d16 cis h a g8 e'~ e16 d cis h
+		a8 fis'~ fis16 e d cis h8 g'~ g16 fis e d
+		<cis cis'> h' a g fis e fis g a8 h g a %205
+		d,\p r fis r g4 r
+		a8\f d, a' a, d4 r\fermata \bar "|." %207 FINIS
+	}
+}
+
+EtVitamBassFigures = \figuremode {
+	r1 %177
+	r
+	r
+	r %180
+	r8 <10 6> r <5> q4 <6>
+	<5> <6> r8 <3> <4 2> <6>
+	<5> <6> <[5]> <6> q4 <5>8 <8>
+	<5>4 <6> q8 <3> <4 2> <[6]>
+	<5>1 %185
+	r1*2
+	r8 <5> <6> <5 3> r <[6] 5> r <_+>
+	r <[6]> r <3> <4+ 2> <5 [2]> <7> <6\\>
+	<5>4 <6> <5> <6> %190
+	<5> <[5]> <7 [_+]>8 <5> <6 5> <_+>
+	r1
+	r1*3 %195
+	r8 <5> <6> <[6]> <6>4. <[6]>8
+	<5>4. <6>8 r4 <4 2>8 <6>
+	<7> <3> <4 2> <6> <4 2> <6> <4> <3>
+	r1
+	r1*3 %202
+	r8 <5> <6>4. <5>8 <6>4
+	r8 <5> <6>4. <5>8 <6>4
+	q q <[7]>8 <5> <6 5>4 %205
+	r <6> <5>2
+	<7>4 <4>8 <3> r2 %207 FINIS
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass
