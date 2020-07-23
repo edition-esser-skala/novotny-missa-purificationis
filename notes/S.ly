@@ -832,6 +832,43 @@ OsannaSopranoLyrics = \lyricmode {
 	sis. %63 FINIS
 }
 
+AgnusDeiSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \dorian \time 3/2 \autoBeamOff \tempoAgnusDei
+		R1.*44 %44
+		r2 \mvTr c'\fE^\tutti c %45
+		cis cis cis
+		d d d
+		d1 d2
+		d cis a
+		b h cis %50
+		d e f
+		es1 d2~
+		d cis cis
+		d4.( e8 f4. e8) d2~
+		d d( cis) %55
+		d r r
+		R1.*6 %62
+		R1.\fermataMarkup \bar "||" %63 FINIS
+	}
+}
+
+AgnusDeiSopranoLyrics = \lyricmode {
+	A -- gnus %45
+	De -- i, qui
+	tol -- lis pec --
+	ca -- ta
+	mun -- di, pec --
+	ca -- _ _ %50
+	_ _ ta
+	mun -- _
+	di, pec --
+	ca -- ta __
+	mun -- %55
+	di: %56 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

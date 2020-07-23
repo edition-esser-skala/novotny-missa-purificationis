@@ -874,6 +874,63 @@ OsannaTenoreLyrics = \lyricmode {
 	sis. %63 FINIS
 }
 
+AgnusDeiTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \dorian \time 3/2 \autoBeamOff \tempoAgnusDei
+		R1.*31 %31
+		r2 \mvTr e\pE^\solo e
+		cis a' cis,
+		\appoggiatura e8 d4( cis?) d2 d
+		dis( a'4 f!) e( dis) %35
+		\appoggiatura dis e2\trill e, r
+		r f'! f
+		e8[ c h a] gis[ a h a] h[\trill a h c]
+		\appoggiatura e d4 c8([ h)] a2( h)\trill
+		a2 r r %40
+		R1.*4
+		r2 \mvTr a\fE^\tutti a %45
+		b b b
+		a a a
+		gis1 gis2
+		a a r
+		R1. %50
+		r2 r a
+		b1 h2
+		a a b
+		a1 b2(
+		h) a1 %55
+		a2 r r
+		R1.*6 %62
+		R1.\fermataMarkup \bar "||" %63 finis
+	}
+}
+
+AgnusDeiTenoreLyrics = \lyricmode {
+	A -- gnus %32
+	De -- i, qui
+	tol -- lis pec --
+	ca -- ta __ %35
+	mun -- di:
+	Mi -- se --
+	re -- _ _
+	_ re no --
+	bis. %40
+
+	A -- gnus %45
+	De -- i, qui
+	tol -- lis pec --
+	ca -- ta
+	mun -- di,
+	%50
+	pec --
+	ca -- ta
+	mun -- di, pec --
+	ca -- ta __
+	mun -- %55
+	di: %56 finis
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

@@ -583,3 +583,72 @@ OsannaViolinoII = {
 		a2 r r\fermata \bar "|." %63 FINIS
 	}
 }
+
+AgnusDeiViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \dorian \time 3/2 \tempoAgnusDei
+		\mvTrr a4-.\pp-\markup \remark "sempre" ^\tweak TextScript.X-offset #0 ^\markup \remark "staccato" a-. a-. a-. a-. a-.
+		cis-. cis-. cis-. cis-. cis-. cis-.
+		d-. d-. a-. a-. a-. a-.
+		a-. a-. a-. a-. a-. a-.
+		d-. d-. d-. d-. d-. d-. %5
+		h!-. h-. h-. h-. h-. h-.
+		e( d) cis-. cis-. cis-. cis-.
+		cis-. cis-. cis-. cis-. cis-. cis-.
+		d4. e8 f4 g8 a b4 c
+		d8( c) b4~ b2 \appoggiatura b8 a4-\critnote gis %10
+		a2 r4 a2 g4
+		f2 r r
+		r cis4( e) d( f)
+		e( g) f-! f( e d)
+		cis( e) d( f) e( g) %15
+		f( d) cis( e) d( f)
+		\appoggiatura a8 g4( f8 e) d2 cis
+		d4-. d-. a-. a-. a-. a-.
+		a-. a-. a-. a-. a-. a-.
+		d-. d-. d-. d-. d-. d-. %20
+		d-. d-. d-. d-. d-. d-.
+		d2( c b)
+		a4-. a-. a-. a-. a-. a-.
+		a2 r r
+		R1.*2 %26
+		r2 gis4( h) a( c)
+		h( d) c-! c( h a)
+		gis( h) a( c) h( d)
+		c( a) gis( h) a( c) %30
+		\appoggiatura e8 \once \slurDashed d4(-\critnote c8 h) a2 gis\trill
+		a c4-. c-. c-. c-.
+		e-. e-. e-. e-. e-. e-.
+		d2 r r
+		\parOn c!4-\parenthesize-. c-. c-. c-. c-. \parOff c-\parenthesize-. %35
+		c-. c-. h-. h-. h-. h-.
+		h-. h-. h-. h-. h-. h-.
+		c-. c-. c-. c-. c-. c-.
+		d2 r r
+		r gis,4( h) a( c) %40
+		h( d) c-! c( h a)
+		gis( h) a( c) h( d)
+		c( a) gis( h) a( c)
+		\appoggiatura e8 \once \slurDashed d4( c8 h) a2 gis\trill
+		c4-\parenthesize-. a'-. c-.\f e-. a-. a,-. %45
+		r b'-. g-. e-. cis-. b-.
+		r a-. d-. f-. a-. a,-.
+		r gis'-. f-. d-. b-. gis-.
+		r a-. cis-. e-. a-. a,~
+		a2(\p gis g) %50
+		f( e d)
+		r4 b''\f-. g-. es-. d-. h-.
+		r a-. cis-. e-. b'-. g-.
+		a8 b a\trill g f g f\trill e d e d\trill c
+		d4-\parenthesize-! d,-\parenthesize-! e1\trill %55
+		d4(\pp f) cis( e) d( f)
+		e( g) f-! f( e d)
+		cis( e) d( f) e( g)
+		f( d) cis( e) d( f)
+		\appoggiatura a8 g4(-\critnote f8 e) d2 cis\trill %60
+		d r r
+		e4( d) d2 cis\trill
+		d r r\fermata \bar "||" %63 finis
+	}
+}

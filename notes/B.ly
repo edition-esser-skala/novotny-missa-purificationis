@@ -838,6 +838,70 @@ OsannaBassoLyrics = \lyricmode {
 	sis. %63 FINIS
 }
 
+AgnusDeiBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \dorian \time 3/2 \autoBeamOff \tempoAgnusDei
+		r2 \mvTr d\pE^\solo d'
+		\appoggiatura d8 cis4( b) \appoggiatura b a2. g4
+		f( e) d2 a'
+		fis( d') fis,
+		\appoggiatura fis4 g2 d b' %5
+		gis( e') gis,
+		a a, r
+		r b' b
+		a4. g8 f4 e d c
+		b b'8[ a] g4 f e d %10
+		cis e a2. g4
+		f4. d8 a1\trill
+		d2 r r
+		R1.*31 %44
+		r2 \mvTr a'\fE^\tutti a %45
+		g! g g
+		f f d
+		b1 b2
+		a a r
+		R1. %50
+		r2 r a'
+		g1 gis2
+		a a, g'^\critnote
+		f4. e8 d4. c8 b4. a8
+		gis2 a1\trill %55
+		d2 r r
+		R1.*6 %62
+		R1.\fermataMarkup \bar "||" %63 finis
+	}
+}
+
+AgnusDeiBassoLyrics = \lyricmode {
+	A -- gnus
+	De -- i, qui
+	tol -- lis pec --
+	ca -- ta
+	mun -- di, pec -- %5
+	ca -- ta
+	mun -- di:
+	Mi -- se --
+	re -- _ _ _ _ _
+	_ _ _ _ _ _ %10
+	_ _ _ _
+	_ re no --
+	bis.
+
+	A -- gnus %45
+	De -- i, qui
+	tol -- lis pec --
+	ca -- ta
+	mun -- di,
+	%50
+	pec --
+	ca -- ta
+	mun -- di, pec --
+	ca -- _ _ _ _ _
+	ta mun -- %55
+	di: %56 finis
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

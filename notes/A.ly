@@ -898,6 +898,65 @@ OsannaAltoLyrics = \lyricmode {
 	sis. %63 FINIS
 }
 
+AgnusDeiAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \dorian \time 3/2 \autoBeamOff \tempoAgnusDei
+		R1.*17 %17
+		r2 \mvTr a'\pE^\solo a
+		fis4( c') b( a) g( fis)
+		g2 d4( g) a( b) %20
+		a2 d,4( a') b( c)
+		b2( as) g
+		g\trill fis r
+		f2( d'4 c) b( a)
+		gis1 a2( %25
+		f4 e8[ d)] c2( h)\trill
+		a r r
+		R1.*17 %44
+		r2 \mvTr e'\fE^\tutti e %45
+		e e e
+		f f f
+		f1 f2
+		f e a
+		a gis g %50
+		f g a
+		g1 f2~
+		f\trill e e
+		a4.( g8 f2) f
+		f1( e2) %55
+		d r r
+		R1.*6 %62
+		R1.\fermataMarkup \bar "||" %63 finis
+	}
+}
+
+AgnusDeiAltoLyrics = \lyricmode {
+	A -- gnus %18
+	De -- i, __ qui __
+	tol -- lis __ pec -- %20
+	ca -- ta, __ pec --
+	ca -- ta
+	mun -- di:
+	Mi -- se --
+	re -- re __ %25
+	no --
+	bis.
+
+	A -- gnus %45
+	De -- i, qui
+	tol -- lis pec --
+	ca -- ta
+	mun -- di, pec --
+	ca -- _ _ %50
+	_ _ ta
+	mun -- _
+	di, pec --
+	ca -- ta
+	mun -- %55
+	di: %56 finis
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

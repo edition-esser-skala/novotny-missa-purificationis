@@ -618,6 +618,76 @@ OsannaViolinoI = {
 	}
 }
 
+AgnusDeiViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \dorian \time 3/2 \tempoAgnusDei
+		\mvTrr f4-.\pp-\markup \remark "sempre" ^\tweak TextScript.X-offset #0 ^\markup \remark "staccato" f-. f-. f-. f-. f-.
+		g-. g-. g-. g-. g-. g-.
+		f-. f-. f-. f-. f-. f-.
+		fis-. fis-. fis-. fis-. fis-. fis-.
+		g-. g-. g-. g-. g-. g-. %5
+		gis-. gis-. gis-. gis-. gis-. gis-.
+		a-. e-. e-. e-. e-. e-.
+		e-. e-. e-. e-. e-. e-.
+		f( d) f g8 a b4 c
+		\once \slurDashed d8( c) b4~ b2 \appoggiatura b8 a4 gis %10
+		a2 r4 cis d e
+		a,2 r r
+		d,4( f) e( g) f( a)
+		g( b) a( d) cis( b)
+		\appoggiatura b a1.~\cresc %15
+		a\trill
+		\appoggiatura c!8\! b4( a8 g) f4( e) e2\trill
+		d4-. f-. f-. f-. f-. f-.
+		fis-. fis-. fis-. fis-. fis-. fis-.
+		g-. g-. g-. g-. g-. g-. %20
+		a-. a-. a-. a-. a-. a-.
+		b2 es, e
+		d4( e) fis-. fis-. fis-. fis-.
+		f-. f-. f-. f-. f-. f-.
+		h,!-. h-. h-. h-. c-. c-. %25
+		a2 r r
+		a4( c) h( d) c( e)
+		d( f) e( a) gis( f!)
+		e1.~\cresc
+		e\trill %30
+		\appoggiatura g!8\! f4( e8 d) c2 h\trill
+		a4-. a'-. a-. a-. a-. a-.
+		a-. a-. a-. a-. a-. a-.
+		a-. a-. a-. a-. a-. a-.
+		a-. a-. a-. a-. a-. a-. %35
+		a-. a-. gis-. gis-. gis-. gis-.
+		gis-. gis-. gis-. gis-. gis-. gis-.
+		a-. a-. a-. a-. a-. a-.
+		a2 r r
+		a,4( c) h( d) c( e) %40
+		d( f) e( a) gis( f!)
+		e1.~\cresc
+		e\trill
+		\appoggiatura g8\! f4( e8 d) c2 h\trill
+		a4-. a'-. c-.\f e-. a-. a,-. %45
+		r b'-. g-. e-. cis-. b-.
+		r a-. d-. f-. a-. a,-.
+		r gis'-. f-. d-. b-. gis-.
+		r a-. cis?-. e-. a-. a,-.
+		b2(\p h cis) %50
+		d( e f)
+		r4 b-.\f g-. es-. d-. h!-.
+		r a-. cis-. a-. b'-. g-.
+		a8 b a\trill g f g f\trill e d e d\trill c
+		d4-! d,-! e1\trill %55
+		d4(\pp f) e( g) f( a)
+		g( b?) a( d) cis( b)
+		\appoggiatura b4 a1.\cresc~
+		a\trillE
+		\appoggiatura c8\! b4( a8 g) f4( e) e2\trill %60
+		d4( d') c( b) a( gis)
+		\appoggiatura h8 \once \slurDashed a4( g8 f) e1\trill
+		d2 r r\fermata \bar "||"
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble
