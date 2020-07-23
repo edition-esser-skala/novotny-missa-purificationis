@@ -580,6 +580,44 @@ BenedictusViolinoI = {
 	}
 }
 
+OsannaViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 3/2 \tempoOsanna
+			\set Score.currentBarNumber = #32
+		R1.*3 %34
+		a'2\fE a gis4 a %35
+		h2 a4 h cis2
+		h4 cis d2 cis~
+		cis4 d e2. dis4
+		e2 e e
+		cis4 d! e2. d4 %40
+		cis d e2 h4 cis
+		d2. cis4 a h
+		cis d e1
+		r2 r e
+		e d4 e fis2 %45
+		e4 fis h, cis d2~
+		d cis4 d e2
+		h4 cis d a2 h4
+		cis2 h4 cis d2
+		cis4 d e2 d~ %50
+		d e d
+		cis4 a h cis d e
+		fis2 fis e4 fis
+		g2 d4 e fis2
+		cis4 d e2 h4 cis %55
+		d1.\trill
+		cis2 fis fis
+		e4 fis g2 d4 e
+		fis2 cis4 d e2
+		cis d2. cis4 %60
+		d2 d' d
+		d1.
+		d2 r r\fermata \bar "|." %63 FINIS
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

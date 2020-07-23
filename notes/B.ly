@@ -764,6 +764,80 @@ SanctusBassoLyrics = \lyricmode {
 	sis. %39 FINIS
 }
 
+OsannaBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \major \time 3/2 \autoBeamOff \tempoOsanna
+			\set Score.currentBarNumber = #32
+		\mvTr d2\fE^\tutti d cis4( d)
+		e2 d4( e) fis2
+		e4 d cis2 d
+		a2 a4( h) cis2 %35
+		h4 cis d2 cis4 d
+		e2 d4 e fis gis
+		a2 gis fis
+		e1.
+		fis2 cis d %40
+		a r r
+		R1.
+		a'2 a gis4( a)
+		h2 a4( h) cis h
+		a g! fis e d2 %45
+		cis4 d e2 d
+		a r r
+		r d d
+		cis4( d) e2 d4( e)
+		fis2 e4 fis g a %50
+		h2 g1
+		a2 r r
+		r a a
+		e4( fis) g2 d4( e)
+		fis2 cis4 d e2 %55
+		d4 cis d e fis g
+		a2 a, a
+		a1.~
+		a~
+		a %60
+		d2 h'4( g) fis( d)
+		g1.
+		d2 r r\fermata \bar "|." %63 FINIS
+	}
+}
+
+OsannaBassoLyrics = \lyricmode {
+	O -- san -- na __ %32
+	in ex -- cel --
+	_ _ _ _
+	sis, in __ ex -- %35
+	cel -- _ _ _ _
+	_ _ _ _ _
+	_ _ _
+	_
+	_ _ _ %40
+	sis,
+
+	o -- san -- na __
+	in ex -- cel -- _
+	_ _ _ _ _ %45
+	_ _ _ _
+	sis,
+	o -- san --
+	na __ in ex --
+	cel -- _ _ _ _ %50
+	_ _
+	sis,
+	o -- san --
+	na __ in ex --
+	cel -- _ _ _ %55
+	_ _ _ _ _ _
+	sis, in ex --
+	cel --
+
+	sis, in __ ex -- %61
+	cel --
+	sis. %63 FINIS
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

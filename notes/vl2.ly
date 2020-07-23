@@ -544,3 +544,42 @@ SanctusViolinoII = {
 		a g fis e fis4 r\fermata \bar "|." %39 FINIS
 	}
 }
+
+OsannaViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 3/2 \tempoOsanna
+			\set Score.currentBarNumber = #32
+		R1.*2
+		r2 r d~\fE
+		d cis4 d e2 %35
+		d4 e fis gis a2
+		gis fis4 gis a gis8[ fis]
+		e4 fis gis2 a~
+		a gis4 fis gis2
+		a r a~ %40
+		a e4 fis g!2
+		fis4 e d e fis d
+		e d cis cis' h a8[ gis]
+		fis4 gis a2 r
+		a a fis4 g %45
+		a2 g fis
+		e a e4 fis
+		g2 a4 g fis e8[ fis]
+		e4 fis g2 fis4 g
+		a2 g4 a h a8[ g] %50
+		fis2 g2. fis4
+		e fis g a8[ g] fis4 e
+		d2 r a'
+		g4 a h2 fis4 g
+		a2 e4 fis g2 %55
+		fis4 e fis g a g8[ fis]
+		e2 r a~
+		a g4 a h2
+		fis4 g a2 h
+		a1. %60
+		fis4( fis') g( h) a( fis)
+		h1.\trill
+		a2 r r\fermata \bar "|." %63 FINIS
+	}
+}

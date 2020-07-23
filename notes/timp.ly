@@ -199,3 +199,20 @@ SanctusTimpani = {
 		c2 c4 r\fermata \bar "|." %39 FINIS
 	}
 }
+
+OsannaTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 3/2 \tempoOsanna
+			\set Score.currentBarNumber = #32
+		R1.*24 %55
+		c2\fE c c
+		g r r
+		g r r
+		g r r
+		g r r %60
+		c c c
+		c1 c2
+		c2-\critnote r r\fermata \bar "|." %63 FINIS
+	}
+}

@@ -762,6 +762,76 @@ BenedictusSopranoLyrics = \lyricmode {
 	ni. %25 finis
 }
 
+OsannaSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 3/2 \autoBeamOff \tempoOsanna
+			\set Score.currentBarNumber = #32
+		R1.*3 %34
+		\mvTr a'2\fE^\tutti a gis4( a) %35
+		h2 a4( h) cis2
+		h4 cis d2 cis~
+		cis4 d e2. dis4
+		e2 e e
+		cis4( d!) e2. d4 %40
+		cis d e2 h4 cis
+		d2. cis4 a h
+		cis d e1
+		r2 r e
+		e d4( e) fis2 %45
+		e4( fis) h, cis d2~
+		d cis4 d e2
+		h4 cis d a2 h4
+		cis2 h4 cis d2
+		cis4 d e2 d %50
+		d e d
+		cis4 a h cis d e
+		fis2 fis e4( fis)
+		g2 d4 e fis2
+		cis4 d e2 h4 cis %55
+		d1.\trill
+		cis2 fis fis
+		e4( fis) g2 d4( e)
+		fis2 cis4 d e2
+		cis d2. cis4 %60
+		d2 d d
+		d1.
+		d2 r r\fermata \bar "|." %63 FINIS
+	}
+}
+
+OsannaSopranoLyrics = \lyricmode {
+	O -- san -- na __ %35
+	in ex -- cel --
+	_ _ _ _
+	_ _ _
+	sis, o -- san --
+	na __ in ex -- %40
+	cel -- _ _ _ _
+	_ _ _ _
+	_ _ sis,
+	o --
+	san -- na __ in %45
+	ex -- cel -- _ _
+	_ _ _
+	_ _ _ _ _
+	_ _ _ _
+	_ _ _ _ %50
+	sis, in ex --
+	cel -- _ _ _ _ _
+	sis, in ex --
+	cel -- _ _ _
+	_ _ _ _ _ %55
+	_
+	sis, o -- san --
+	na __ in ex --
+	cel -- _ _ _
+	_ _ _ %60
+	sis, in ex --
+	cel --
+	sis. %63 FINIS
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

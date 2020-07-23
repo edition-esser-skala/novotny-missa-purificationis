@@ -838,52 +838,122 @@
 	% 		\midi { \tempo 4 = 80 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		number = "5"
+	% 		title = "B E N E D I C T U S"
+	% 	}
+	% 	\paper {
+	% 		system-system-spacing.basic-distance = #17
+	% 		system-system-spacing.minimum-distance = #17
+	% 		top-system-spacing.basic-distance = #11
+	% 		top-system-spacing.minimum-distance = #11
+	% 		top-markup-spacing.basic-distance = #1
+	% 		top-markup-spacing.minimum-distance = #1
+	% 		markup-system-spacing.basic-distance = #10
+	% 		markup-system-spacing.minimum-distance = #10
+	% 		systems-per-page = #2
+	% 	}
+	% 	\tocSection "5" "Benedictus"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup \with { \smallGroupDistance } <<
+	% 				\set StaffGroup.instrumentName = "vl 1"
+	% 				\new Staff { \BenedictusViolinoI }
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \BenedictusSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \BenedictusSopranoLyrics
+	% 			>>
+	% 			\new PianoStaff <<
+	% 				\set PianoStaff.instrumentName = \markup \center-column { "org" "solo" }
+	% 				\new Staff { \BenedictusOrganoR }
+	% 				\new Staff { \BenedictusOrganoL }
+	% 				\new FiguredBass { \BenedictusBassFigures }
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "b"
+	% 					% \transpose c c,
+	% 					\BenedictusBassi
+	% 				}
+	% 			>>
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 60 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			number = "5"
-			title = "B E N E D I C T U S"
+			subtitle = "O S A N N A"
 		}
-		\paper {
-			system-system-spacing.basic-distance = #17
-			system-system-spacing.minimum-distance = #17
-			top-system-spacing.basic-distance = #11
-			top-system-spacing.minimum-distance = #11
-			top-markup-spacing.basic-distance = #1
-			top-markup-spacing.minimum-distance = #1
-			markup-system-spacing.basic-distance = #10
-			markup-system-spacing.minimum-distance = #10
-			systems-per-page = #2
-		}
-		\tocSection "5" "Benedictus"
+		% \tocSubsection "5.2" "Osanna"
 		\score {
 			<<
 				\new StaffGroup \with { \smallGroupDistance } <<
-					\set StaffGroup.instrumentName = "vl 1"
-					\new Staff { \BenedictusViolinoI }
+					\set StaffGroup.instrumentName = \markup \center-column { "clno" "1, 2" }
+					\new Staff {
+						% \transpose c d
+						\partcombine \OsannaClarinoI \OsannaClarinoII
+					}
+				>>
+				\new Staff {
+					\set Staff.instrumentName = "timp"
+					% \transpose c d
+					\OsannaTimpani
+				}
+				\new StaffGroup <<
+					\new GrandStaff <<
+						\set GrandStaff.instrumentName = "vl"
+						\new Staff {
+							\set Staff.instrumentName = "1"
+							\OsannaViolinoI
+						}
+						\new Staff {
+							\set Staff.instrumentName = "2"
+							\OsannaViolinoII
+						}
+					>>
 				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \BenedictusSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \OsannaSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \BenedictusSopranoLyrics
-				>>
-				\new PianoStaff <<
-					\set PianoStaff.instrumentName = \markup \center-column { "org" "solo" }
-					\new Staff { \BenedictusOrganoR }
-					\new Staff { \BenedictusOrganoL }
-					\new FiguredBass { \BenedictusBassFigures }
+					\new Lyrics \lyricsto Soprano \OsannaSopranoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "A"
+						\new Voice = "Alto" { \dynamicUp \OsannaAltoNotes }
+					}
+					\new Lyrics \lyricsto Alto \OsannaAltoLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "T"
+						\new Voice = "Tenore" { \dynamicUp \OsannaTenoreNotes }
+					}
+					\new Lyrics \lyricsto Tenore \OsannaTenoreLyrics
+
+					\new Staff {
+						\set Staff.instrumentName = "B"
+						\new Voice = "Basso" { \dynamicUp \OsannaBassoNotes }
+					}
+					\new Lyrics \lyricsto Basso \OsannaBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
-						\set Staff.instrumentName = "b"
+						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\BenedictusBassi
+						\OsannaOrgano
 					}
 				>>
+				\new FiguredBass { \OsannaBassFigures }
 			>>
 			\layout { }
-			\midi { \tempo 4 = 60 }
+			\midi { \tempo 2 = 120 }
 		}
 	}
 }

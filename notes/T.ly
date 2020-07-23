@@ -799,6 +799,81 @@ SanctusTenoreLyrics = \lyricmode {
 	cel -- sis. %39 FINIS
 }
 
+OsannaTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \major \time 3/2 \autoBeamOff \tempoOsanna
+			\set Score.currentBarNumber = #32
+		r2 \mvTr a\fE^\tutti a
+		gis4( a) h2 a4( h)
+		cis d e d8[ e] fis2
+		e a, r %35
+		fis fis e4( fis)
+		gis( a) h2 a4 h
+		cis2 h a4 h
+		cis2 h4 a h2
+		a4 h cis d8[ e] fis2 %40
+		e4 d cis d e2
+		d d, r
+		r e' e
+		d4( e) fis2 e4( d)
+		cis h a h8[ cis] d4 cis8[ d] %45
+		e2 r a,
+		a a4( h) cis( d)
+		e( d8[ e)] fis2 a,~
+		a g4 a h2
+		a4 h cis2 h4 cis %50
+		d cis h a h2
+		a r d
+		d cis cis4( d)
+		e2 h4 cis d2
+		a4 h cis2 g4 a %55
+		h2 a1
+		a2 d d
+		cis4 d e fis g2
+		d4 e fis2 g~
+		g4 fis2 e8[ d] e2\trill %60
+		d d d
+		d1.
+		d2 r r\fermata \bar "|." %63 FINIS
+	}
+}
+
+OsannaTenoreLyrics = \lyricmode {
+	O -- san -- %32
+	na __ in ex --
+	cel -- _ _ _ _
+	_ sis, %35
+	o -- san -- na __
+	in __ ex -- cel -- _
+	_ _ _ _
+	_ _ _ _
+	_ _ _ _ _ %40
+	_ _ _ _ _
+	_ sis,
+	o -- san --
+	na __ in ex --
+	cel -- _ _ _ _ _ %45
+	sis, o --
+	san -- na __ in __
+	ex -- cel -- _
+	_ _ _
+	_ _ _ _ _ %50
+	_ _ _ _ _
+	sis, o --
+	san -- na in __
+	ex -- cel -- _ _
+	_ _ _ _ _ %55
+	_ _
+	sis, in ex --
+	cel -- _ _ _ _
+	_ _ _ _
+	_ _ _ %60
+	sis, in ex --
+	cel --
+	sis. %63 FINIS
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

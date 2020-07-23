@@ -1381,6 +1381,87 @@ BenedictusBassi = {
 	}
 }
 
+OsannaOrgano = {
+	\relative c {
+		\clef bass
+		\key d \major \time 3/2 \tempoOsanna
+			\set Score.currentBarNumber = #32
+		<< {
+				r2 a' a
+				gis4 a h2 a4 h
+				cis d e d8 e s2
+		} \\ {
+			\mvTr d,2\fE-\tutti d cis4 d
+			e2 d4 e fis2
+			e4 d cis2 d
+		} >>
+		a2. h4 cis2 %35
+		h4 cis d2 cis4 d
+		e2 d4 e fis gis
+		a2 gis fis
+		e1.
+		fis2 cis d %40
+		a \clef "treble_8" cis'4 d e2
+		d d, \clef treble << { a''4 h } \\ { fis d } >>
+		\clef bass a2 a gis4 a
+		h2 a4 h cis h
+		a g! fis e d2 %45
+		cis4 d e2 d
+		a \clef "treble_8" a'4 h cis d
+		e2 \clef bass d, d
+		cis4 d e2 d4 e
+		fis2 e4 fis g a %50
+		h2 g1
+		a2 \clef treble << { h'4 cis } \\ { g a8 g } >> \clef "treble_8" d2~
+		d \clef bass a a
+		e4 fis g2 d4 e
+		fis2 cis4 d e2 %55
+		d4 cis d e fis g
+		a2 a, a~-\tasto
+		a1.~
+		a~
+		a %60
+		d4 d' h g fis d
+		g,1.
+		d'2-\critnote r r\fermata \bar "|." %63 FINIS
+	}
+}
+
+OsannaBassFigures = \figuremode {
+	r1. %32
+	r
+	r1 <5 3>2
+	<4> <3> <5+>4 <[6]> %35
+	<5>2 <5 3>4 <6 4+> <6> <[7]>
+	<5 _+> <6 4> <[6]> <[7] _+> <5> <\t>
+	<5 3> <[6] 4> <6>2 <7 3>4 <6\\ 4>
+	<6 4>2 \bo <[5] _+>4 \bc <[4] 2> <5 _+>2
+	\bo <5 [3]>4 \bc <6 [4]> <6>2 <9>4 <8> %40
+	<5 3> <\t 4> <6>2 <5 _!>4 <6 \t>
+	<5>1.
+	<5 3>4 <\t 4> <5 [3]>2 <6>
+	<5 3>4 <6+ 4> <6>2 q
+	<5>4 <[\t]> <6> <[6]> <3> <4> %45
+	<6>2 <5 _!>4 <6 \t> <5>2
+	<5 4> <[\t 3]> <10 6>4 <10 \t>
+	<5> <6> <5>2 <\t>4 <6>
+	q2 <5 3>4 <6 4> <6> <[7]>
+	<5 3> <6 4> <6>2 <5> %50
+	q <8 6> <7 5>
+	<5>4 <6> r2 <3>4 <4>
+	<5>2 <6> <5 3>4 <6 4>
+	<8>2 <5 3>4 <6 4> <5>2
+	<5 3>4 <6 4> <6>2 <5 3>4 <6 4> %55
+	<6>2 <5> <6>
+	<5>1.
+	r
+	r
+	r %60
+	<5>2 <6> q
+	<9> <8>1
+	r1. %63 FINIS
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

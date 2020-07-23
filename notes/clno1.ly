@@ -254,3 +254,23 @@ SanctusClarinoI = {
 		c2 c4 r\fermata \bar "|." %39 FINIS
 	}
 }
+
+OsannaClarinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 3/2 \tempoOsanna
+			\set Score.currentBarNumber = #32
+		R1.*21 %52
+		r2 g''\fE g
+		f4 g a2 e4 f
+		g2 d4 e \pao f2 %55
+		e1 e2
+		d r r
+		g, r r
+		g r r
+		g r r %60
+		c c c
+		c1 c2
+		c2^\critnote r r\fermata \bar "|." %63 FINIS
+	}
+}
