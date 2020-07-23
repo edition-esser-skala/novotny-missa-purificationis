@@ -721,6 +721,84 @@ EtVitamTenoreLyrics = \lyricmode {
 	a -- men, a -- men. %207 FINIS
 }
 
+SanctusTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \major \time 4/4 \autoBeamOff \tempoSanctus
+		\mvTr a4\fE^\tutti a h h
+		a a g2
+		a4 a8 a16 a h8 h h h
+		e,4 r \tempoPleni a a8 a
+		a a r a h h h8. h16 %5
+		cis8([ h)] a4. a8 fis'4
+		g4.( fis8) e4 r
+		R1*3 %10
+		r2 r4 r16 fis,[ g a]
+		h4~ h16[ g a h] cis4~ cis16[ a h cis]
+		d4~ d16[ h cis d] e4~ e16[ cis d e]
+		fis[ e d8]~ d16[ cis h8]~ h4~ h8[ cis16 d]
+		e[ d cis8]~ cis16[ h a8]~ a4~ a8[ h16 cis] %15
+		d[ cis h8]~ h16[ a g8]~ g4~ g8[ a16 h]
+		cis8. h16 a4 a8([ h] a4)
+		a r r2
+		R1*4 %22
+		r2 r8 d d d
+		cis a fis'16[ e d cis] h8[ e]~ e16[ d cis h]
+		a[ h cis d] e[ d] cis4 d e8~ %25
+		e16[ d cis h] a[ h cis8] d16[ cis h cis] d[ cis d8]\trill
+		e16[ d cis8] d4 e16([ d)] cis([ h)] \sbOn a[ h \tuplet 3/2 8 { cis h cis] } \sbOff
+		d8[ a] a4 r8 a a a
+		fis e16([ fis)] gis8[ a16 h] cis[ h cis d] e[ cis d e]
+		a,4 a16([ g a h)] cis4\trill d8 g,16([ a)] %30
+		h8([ cis16 d] g,8) cis d cis16([ h)] a4\trill
+		a8 d d d cis a fis'16[ e d cis]
+		d4~ d16[ cis h a] g8[ cis]~ cis16[ h a g]
+		fis8[ h]~ h16[ a g fis] e8 a d([\trill cis16 h)]
+		a8 d d d cis fis fis16[ e d cis] %35
+		h8[ e]~ e16[ d cis h] a8[ d]~ d16[ cis d8]\trill
+		e16[ d cis h] cis[ d e8] \appoggiatura g16 fis8[ e16 d] e4\trill
+		fis16[ e d cis32 h] a4 h8([ a)] h([ c)]
+		\appoggiatura c4 h2 a4 r\fermata \bar "|." %39 FINIS
+	}
+}
+
+SanctusTenoreLyrics = \lyricmode {
+	San -- ctus, san -- ctus
+	san -- ctus, san --
+	ctus Do -- mi -- nus De -- us Sa -- ba --
+	oth. Ple -- ni sunt
+	coe -- li et ter -- ra glo -- ri -- %5
+	a, __ glo -- ri -- a
+	tu -- a,
+
+	glo -- %11
+	_ _
+	_ _
+	_
+	_ %15
+	_
+	_ ri -- a tu --
+	a.
+
+	O -- san -- na %23
+	in ex -- cel -- _
+	_ _ _ _ _ %25
+	_ _ _
+	_ sis, in ex -- cel --
+	_ sis, o -- san -- na
+	in ex -- cel -- _ _
+	sis, ex -- cel -- sis, o -- %30
+	san -- na in ex -- cel --
+	sis, o -- san -- na in ex -- cel --
+	_ _
+	_ sis, ex -- cel --
+	sis, o -- san -- na in ex -- cel -- %35
+	_ _
+	_ _ _ _
+	_ sis, in __ ex --
+	cel -- sis. %39 FINIS
+}
+
 % TenoreNotes = {
 % 	\relative c' {
 % 		\clef "treble_8"

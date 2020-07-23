@@ -627,6 +627,90 @@ EtVitamSopranoLyrics = \lyricmode {
 	a -- men. %207 FINIS
 }
 
+SanctusSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoSanctus
+		\mvTr d'4\fE^\tutti d d d
+		d d cis2
+		d4 d8 d16 d d8 d d8. d16
+		cis4 r \tempoPleni cis cis8 cis
+		d d r d h h e8. d16 %5
+		cis8 h16([ cis] d8[ e] fis4) d8 d
+		d( e4 d8) cis16 \mvTr a16[\pE^\solo h cis] d[ a a8]\trill
+		h16([ c) cis( d)] e[ h h8]\trill cis16([ d) dis( e)] fis[ cis cis8]\trill
+		dis16[ h cis dis] e[ h h8]\trill cis16[ a h cis] d[ a a8]\trill
+		a16([ d) d( cis)] a([ fis') fis( e)] d([ g) g( fis)] e([ h') h( a)] %10
+		g([ e)] fis([ d)] e4\trill d16 \mvTr a16[\fE^\tutti h cis] d4~
+		d16[ h cis d] e4~ e16[ cis d e] fis4~
+		fis16[ d e fis] g4~ g16[ e fis g] a8. g16
+		fis8.([ e16)] d4~ d8[ e16 fis] g8.[ fis16]
+		e8.[ d16] cis4~ cis8[ d16 e] fis8.[ e16] %15
+		d8.[ cis16] h4~ h8[ cis16 d] e8. d16
+		cis4 d d8 d d([ cis)]
+		d16 \mvTr a[\pE^\solo h cis] d[ a a8]\trill h16[ gis a h] cis[ gis gis8]\trill
+		ais16[ fis gis ais] h[ fis fis8]\trill gis16[ e fis gis] a?[ e e8]\trill~
+		e16([ a) a( gis)] e([ cis') cis( h)] a([ d) d( cis)] h([ fis') fis( e)] %20
+		d[\trill cis d e] fis[\trill e fis gis] a([ fis)] e([ d)] cis8([ h)]\trill
+		a4 r r2
+		R1*3 %25
+		r2 r8 \mvTr d\fE^\tutti d d
+		cis a fis'16[ e d cis] h8[ e]~ e16[ d cis h]
+		a8([ h16 cis)] d([ e)] fis([ d)] e[ d cis h] a8[ h16 cis]
+		d[ cis h a] \appoggiatura a8 gis4 a r
+		r8 d d d cis a fis'16[ e d cis] %30
+		h8[ e]~ e16[ d cis h] a8[ h16 cis] d4\trill
+		cis8 fis fis fis e cis a'16[ g fis e]
+		d4~ d8[ e16 fis] g[ fis e d] cis8[ d16 e]
+		fis[ e d cis] h8[ cis16 d] e[ d cis h32 cis] d4
+		cis8 fis fis fis e a a16[ g fis e] %35
+		d8[ g]~ g16[ fis e d] cis8[ fis]~ fis16[ e d cis]
+		h8[ cis16 d] e[ d h cis] d[ a] d4 cis8
+		d4 d8 d d d d d
+		d2 d4 r\fermata \bar "|." %39 FINIS
+	}
+}
+
+SanctusSopranoLyrics = \lyricmode {
+	San -- ctus, san -- ctus
+	san -- ctus, san --
+	ctus Do -- mi -- nus De -- us Sa -- ba --
+	oth. Ple -- ni sunt
+	coe -- li et ter -- ra glo -- ri -- %5
+	a, glo -- ri -- a
+	tu -- a, glo -- _
+	_ _ _ _
+	_ _ _ _
+	_ _ _ _ %10
+	ri -- a tu -- a, glo -- _
+	_ _
+	_ _ ri --
+	a, __ glo -- _
+	_ _ _ %15
+	_ _ _ ri --
+	a, glo -- ri -- a tu --
+	a, glo -- _ _ _
+	_ _ _ _
+	_ _ _ %20
+	_ _ ri -- a tu --
+	a.
+
+	O -- san -- na %26
+	in ex -- cel -- _
+	sis, __ in ex -- cel -- _
+	_ _ sis,
+	o -- san -- na in ex -- cel -- %30
+	_ _ _
+	sis, o -- san -- na in ex -- cel --
+	_ _ _
+	_ _ _ _
+	sis, o -- san -- na in ex -- cel -- %35
+	_ _
+	_ _ _ _ _
+	sis, in ex -- cel -- sis, in ex --
+	cel -- sis. %39 FINIS
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

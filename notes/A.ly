@@ -752,6 +752,80 @@ EtVitamAltoLyrics = \lyricmode {
 	a -- men, a -- men. %207 FINIS
 }
 
+SanctusAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoSanctus
+		\mvTr fis4\fE^\tutti fis g g
+		fis fis e2
+		fis4 fis8 fis16 fis gis8 gis gis gis
+		a4 r \tempoPleni e e8 e
+		fis fis r a d, d g8. fis16 %5
+		e4 fis8([ g)] a4 h
+		h( a) a r
+		R1*3 %10
+		r2 r16 fis[ e g] fis8.[ e16]
+		d8[ e16 fis] g8.[ fis16] e8[ fis16 g] a8.[ g16]
+		fis8[ g16 a] h8.[ a16] g8[ a16 h] cis8.[ h16]
+		a[ g fis8]~ fis16[ e d fis] g[ d g8]~ \once \tieDashed g4~
+		g16[ fis e8]~ e16[ d cis e] fis[ cis fis8]~ \once \tieDashed fis4~ %15
+		fis16[ e \once \tieDashed d8]~ d16[ cis h d] e[ h \tieDashed e8]~ e4~
+		e8[ \tieSolid fis16 g] a8. g16 fis8[ e] e4\trill
+		d r r2
+		R1*6 %24
+		r8 a' a a a fis h16[ a g fis] %25
+		e8[ a]~ a16[ g fis e] fis[( e)] d([ e)] fis[ e fis gis?]
+		a[ e a8]~ a16[ g fis a] g[ fis e d] cis[ d e8]
+		fis8 d16([ e)] fis[ g a fis] e8.[ d16] cis8[ d16 e]
+		fis[ e d cis] h4\trill cis8 a' a a
+		fis16([ e)] fis([ g)] a8.([\trill g32 fis)] e8[ fis16 g] a[ a, h cis] %30
+		d8 g16([ fis)] e8[ fis16 g] a[ g fis g] a[ g a h]
+		e,4 r r8 cis' cis cis
+		a fis fis[ g16 a] h[ a g fis] e8[ fis16 g]
+		a[ g fis e] d8[ e16 fis] g8 a a16[( g a h])
+		e,8 a a a cis16([ h)] a([ g)] fis8[ h]~ %35
+		h16[ a g fis] e8[ \once \tieDashed a]~ a16[ g fis g] a4\trill
+		g16([ fis)] e8 e16[( fis g8] a2)\trill
+		a16([ g]) fis([ e)] d8[ e16 fis] g8[ fis g a]
+		\appoggiatura a4 g2 fis4 r\fermata \bar "|." %39 FINIS
+	}
+}
+
+SanctusAltoLyrics = \lyricmode {
+	San -- ctus, san -- ctus
+	san -- ctus, san --
+	ctus Do -- mi -- nus De -- us Sa -- ba --
+	oth. Ple -- ni sunt
+	coe -- li et ter -- ra glo -- ri -- %5
+	a, glo -- ri -- a
+	tu -- a,
+
+	glo -- _ %11
+	_ _ _ _
+	_ _ _ _
+	_ _
+	_ %15
+	_
+	ri -- a tu -- _
+	a.
+
+	O -- san -- na in ex -- cel -- %25
+	_ sis, ex -- cel --
+	_ _ _
+	sis, ex -- cel -- _ _
+	_ _ sis, o -- san -- na
+	in ex -- cel -- _ _ %30
+	sis, ex -- cel -- _ _
+	sis, o -- san -- na
+	in ex -- cel -- _ _
+	_ _ sis, ex -- cel --
+	sis, o -- san -- na in ex -- cel -- %35
+	_ _
+	sis, ex -- cel --
+	sis, ex -- cel -- _
+	_ sis. %39 FINIS
+}
+
 % AltoNotes = {
 % 	\relative c' {
 % 		\clef treble

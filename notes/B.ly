@@ -684,6 +684,86 @@ EtVitamBassoLyrics = \lyricmode {
 	a -- men, a -- men. %207 FINIS
 }
 
+SanctusBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \autoBeamOff \tempoSanctus
+		\mvTr d4\fE^\tutti d d d
+		d2 d
+		d( h)
+		a4 r \tempoPleni a4 a8 a
+		d d r fis g g e g %5
+		a([ g)] fis([ e)] d4 h'8([ a)]
+		g e cis([ d)] a4 r
+		R1*3 %10
+		r2 r4 r16 d[ e fis]
+		g4~ g16[ e fis g] a4~ a16[ fis g a]
+		h4~ h16[ g a h] cis4~ cis16[ a h cis]
+		d8.[ cis16] h8.([ a16)] g8 g16([ fis] e8.[ d16]
+		cis8) cis'16([ h)] a8.([ g16)] fis8.[ e16 d8. cis16] %15
+		h8[ h'16 a] g8.[ fis16] e8.[ d16 cis8. h16]
+		a8[ a'16 g] fis8.[ e16] d8 g a4
+		d, r r2
+		R1*3 %21
+		r8 a' a a fis d h'16[ a g fis]
+		e8[ a]~ a16[ g fis e] fis8 d16([ e)] fis[ e fis g]
+		a[ g fis e] d[ e fis8] g16[ fis e d] cis[ a a' g]
+		fis8 e16([ d)] cis8[ a'16 g] fis[ e d fis] g[ fis e d] %25
+		cis[ e a g] fis[ e d cis] h2\trill
+		a4 r r2
+		r8 d d d cis a fis'16[ e d cis]
+		h8[ e]~ e16[ d cis h] a8 a16([ h)] cis[ a h cis]
+		d[ cis d e] fis[ e fis g] a[ g fis e] d8 h'16([ a)] %30
+		g[ fis e d] cis[ e a g] fis[ e d e] fis[ e fis g]
+		a4 r r8 a a a
+		fis d h'16[ a g fis] e8[ a]~ a16[ g fis e]
+		d8[ g]~ g16[ fis e d] cis8[ a'16 g] fis[ e fis g]
+		a4 a, a a %35
+		a a a a
+		a a a2
+		d8 d'~ d16[ c] h([ a)] g8[( d' h fis]
+		g2) d4 r\fermata \bar "|." %39 FINIS
+	}
+}
+
+SanctusBassoLyrics = \lyricmode {
+	San -- ctus, san -- ctus
+	san -- ctus,
+	san --
+	ctus. Ple -- ni sunt
+	coe -- li et ter -- ra glo -- ri -- %5
+	a __ tu -- a, glo --
+	ri -- a tu -- a,
+
+	glo -- %11
+	_ _
+	_ _
+	_ ri -- a glo --
+	ri -- a, __ glo -- %15
+	_ _ _
+	_ _ ri -- a tu --
+	a.
+
+	O -- san -- na in ex -- cel -- %22
+	_ sis, ex -- cel --
+	_ _ _ _
+	sis, ex -- cel -- _ _ %25
+	_ _ _
+	sis,
+	o -- san -- na in ex -- cel --
+	_ sis, ex -- cel --
+	_ _ _ sis, ex -- %30
+	cel -- _ _ _
+	sis, o -- san -- na
+	in ex -- cel -- _
+	_ _ _
+	sis, o -- san -- na %35
+	in ex -- cel -- sis,
+	in ex -- cel --
+	sis, in __ ex -- cel --
+	sis. %39 FINIS
+}
+
 % BassoNotes = {
 % 	\relative c {
 % 		\clef bass

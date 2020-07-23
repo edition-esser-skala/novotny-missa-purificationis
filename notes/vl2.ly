@@ -499,3 +499,48 @@ EtVitamViolinoII = {
 		cis16( e) fis d' e, d' e, cis' \appoggiatura e,8 fis4 r\fermata \bar "|." %207 FINIS
 	}
 }
+
+SanctusViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoSanctus
+		r16 d\fE-! fis-! a-! d-! fis-! a-! d-! r d,, g h d g h d
+		r d,, fis a d fis a d r cis,, e g cis e g cis
+		r d a fis d a fis d r d gis h d gis h d
+		cis a e cis a e cis a \tempoPleni r32 a'( h cis d e fis g) a( g fis e d cis h a)
+		fis' d( e fis g a h cis) d( cis h a g fis e d) h'( a g fis) g( fis e d) e( fis g fis e d cis h) %5
+		cis a( h cis d e fis g) a d,( e fis g a h cis) d d,,( e fis g a h c) d g,( a h c d e fis)
+		g e( fis g a h cis! d) e16( g,) fis( d') \appoggiatura d8 cis4 fis,,8\pp fis
+		g g gis gis a a ais ais
+		a a gis gis g g fis fis
+		fis e d cis h' a g fis %10
+		e d16 g a8 cis, d16\f a' h cis d a fis d
+		h'32 e,( fis g a h cis d) e16 h g e cis'32 fis,( g a h cis d e) fis16 cis a fis
+		d'32 g,( a h cis d e fis) g16 d h g e'32 a,( h cis d e fis g) a16 e cis a
+		\once \slurDashed fis( fis') fis( e) d( d') d( cis) cis( h) h( a) a( g) g( fis)
+		fis( e) e( d) cis( cis') cis( h) h( a) a( g) g( fis) fis( e) %15
+		e( d) d( cis) h( h') h( a) a( g) g( fis) fis( e) e( d)
+		cis32( d e d) cis16( h) a( a') a( g) fis( d') h( g) fis d' e, cis'
+		\appoggiatura cis8 d4 fis,,8 fis fis fis e e
+		e e d d d d cis cis
+		cis h a gis' fis e d cis %20
+		h4 r8 h a d e e
+		a,4 r r2
+		R1*2
+		r8 a' a a a-\critnote fis h16 a g fis %25
+		e8 a~ a16 g fis e fis e d e fis e fis gis?
+		a e a8~ a16 g fis a g fis e d cis d e8\trill
+		fis8 d16 e fis g a fis e8. d16 cis8 d16 e
+		fis e d cis h4\trill cis8 a' a a
+		fis16 e fis g a8.(\trill g32 fis) e8 fis16 g a a, h cis %30
+		d8 g16 fis e8 fis16 g a g fis g a g a h
+		e,4 r r8 cis' cis cis
+		a fis~ fis g16 a h a g fis e8 fis16 g
+		a g fis e d8 e16 fis g8 a~ a16 g a h
+		e,8 a a a cis16 h a g fis8 h~ %35
+		h16 a g fis e8 a~ a16 g fis g a4\trill
+		g16 fis e8 e16 fis g8 a2\trill
+		a8 fis'16 e d8.(\trill e32 fis) g8 fis g a~
+		a g fis e fis4 r\fermata \bar "|." %39 FINIS
+	}
+}

@@ -520,6 +520,28 @@ EtVitamViolinoI = {
 	}
 }
 
+SanctusViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoSanctus
+		s1*25 %25
+		r2 r8 d' d d
+		cis a fis'16 e d cis h8 e~ e16 d cis h
+		a8 h16 cis d e fis d e d cis h a8 h16 cis
+		d cis h a \appoggiatura a8 gis4\trill a r
+		r8 d d d cis a fis'16 e d cis %30
+		h8 e~ e16 d cis h a8 h16 cis d4\trill
+		cis8 fis fis fis e cis a'16 g fis e
+		d4~ d8 e16 fis g fis e d cis8\trill d16 e
+		fis e d cis h8 cis16 d e d cis h32 cis d4\trill
+		cis8 fis fis fis e a~ a16 g fis e %35
+		d8 g~ g16 fis e d cis8 fis~ fis16 e d cis
+		h8\trill cis16 d e d h cis d a d4 cis8
+		d4 d'8-! d-! d-! d-! d-! d-!
+		d4-! d-! d-! r\fermata \bar "|." %39 FINIS
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

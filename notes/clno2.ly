@@ -217,3 +217,40 @@ EtVitamClarinoII = {
 		g'8\fE c g g e4 r\fermata \bar "|." %207 FINIS
 	}
 }
+
+SanctusClarinoII = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoSanctus
+		c4\fE r8 c16 c c4 r8 c16 c
+		c4 r8 c16 c c4 r8 c16 c
+		c4 r8 c16 c c4 r8 c16 c
+		g4 r \tempoPleni g' g8 g
+		c c c, c c4 r %5
+		g' r r2
+		r4 r8 c16 c g4 r
+		R1*3 %10
+		r2 r4 r8 c,
+		c4 r g'2
+		c d
+		g,4 r r2
+		R1*2 %16
+		g4 e8 g c4 g
+		g r r2
+		R1*7 %25
+		r2 r8 c, c c
+		g'4 r r2
+		r8 g g g g4 r
+		c2 g4 g8 g
+		c4 c8 c g4 r %30
+		R1
+		r2 r8 g g g
+		c4 r r2
+		R1
+		r2 g,4 r %35
+		g r g r
+		g r g r
+		r8 c4 c8 c c c c
+		c2 c4 r\fermata \bar "|." %39 FINIS
+	}
+}

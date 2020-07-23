@@ -1153,6 +1153,92 @@ EtVitamBassFigures = \figuremode {
 	<7>4 <4>8 <3> r2 %207 FINIS
 }
 
+SanctusOrgano = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \tempoSanctus
+		\mvTr d8-.\fE-\tutti^\tweak TextScript.X-offset #0  ^\markup \remark "staccato" d-. d-. d-. d-. d-. d-. d-.
+		d d d d d d d d
+		d d d d h h h h
+		a4 r \tempoPleni a'8 a, r a
+		d d, r fis' g g e g %5
+		a g fis e <d d'> c' h a
+		g e cis! d a' a, r4
+		R1*3 %10
+		r2 r4 r16 d e fis
+		g4~ g16 e fis g a4~ a16 fis g a
+		h4~ h16 g a h cis4~ cis16 a h cis
+		d8.[ cis16 h8. a16] g8.[ fis16 e8. d16]
+		<cis cis'>8.[ h'16 a8. g16] fis8.[ e16 d8. cis16] %15
+		<h h'>8.[ a'16 g8. fis16] e8.[ d16 cis8. h16]
+		a( a') a( g) fis,( fis') fis( e) d8 g a a,
+		d4 r r2
+		R1*3 %21
+		r8 a'-! a-! a-! fis-! d-! h'16-! a-! g-! fis-!
+		e8-! a~-! a16 g-! fis-! e-! << {
+			g'8\rest d d d
+			cis a fis'16 e d cis h8 e~ e16 d cis h
+			a h s8
+		} \\ {
+			fis8^! d16 e fis e fis g
+			a g fis e d e fis8 g16 fis e d cis8 a'16 g
+			fis8 e16 d
+		} >> <cis cis'> h' a g fis e d fis g fis e d %25
+		<cis cis'> h' a g fis e d cis h2
+		a4 \clef "treble_8" d'8.(\trill cis32 d) e16 d cis h a h cis8
+		d8 \clef bass d,[ d d] cis a fis'16 e d cis
+		h8 e~ e16 d cis h a8 a16 h cis a h cis
+		d cis d e fis e fis g a g fis e <d d'> cis' h a %30
+		g fis e d <cis cis'> h' a g fis e d e fis e fis g
+		a8 \clef "treble_8" d[ d d] cis \clef bass a[ a a]
+		fis d h'16 a g fis e8 a~ a16 g fis e
+		d8 g~ g16 fis e d <cis cis'> h' a g fis e fis g
+		a g fis e d8 cis16 h a2~-\tasto %35
+		a1~
+		a
+		d8 d'~ d16 c h a g8 d' h fis
+		g2 d4 r\fermata \bar "|." %39 FINIS
+	}
+}
+
+SanctusBassFigures = \figuremode {
+	<5 [3]>2 <6 4>
+	<5 3> <7 4 2>
+	<8 3> <6\\>
+	r1
+	<5>4. <6>8 <5>4 <8>8 <[6]> %5
+	r <4> <6> <[6]> <3> <4> \bo <[5]> \bc <[\t]>
+	r <5> <6 5>2.
+	r1*3 %10
+	r1
+	<5>4 <6> <5> <6>
+	<5> <6> <5> <6>
+	r1
+	r4 <5> q2 %15
+	r4 q q2
+	q4 \bo <[6 \l]>4. <6 5>8 <4> \bc <[3 \l]>
+	r1
+	r1*3 %21
+	r1
+	r
+	r
+	r8 <[6]> <6>4 \bo <[5]>8 \bc <[8]> <5> <8> %25
+	<6>4 q <5>4. <6\\>8
+	<5>4 q q8 <6>4 q16 <5>
+	q8 q4. \bo <[6]>4 \bc <[5]>
+	<5>8 \bo <[7 5]>16 \bc <[6 4]> <_+>4 <5> <6>
+	<5> <6>2 <5>4 %30
+	q2 <6>
+	<5>8 <10> q q q <10 5> \bassFigureExtendersOn <10\! 5> q \bassFigureExtendersOff
+	<6>4 <5>4. q
+	r8 q4. q4 <6>
+	<5> q2. %35
+	r1
+	r
+	<5>2. <6>8 <6 5!>
+	\bo <9 [4!]>4 \bc <8 [3]>2. %39 FINIS
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

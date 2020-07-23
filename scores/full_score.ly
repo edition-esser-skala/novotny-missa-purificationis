@@ -697,71 +697,142 @@
 	% 		\midi { \tempo 4 = 80 }
 	% 	}
 	% }
+	% \bookpart {
+	% 	\header {
+	% 		subtitle = "E T   V I T A M"
+	% 	}
+	% 	\tocSubsection "3.5" "Et vitam"
+	% 	\score {
+	% 		<<
+	% 			\new StaffGroup \with { \smallGroupDistance } <<
+	% 				\set StaffGroup.instrumentName = \markup \center-column { "clno" "1, 2" }
+	% 				\new Staff {
+	% 					% \transpose c d
+	% 					\partcombine \EtVitamClarinoI \EtVitamClarinoII
+	% 				}
+	% 			>>
+	% 			\new Staff {
+	% 				\set Staff.instrumentName = "timp"
+	% 				% \transpose c d
+	% 				\EtVitamTimpani
+	% 			}
+	% 			\new StaffGroup <<
+	% 				\new GrandStaff <<
+	% 					\set GrandStaff.instrumentName = "vl"
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "1"
+	% 						\EtVitamViolinoI
+	% 					}
+	% 					\new Staff {
+	% 						\set Staff.instrumentName = "2"
+	% 						\EtVitamViolinoII
+	% 					}
+	% 				>>
+	% 			>>
+	% 			\new ChoirStaff <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "S"
+	% 					\new Voice = "Soprano" { \dynamicUp \EtVitamSopranoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Soprano \EtVitamSopranoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "A"
+	% 					\new Voice = "Alto" { \dynamicUp \EtVitamAltoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Alto \EtVitamAltoLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "T"
+	% 					\new Voice = "Tenore" { \dynamicUp \EtVitamTenoreNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Tenore \EtVitamTenoreLyrics
+	%
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = "B"
+	% 					\new Voice = "Basso" { \dynamicUp \EtVitamBassoNotes }
+	% 				}
+	% 				\new Lyrics \lyricsto Basso \EtVitamBassoLyrics
+	% 			>>
+	% 			\new StaffGroup <<
+	% 				\new Staff {
+	% 					\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
+	% 					% \transpose c c,
+	% 					\EtVitamOrgano
+	% 				}
+	% 			>>
+	% 			\new FiguredBass { \EtVitamBassFigures }
+	% 		>>
+	% 		\layout { }
+	% 		\midi { \tempo 4 = 80 }
+	% 	}
+	% }
 	\bookpart {
 		\header {
-			subtitle = "E T   V I T A M"
+			number = "4"
+			title = "S A N C T U S"
 		}
-		% \tocSubsection "3.5" "Et vitam"
+		\tocSection "4" "Sanctus"
 		\score {
 			<<
 				\new StaffGroup \with { \smallGroupDistance } <<
 					\set StaffGroup.instrumentName = \markup \center-column { "clno" "1, 2" }
 					\new Staff {
 						% \transpose c d
-						\partcombine \EtVitamClarinoI \EtVitamClarinoII
+						\partcombine \SanctusClarinoI \SanctusClarinoII
 					}
 				>>
 				\new Staff {
 					\set Staff.instrumentName = "timp"
 					% \transpose c d
-					\EtVitamTimpani
+					\SanctusTimpani
 				}
 				\new StaffGroup <<
 					\new GrandStaff <<
 						\set GrandStaff.instrumentName = "vl"
 						\new Staff {
 							\set Staff.instrumentName = "1"
-							\EtVitamViolinoI
+							\SanctusViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2"
-							\EtVitamViolinoII
+							\SanctusViolinoII
 						}
 					>>
 				>>
 				\new ChoirStaff <<
 					\new Staff {
 						\set Staff.instrumentName = "S"
-						\new Voice = "Soprano" { \dynamicUp \EtVitamSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \SanctusSopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \EtVitamSopranoLyrics
+					\new Lyrics \lyricsto Soprano \SanctusSopranoLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "A"
-						\new Voice = "Alto" { \dynamicUp \EtVitamAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \SanctusAltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \EtVitamAltoLyrics
+					\new Lyrics \lyricsto Alto \SanctusAltoLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "T"
-						\new Voice = "Tenore" { \dynamicUp \EtVitamTenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \SanctusTenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \EtVitamTenoreLyrics
+					\new Lyrics \lyricsto Tenore \SanctusTenoreLyrics
 
 					\new Staff {
 						\set Staff.instrumentName = "B"
-						\new Voice = "Basso" { \dynamicUp \EtVitamBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \SanctusBassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \EtVitamBassoLyrics
+					\new Lyrics \lyricsto Basso \SanctusBassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = \markup { \center-column { "org" "b" } }
 						% \transpose c c,
-						\EtVitamOrgano
+						\SanctusOrgano
 					}
 				>>
-				\new FiguredBass { \EtVitamBassFigures }
+				\new FiguredBass { \SanctusBassFigures }
 			>>
 			\layout { }
 			\midi { \tempo 4 = 80 }
