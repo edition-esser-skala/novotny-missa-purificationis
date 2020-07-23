@@ -711,6 +711,57 @@ SanctusSopranoLyrics = \lyricmode {
 	cel -- sis. %39 FINIS
 }
 
+BenedictusSopranoNotes = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \autoBeamOff \tempoBenedictus
+		R1*6 %6
+		r2 \mvTr a'16([\pE^\solo h)] cis([ d)] e([ h) cis( gis)]
+		a([ a')] gis([ fis)] e[( d d8])\trill cis16([ dis)] \appoggiatura fis32 e16([ \appoggiatura dis32 cis16)] h[( a a8])\trill
+		gis8 e' a,16([ dis) dis\trill e] \tuplet 3/2 8 { h16[( e dis]) cis([ h a)] } gis[( fis)] fis8\trill
+		e h' e32([\trill dis e fis) gis( e cis h)] ais8[\trill h16 cis] d32([\trill cis d e) fis( d h a)] %10
+		gis16 gis a8 h8.([\trill cis32 d)] cis8.([\trill d32 e)] \appoggiatura { d16[ e] } fis8 a,
+		\appoggiatura a16 gis8 h e4~ e8 dis16 e fis16[\trill gis a fis]
+		gis[ e dis cis] h[\trill cis h a] gis[ e' dis cis] h[ fis gis\trill a]
+		\sbOn \tuplet 3/2 8 { gis[ a h cis h a] } \sbOff gis[ fis] fis8\trill e4 r
+		R1 %15
+		a16([ h)] cis([ d)] e([ h) cis( gis)] a([ a')] \appoggiatura a32 gis16([ fis)] e([ d d8)]\trill
+		cis8 cis16([ d)] e32([\trill d e fis) g?( e cis h)] \appoggiatura h16 ais8([ g'?)] fis16([ h,)] ais([ e')]
+		\appoggiatura e d8 h16([\trill cis)] d32([\trill cis d e) fis( d h a)] gis!8([ fis')] e16([ a,)] gis([ d')]
+		cis8 cis16[( d)] \once \tieDashed e4~ e2\trill_\cresc
+		cis16([\! a')] gis([ fis)] e([ d)] d8\trill cis4 r %20
+		r8 a h8.([\trill cis32 d)] cis8.([\trillE d32 e)] fis8 a,
+		\appoggiatura a8 gis4 r r2
+		r8 gis16([ a)] h8.([\trill cis32 d)] \tuplet 3/2 8 { cis16([ d e)] fis([ fis, h)] } a8[ gis\trill]
+		a16[ a' gis fis] e[ h cis\trill d] \sbOn \tuplet 3/2 8 { cis[ h a fis d' h] } \sbOff a8([ gis)]\trill
+		a4 r r2 %25
+		R1*5 %30
+		R1\fermataMarkup \bar "||" %31 finis
+	}
+}
+
+BenedictusSopranoLyrics = \lyricmode {
+	Be -- ne -- di -- %7
+	ctus, qui ve -- nit, qui ve --
+	nit in no -- mi -- ne Do -- mi --
+	ni, in no -- _ _ %10
+	_ mi -- ne Do -- _ _ mi --
+	ni, in no -- mi -- ne Do --
+	_ _ _ _
+	- _ mi -- ni.
+	%15
+	Be -- ne -- di -- ctus, qui ve --
+	nit in no -- _ _ mi --
+	ne, in no -- _ _ mi --
+	ne, in no --
+	mi -- ne Do -- mi -- ni, %20
+	in no -- _ _ mi --
+	ne,
+	in no -- mi -- ne Do --
+	_ _ _ mi --
+	ni. %25 finis
+}
+
 % SopranoNotes = {
 % 	\relative c' {
 % 		\clef treble

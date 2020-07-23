@@ -542,6 +542,44 @@ SanctusViolinoI = {
 	}
 }
 
+BenedictusViolinoI = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \tempoBenedictus
+		r2 r8 a4\pp h8
+		a e'4 dis8 e r a r
+		r \tuplet 3/2 8 { a16 gis fis } e8 dis\trill e4 r
+		r2 r4 e8 e
+		e e' \sbOn \tuplet 3/2 8 { d16 cis h e, d cis } \sbOff cis8\trill h e4 %5
+		r8 d cis h a4 r
+		r8 d cis h a4 r
+		r8 a4 h8 a4 e'8 fis
+		h,4 r r8 \tuplet 3/2 8 { a'16 gis fis } e8 dis
+		e4 r r2 %10
+		r r4 r8 cis~
+		cis h r gis' a4~ a16 h cis a
+		gis4~ gis16 a gis fis e4 r
+		R1
+		r8 e4 fis8 h, gis' a h %15
+		e,4 r e'8 cis4 h8
+		\appoggiatura h a4 r r2
+		R1
+		r4 r8 cis, d h r h
+		cis16 cis' cis8\trill cis8 h a16 cis cis8\trill \tuplet 3/2 8 { cis16 a h } h8\trill %20
+		a4 r r2
+		r4 e2 \sbOn \tuplet 3/2 8 { d'16 cis h e, d cis } \sbOff
+		\appoggiatura cis8 h4 r r8-\critnote d cis h
+		a4 r r8 d cis h
+		a4 r r8 a4 h8 %25
+		a e'4 dis8 e8 r a r
+		r \tuplet 3/2 8 { a16 gis fis } e8 dis e4 r
+		r2 r4 e16 e8 e16
+		e8 e' \sbOn \tuplet 3/2 8 { d16 cis h e, d cis } \sbOff \appoggiatura cis8 h4 e
+		r8 d cis h a4 r %30
+		r8 d cis h a4 r\fermata \bar "||" %31 finis
+	}
+}
+
 % ViolinoI = {
 % 	\relative c' {
 % 		\clef treble

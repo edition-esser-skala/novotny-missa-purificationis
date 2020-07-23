@@ -1239,6 +1239,148 @@ SanctusBassFigures = \figuremode {
 	\bo <9 [4!]>4 \bc <8 [3]>2. %39 FINIS
 }
 
+BenedictusOrganoR = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \tempoBenedictus
+		a'16.\trill h32 cis16.\trill d32 \appoggiatura d e16. h32 cis16. gis32 a16. e32 fis16. cis32 \tuplet 3/2 8 { e16 cis d } d8\trill
+		\sbOn cis16 dis e( fis32 gis) \sbOff \tuplet 3/2 8 { h16 gis a } a8\trill gis16( dis') dis\trill e a,( dis) dis\trill e
+		\sbOn \tuplet 3/2 8 { h e dis cis h a } \sbOff gis8 fis\trill \appoggiatura fis e4 e'32(\trill dis e fis) gis( e cis h)
+		ais8\trill h16(\trill cis) d32(\trill cis d e) fis( d h a) gis8\trill a h8.(\trill cis32 d)
+		\appoggiatura d8 cis8.(\trill d32 e) \sbOn \tuplet 3/2 8 { fis16 e d cis h a } \sbOff \appoggiatura a8 gis4 h8.(\trill cis32 d) %5
+		\sbOn \tuplet 3/2 8 { cis16 d e fis fis, h } \sbOff a8 gis\trill a16 a' \appoggiatura a32 gis16 fis \appoggiatura fis32 e16 h cis\trill d
+		\sbOn \tuplet 3/2 8 { cis h a fis d' h } \sbOff a8 gis a4 r
+		R1*6 %13
+		r2 e'16.\trill fis32 gis16.\trill a32 h16. fis32 gis16. dis32
+		e16. h32 cis16. gis32 \tuplet 3/2 8 { h16 gis a } a8\trill gis16.\trill a32 h16.\trill cis32 \tuplet 3/2 8 { e16 cis d } d8\trill %15
+		\appoggiatura d cis4 r r2
+		R1*2
+		r4 cis32(\trill h cis d) e( cis h a) \appoggiatura a16 gis8. a16 h32(\trill a h cis) d( h a gis)
+		\appoggiatura gis8 a4 r a16 a' gis fis \tuplet 3/2 8 { e cis d } d8\trill %20
+		cis4 r r2
+		r4 h8.(\trill cis32 d) cis8.(\trill d32 e) \sbOn \tuplet 3/2 8 { fis16 e d cis h a } \sbOff
+		\appoggiatura a8 gis4 r r2
+		R1
+		a16.\trill h32 cis16.\trill d32 \appoggiatura d e16. h32 cis16. gis32 a16. e32 fis16. cis32 \tuplet 3/2 8 { e16 cis d } d8\trill %25
+		\sbOn cis16 dis e( fis32 gis) \sbOff \tuplet 3/2 8 { h16 gis a } a8\trill gis16( dis') dis\trill e a,( dis) dis\trill e
+		\sbOn \tuplet 3/2 8 { h e dis cis h a } \sbOff gis8 fis\trill \appoggiatura fis e4 e'32(\trill dis e fis) gis( e cis h)
+		ais8\trill h16(\trill cis) d32(\trill cis d e) fis( d h a) gis8\trill a h8.(\trill cis32 d)
+		cis8.(\trill d32 e) \sbOn \tuplet 3/2 8 { fis16 e d cis h a } \sbOff \appoggiatura a8 gis4 h8.(\trill cis32 d)
+		\sbOn \tuplet 3/2 8 { cis16 d e fis fis, h } \sbOff a8 gis\trill a16 a' \appoggiatura a32 gis16 fis \appoggiatura fis32 e16 h cis\trill d %30
+		\sbOn \tuplet 3/2 8 { cis h a fis d' h } \sbOff a8 gis\trill \appoggiatura gis a4 r\fermata \bar "||" %31 finis
+	}
+}
+
+BenedictusOrganoL = {
+	\relative c {
+		\clef bass
+		\key a \major \time 4/4 \tempoBenedictus
+		\mvTr a8\pE-\soloE a' gis e cis a' fis gis
+		a gis fis h, e r fis r
+		gis a h h, e e, r e'~
+		e d!16 cis h8 d~ d cis gis' e
+		a cis, d fis e8. fis16 gis8 e %5
+		a d, e e, fis' fis gis e
+		a d, e e, a a' gis e
+		cis a' fis gis a gis cis, dis
+		e r fis r gis a h h,
+		e e, r e'~ e d!16 cis h8 d~ %10
+		d cis gis' e a cis, d fis
+		e4 r8 e fis fis h, h
+		e fis gis dis e gis dis h
+		e a, h h e e dis h'
+		gis e cis dis e e fis gis %15
+		a a gis e cis a h e
+		a a, r g'? fis e d cis
+		h4 r8 fis' e d cis h
+		a4 r8 a h e r e
+		cis a h e a, cis h e %20
+		a, cis gis' e a cis, d fis
+		e8. fis16 gis8 e a cis, d fis
+		e8. fis16 gis8 e a d, e e
+		fis fis gis e a d, e e,
+		a a' gis e cis a' fis gis %25
+		a gis fis h, e r fis r
+		gis a h h, e e, r e'~
+		e d!16 cis h8 d~ d cis gis' e
+		a cis, d fis e8. fis16 gis8 e
+		a d, e e fis fis gis e %30
+		a d, e e, a4 r\fermata \bar "||" %31 finis
+	}
+}
+
+BenedictusBassFigures = \figuremode {
+	r1
+	r
+	r
+	r
+	r %5
+	r
+	r2. <6>4
+	q8 q q <5>4 <6>8 q <5>
+	<8 3>4 <\t \t> <6> \bo <[6] 4>8 \bc <[5] _+>
+	r4. <3>8 \bo <[4+] 2> <6>16 \bc <[6\\]> r8 <3>8 %10
+	<2>8 <[6]> <6>4. q4 <[5]>8
+	<5>2 <7>4 <7 [_+]>
+	r8 \bo <[6\\]> \bc <[6]> <6> r q q <[_+]>
+	r <6 5> \bo <[6] 4> \bc <[5] _+> r2
+	r1 %15
+	r4 <6> <[6]> <7>8 q
+	r4. <[4 3]>8 <_+> <[_!]> <6> <[6\\]>
+	r2 <_+>4 <6>8 <[6]>
+	r1
+	r %20
+	r4 <6>4. q4 q8
+	r1
+	r4 \bo <[6]>4. <6>8 <6 4> \bc <[5] 3>
+	r4 <6>4. <6 5>8 <4> <3>
+	r1 %25
+	r
+	r
+	r
+	r
+	r %30
+	r %31 finis
+}
+
+BenedictusBassi = {
+	\relative c {
+		\clef bass
+		\key a \major \time 4/4 \tempoBenedictus
+		\mvTr a8\pE-\solo a' gis e cis a' fis gis
+		a gis fis h, e r fis r
+		gis a h h, e e, r e'~
+		e d!16 cis h8 d~ d cis gis' e
+		a cis, d fis e8. fis16 gis8 e %5
+		a d, e e, fis' fis gis e
+		a d, e e, a a' gis e
+		cis a' fis gis a gis cis, dis
+		e r fis r gis a h h,
+		e e, r e'~ e d!16 cis h8 d~ %10
+		d cis gis' e a cis, d fis
+		e4 r8 e fis fis h, h
+		e fis gis dis e gis dis h
+		e a, h h e e dis h'
+		gis e cis dis e e fis gis %15
+		a a gis e cis a h e
+		a a, r g'? fis e d cis
+		h4 r8 fis' e d cis h
+		a4 r8 a h e r e
+		cis a h e a, cis h e %20
+		a, cis gis' e a cis, d fis
+		e8. fis16 gis8 e a cis, d fis
+		e8. fis16 gis8 e a d, e e
+		fis fis gis e a d, e e,
+		a a' gis e cis a' fis gis %25
+		a gis fis h, e r fis r
+		gis a h h, e e, r \once \tieDashed e'~
+		e d!16 cis h8 d~ d cis gis' e
+		a cis, d fis e8. fis16 gis8 e
+		a d, e e fis fis gis e %30
+		a d, e e, a4 r\fermata \bar "||" %31 finis
+	}
+}
+
 % Organo = {
 % 	\relative c {
 % 		\clef bass

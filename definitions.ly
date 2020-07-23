@@ -678,6 +678,8 @@ tempoEtVitam = \tempoMarkup "Allegro molto"
 tempoSanctus = \tempoMarkup "Adagio molto"
 	tempoPleni = \tempoMarkup "Allegro / Presto"
 
+tempoBenedictus = \tempoMarkup "Largo molto"
+
 
 \include "notes/clno1.ly"
 \include "notes/clno2.ly"
