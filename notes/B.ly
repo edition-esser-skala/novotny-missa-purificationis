@@ -902,13 +902,65 @@ AgnusDeiBassoLyrics = \lyricmode {
 	di: %56 finis
 }
 
-% BassoNotes = {
-% 	\relative c {
-% 		\clef bass
-%
-% 	}
-% }
-%
-% BassoLyrics = \lyricmode {
-%
-% }
+DonaBassoNotes = {
+	\relative c {
+		\clef bass
+		\key d \major \time 4/4 \autoBeamOff \tempoDona
+			\set Score.currentBarNumber = #64
+		R1*9 %72
+		r8 \mvTr a'4\fE^\tutti a8 fis4( e)
+		d r8 c' h4 a
+		g fis e2\trill %75
+		d8 d16([ e] fis[ e fis g)] a8 a4( gis8)
+		a a,16([ h] cis[ a h cis)] d8 d4( cis8)
+		d4 r g4. g8
+		fis4( e) d r8 c'(
+		h16[ c d h] a[ h c a]) g4 r %80
+		r8 a4( gis8) a4 r
+		r8 d,4 d8 e4 fis
+		g16([ fis e d] cis[ a h cis)] d4 r
+		g8. g16 a16([ g)] fis([ a)] h[ a g h] cis[ h a cis]
+		d[ cis h a] g[ fis e d] a4 r %85
+		r8 d4 d8 cis4( h)
+		a r8 g' fis4 e
+		d16[ e fis g] a[ h c a] h[ c d h] a[ h c a]
+		g[ a h g] fis[ g a fis] e[ fis g fis] e4\trill
+		d8 d'4 d8 cis16[ d e cis] h[ cis d h] %90
+		a[ h cis a] g[ a h g] fis[ g a fis] e[ fis g e]
+		d8 d16[( e] fis[ e fis g)] a4 a,~
+		a1~
+		a
+		\tempoDonaB b4 r r8 g4\p g8 %95
+		gis4 gis a2
+		\tempoDonaC d16[( e)] fis![\fE d] g[ a h g] fis[ g a fis] g8[ fis]
+		g2 d4 r\fermata \bar "|." %98 FINIS
+	}
+}
+
+DonaBassoLyrics = \lyricmode {
+	Do -- na no -- %73
+	bis pa -- _ _
+	_ _ _ %75
+	cem, pa -- cem, pa --
+	cem, pa -- cem, pa --
+	cem, do -- na
+	no -- bis pa --
+	cem, %80
+	do -- na,
+	do -- na no -- bis
+	pa -- cem,
+	do -- na no -- bis pa -- _
+	_ _ cem, %85
+	do -- na no --
+	bis pa -- _ _
+	_ _ _ _
+	_ _ _ _
+	cem, no -- bis pa -- _ %90
+	_ _ _ _
+	cem, pa -- cem, pa --
+
+	cem, do -- na %95
+	no -- bis pa --
+	\xE cem, pa -- _ _ _
+	_ \x cem. %98 FINIS
+}

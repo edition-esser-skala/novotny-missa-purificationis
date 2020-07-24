@@ -931,13 +931,81 @@ AgnusDeiTenoreLyrics = \lyricmode {
 	di: %56 finis
 }
 
-% TenoreNotes = {
-% 	\relative c' {
-% 		\clef "treble_8"
-%
-% 	}
-% }
-%
-% TenoreLyrics = \lyricmode {
-%
-% }
+DonaTenoreNotes = {
+	\relative c' {
+		\clef "treble_8"
+		\key d \major \time 4/4 \autoBeamOff \tempoDona
+			\set Score.currentBarNumber = #64
+		r8 \mvTr d4\fE^\tutti d8 cis4( h)
+		a r8 g' fis4 e %65
+		d cis h2
+		a4 r r8 d4( cis8)
+		d4 r r8 g4 fis8~
+		fis e4 d8~ d4 cis\trill
+		d8 d16[ e] fis[ e fis d] e[ d cis e] d[ cis h d] %70
+		cis8 a r a'~ a16[ g fis a] g[ fis e g]
+		fis[ e d fis] e[ d cis e] d[ cis h cis] d[ fis e d]
+		cis8 a4 h16([ cis)] d8 d, r4
+		R1*2 %75
+		r8 d'4 d8 cis4 h
+		cis16[ d e d] cis[ h \once \tieDashed a8]~ a4 h8 e(
+		a,16[ d c h] a4) h8 h16[ c] d4~
+		d8[ a h e] a,4 r
+		r2 r8 g4 g8 %80
+		a16([ h)] cis([ a)] d[ cis h d] cis[ d e d] cis[ d e cis]
+		a4 d g,8[ cis16 h] a8[ d16 cis]
+		h8 e~ e4 a,8 a a4
+		g4 r r2
+		r8 d'4 d8 cis16([ d)] e([ cis)] a[ h cis a] %85
+		d[ e fis d] a4\trill a8 e( fis[ h)]
+		e,4 r r8 a( h[ e)]
+		a,4 r r8 d e[ c]
+		d16[ c h8] c16[ h a8] h16[ cis d8] e16[ d e8]\trill
+		a,4 r r2 %90
+		r8 cis[ d] e4 d cis8
+		d fis,16([ g] a[ g a h)] a8 cis4 cis8
+		d16([ cis)] h([ d)] e[ d cis e] fis[ e d8] cis16[ d e cis]
+		d[ e fis d] e[ fis g8]~ g8[ fis] e4
+		\tempoDonaB d r r8 b4\p b8 %95
+		h4 h a2
+		\tempoDonaC a8 d\f d4 d2
+		h4 a8[ g] a4 r\fermata \bar "|." %98 FINIS
+	}
+}
+
+DonaTenoreLyrics = \lyricmode {
+	Do -- na no -- %64
+	bis pa -- _ _ %65
+	_ _ _
+	cem, do --
+	na pa -- _
+	_ _ _
+	cem, pa -- _ _ _ %70
+	_ cem, pa -- _
+	_ _ _ _
+	cem, no -- bis pa -- cem,
+
+	do -- na no -- bis %76
+	pa -- _ cem, pa --
+	cem, pa -- _
+	cem,
+	do -- na %80
+	no -- bis pa -- _ _
+	cem, pa -- _ _
+	cem, pa -- _ cem, pa --
+	cem,
+	do -- na no -- bis pa -- %85
+	_ _ cem, pa --
+	cem, pa --
+	cem, pa -- _
+	_ _ _ _
+	cem, %90
+	pa -- _ _ _
+	cem, pa -- cem, do -- na
+	no -- bis pa -- _ _
+	_ _ _
+	cem, do -- na %95
+	no -- bis pa --
+	cem, \xE no -- bis \x pa --
+	_ _ cem.
+}

@@ -652,3 +652,46 @@ AgnusDeiViolinoII = {
 		d r r\fermata \bar "||" %63 finis
 	}
 }
+
+DonaViolinoII = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoDona
+			\set Score.currentBarNumber = #64
+		r8 d4 d8 cis16 d e cis h cis d h
+		a h cis d e fis g e fis g a fis e fis g e %65
+		d e fis d cis d e cis h cis d cis h4\trill
+		a8 a16 h cis a h cis d8 d4 cis8
+		d4 r16 d e fis g d g4 fis8~
+		fis e4 d8 d4 cis\trill
+		d16 e fis g a g a fis e8 a4 gis8 %70
+		a8. h16 cis d e cis a8 d4 cis8~
+		cis h4 a8~ a4 gis\trill
+		a8 e4 fis16 g a g fis a g fis e g
+		fis g a h c d e c d c h d c h a c
+		h a g h a g fis a g fis e fis g h a g %75
+		fis8 fis16 g a8.(\trill g32 fis) e16 cis d e fis e fis g
+		a8 a4 a8 d16 cis h a g4\trill
+		fis16( g) fis( g) a h c a g8 d g16( fis) g8
+		a8 d4 cis8 d8. d16 c h a c
+		d c h d c h a c h a g8 g8. fis16 %80
+		e8. e16 fis8 h e,8. e16 a4~
+		a16 h a g fis e fis a g fis e g a g fis a
+		h a g fis e8 a16 g fis8 c16 d e d e fis
+		g8. fis16 e8 fis4 g a16 g
+		fis g a4 a8 r a4 a8 %85
+		fis16 g a fis d e fis gis a e a4 gis8
+		a4 r r8 d4 cis8
+		d a16 h c h a c d c h d c h a c
+		h a g h a g fis a g fis e fis g h a g
+		fis8 a4 a8 a16 e a4 g8~ %90
+		g fis h16 a g h a d d8\trill h16 e e8\trill
+		a,16 fis a g fis4\trill e a8. a16
+		gis4-! g-! fis16 g a4 a8
+		a4 g16 a h8 a8. a16 a8 e'
+		\tempoDonaB d4 r r2 %95
+		R1
+		\tempoDonaC fis16 g a fis h c d h a h c a h8 a
+		\appoggiatura a g4 fis8 e fis4 r\fermata \bar "|." %98 FINIS
+	}
+}

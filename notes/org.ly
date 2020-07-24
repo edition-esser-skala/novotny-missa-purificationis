@@ -1598,13 +1598,89 @@ AgnusDeiBassFigures = \figuremode {
 	q1. %63 finis
 }
 
-% Organo = {
-% 	\relative c {
-% 		\clef bass
-%
-% 	}
-% }
-%
-% BassFigures = \figuremode {
-%
-% }
+DonaOrgano = {
+	\relative c {
+		\clef "treble_8"
+		\key d \major \time 4/4 \tempoDona
+			\set Score.currentBarNumber = #64
+		r8 d'4-! d8-! cis16-! d-! e-! cis-! h-! cis-! d-! h-!
+		a-! h-! cis-! d-! e-! fis-! g-! e-! fis-! g-! a-! fis-! e-! fis-! g-! e-! %65
+		d-! e-! fis-! d-! cis-! d-! e-! cis-! h-! cis-! d-! cis-! h4\trill
+		<< {
+			r8 a'4 a8 fis16 g a fis e fis g e
+			d e fis g a h c a h c d h a h c a
+			g a h g fis g a fis e fis g fis e4\trill
+		} \\ {
+			a,4 r r8 d4 cis8
+			d4 r r8 g4 fis8~
+			fis e4 d8~ d4 cis
+		} >>
+		d8 d16 e fis e fis d e d cis e d cis h d %70
+		cis h a8 r a'~ a16 g fis a g fis e g
+		fis e d fis e d cis e d cis h cis d fis e d
+		cis8 \clef bass a4 a8 fis16 g a fis e fis g e
+		d e fis g a h c a h c d h a h c a
+		g a h g fis g a fis e fis g fis e4\trill %75
+		d8 d16 e fis e fis g a8 a4 gis8
+		a a,16 h cis a h cis d8 d4 cis8
+		d16 \clef "treble_8" d'[ c? h] a4 \clef bass g4. g8
+		fis16 g a fis e fis g e d e fis g a h c a
+		h c d h a h c a g8 \clef "treble_8" g4 g8 %80
+		a \clef bass a4 gis8 a4 \clef "treble_8" cis16 d e cis
+		a8 \clef bass d,4 d8 e16 d cis e fis e d fis
+		g fis e d cis a h cis d8 \clef "treble_8" a'4 a8
+		\clef bass g8. g16 a g fis a h a g h cis h a cis
+		d cis h a g fis e d a4 \clef "treble_8" a'16 h cis a %85
+		d8 \clef bass d,4 d8 cis16 d e cis h cis d h
+		a h cis d e fis g e fis g a fis e fis g e
+		d e fis g a h c a h c d h a h c a
+		g a h g fis g a fis e fis g fis e4\trill
+		d16 e fis g a h cis d cis d e cis h cis d h %90
+		a h cis a g a h g fis g a fis e fis g e
+		d8. e16 fis e fis g a4 \mvTr a,~\p-\tasto
+		a1~
+		a
+		\tempoDonaB b4 r \mvTr g8\pE-!-\markup \remark "pedale" g-! g-! g-! %95
+		gis-! gis-! gis-! gis-! a-! a-! a-! a-!
+		\tempoDonaC d16\fE e fis d g a h g fis g a fis g8 fis
+		g2 d4 r\fermata \bar "|." %98 FINIS
+	}
+}
+
+DonaBassFigures = \figuremode {
+	r1 %64
+	r %65
+	r
+	r
+	r
+	r
+	<5>4 <6> q q %70
+	q4. <[7]>8 <6 [4]> <6> <6 5> <6>
+	<6 5> <6> <6 5> <6> <6 5> <[\t \t]> <6 4+>4
+	<6>8 <5>4. <6>4 <7>8 <6>
+	<5>4 <5 [_!]> <6> \bo <7 [_!]>8 \bc <6 [\t]>
+	<7> <6> <7> <6> <7>4 <6\\> %75
+	<5> <6> <5>8 <3> <2> <6>
+	r4 <6> <5>8 <3> <2> <6>
+	<5>4 <5 _!>8 <6 \t> \bo <[3]>4. \bc <[4+]>8
+	<6>4 <7>8 <6> <5>4 \bo <5 [_!]>8 \bc <6 [\t]>
+	<6>4 \bo <7 [_!]>8 \bc <6 [\t]> r8 <5>4 <6>8 %80
+	<5> <3> <2> <6> r4 <10>16 q q q
+	<6>8 <5>4. <5>8 <8> <[6]> <8>
+	<5>4 <6> r8 <5 _!>4 <6 \t>8
+	<5>4 q8 <8> <5> <8> <5> <8>
+	<5>2 q4 <10>16 q q q %85
+	<5>8 q4. <6>4 <7>8 <6\\>
+	<5>4 <5 [_!]> <6> <7>8 <6>
+	<5>4 <5 [_!]> <6> \bo <7 [_!]>8 \bc <6 [\t]>
+	<7> <6> <7 [5!]> <6> <7>4 <6\\>
+	<5>2 <6>4 <7>8 <6> %90
+	<7> <6> <7> <6> <7> <6> <7> <6>
+	r4 <6>2.
+	r1
+	r
+	r %95
+	r
+	<8 _+>8 <6> <5>4 <6> <5>8 <6 5!>
+	<9>4 <8>2. %98 FINIS
+}

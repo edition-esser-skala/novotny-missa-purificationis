@@ -957,13 +957,78 @@ AgnusDeiAltoLyrics = \lyricmode {
 	di: %56 finis
 }
 
-% AltoNotes = {
-% 	\relative c' {
-% 		\clef treble
-%
-% 	}
-% }
-%
-% AltoLyrics = \lyricmode {
-%
-% }
+DonaAltoNotes = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \autoBeamOff \tempoDona
+			\set Score.currentBarNumber = #64
+		R1*3 %66
+		r8 \mvTr a'4\fE^\tutti a8 fis4( e)
+		d r8 c' h4 a
+		g fis e2
+		d4 r r8 a'4( gis8) %70
+		a4 r r8 d4 cis8~
+		cis h4 a8 a4( gis)
+		a8 e4 fis16[ g] a[ g fis a] g[ fis e g]
+		fis4 e8 e' d16[ c h d] c[ h a c]
+		h[ a g h] a[ g fis a] g[ fis e fis] g4\trill %75
+		fis8 fis16[ g] a8.([\trill g32 fis)] e4 r
+		r8 a4 a8 fis4( e)
+		d16[( e)] fis[( g] a[ h c a]) g8 d g16[ fis g8]
+		a16[ g fis a] g[ fis e g] fis[ g a h] c[ h a c]
+		d[ c h d] c[ h a c] h[ a g8]~ g8.[ fis16] %80
+		e4 fis8[( h]) e,4 a~
+		a16[ h a g] fis[ e fis a] g[ fis e g] a[ g fis a]
+		h[ a g fis] e8 a16[ g] fis8[ c16 d] e[ d e fis]
+		g8.[ fis16] e8 fis4 g a16[ g]
+		fis[ g] a4 a,8 r4 a'8. a16 %85
+		fis([ g)] a([ fis)] d([ e fis gis?)] a8 a4( gis8)
+		a4 r r8 d4( cis8)
+		d a16[ h] c[ h a c] d[ c h d] c[ h a c]
+		h[ a g h] a[ g fis a] g[ fis e fis] g[ h a g]
+		fis8 a4 a8 a16[ e] a4 g8~ %90
+		g fis h16[ a g h] a4 h8[ e]
+		a, a16([ g] fis4) e a8. a16
+		gis4 g fis16([ g] a4) a8
+		a4( g16[ a h8]) a4 a
+		\tempoDonaB f r e\p e %95
+		f f f( e)
+		\tempoDonaC fis16([ g)] a[\f fis] h[ a g h] a[ h c a] h8[ a]~
+		a[ g fis e] fis4 r\fermata \bar "|." %98 FINIS
+	}
+}
+
+DonaAltoLyrics = \lyricmode {
+	Do -- na no -- %67
+	bis pa -- _ _
+	_ _ _
+	cem, do -- %70
+	na no -- _
+	_ bis pa --
+	cem, pa -- _ _ _
+	_ cem, pa -- _ _
+	_ _ _ _ %75
+	cem, pa -- _ cem,
+	do -- na no --
+	bis __ pa -- cem, pa -- _
+	_ _ _ _
+	_ _ _ %80
+	cem, pa -- cem, pa --
+	_ _ _
+	_ cem, pa -- _ _
+	_ _ _ _ _
+	_ _ cem, do -- na %85
+	no -- bis pa -- cem, pa --
+	cem, pa --
+	cem, pa -- _ _ _
+	_ _ _ _
+	cem, no -- bis pa -- _ _ %90
+	cem, pa -- _ _
+	cem, pa -- cem, do -- na
+	no -- bis pa -- cem,
+	pa -- cem, pa --
+	cem, do -- na %95
+	no -- bis pa --
+	cem, pa -- _ _ _
+	cem. %98 FINIS
+}

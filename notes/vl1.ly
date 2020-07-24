@@ -688,9 +688,43 @@ AgnusDeiViolinoI = {
 	}
 }
 
-% ViolinoI = {
-% 	\relative c' {
-% 		\clef treble
-%
-% 	}
-% }
+DonaViolinoI = {
+	\relative c' {
+		\clef treble
+		\key d \major \time 4/4 \tempoDona
+			\set Score.currentBarNumber = #64
+		R1*3 %66
+		r8 a'4\fE a8 fis16 g a fis e fis g e
+		d e fis g a h c a h c d h a h c a
+		g a h g fis g a fis e fis g fis e4\trill
+		d8 d'4 d8 cis16 d e cis h cis d h %70
+		a h cis d e fis g e fis g a fis e fis g e
+		d e fis d cis d e cis h cis d cis h4\trill
+		a8 a16 h cis a h cis d a d4 cis8
+		d4 r16 d e fis g d g4 fis8~
+		fis e4 d8~ d4 cis\trill %75
+		d8 cis16 h a g a h cis a h cis d8.(\trill cis32 h)
+		a16 h cis d e cis d e fis a g fis e fis g e
+		d8 a16 h c d e c h a g a h a h cis?
+		d e fis a g fis e g fis g a h a g e fis
+		g d g4 fis8 g g,16 a h cis! d e %80
+		cis d e cis h cis d h a h cis d e fis g e
+		fis g fis e d e d cis h8 e d16 e fis e
+		d8.(\trill cis32 d) e16 d cis h a8 a4 a8
+		h16 a g h cis h a cis d cis h d e d cis e
+		a,8 fis'4 fis8 e16 fis g e cis d e cis %85
+		a8 fis'4 fis8 e16 d cis e d cis h d
+		cis d e fis g a h g a g fis a g fis e g
+		fis g a g fis d e fis g d g4 fis8~
+		fis e4 d8 d4 cis\trill
+		d8.[ d16 fis8. fis16] e d cis e d cis h d %90
+		cis8 fis4 e16 g a g fis a g fis e g
+		fis8-! fis16( e) d\trill cis d e cis8-! a4-! a8-!
+		h16 cis d h cis d e cis d e fis d e fis g e
+		fis g a fis g fis e d cis e fis d' e, cis' cis8\trill
+		\tempoDonaB d8 r r4 r2 %95
+		R1
+		\tempoDonaC d8-! r d-! r d-! r d-! d-!
+		d4-! d8 d d4 r\fermata \bar "|." %98 FINIS
+	}
+}

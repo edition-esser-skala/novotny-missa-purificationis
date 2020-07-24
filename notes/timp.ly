@@ -216,3 +216,24 @@ OsannaTimpani = {
 		c2-\critnote r r\fermata \bar "|." %63 FINIS
 	}
 }
+
+DonaTimpani = {
+	\relative c {
+		\clef bass
+		\key c \major \time 4/4 \tempoDona
+			\set Score.currentBarNumber = #64
+		R1*12 %75
+		r8 c\fE c c g4 r
+		R1*8 %84
+		r8 c c c g4 r %85
+		R1*4
+		r8 c c c g4 r %90
+		R1
+		r8 c c c g4 r
+		g r r2
+		g4 r r2
+		R1*2 %96
+		c4 r r c8 c
+		c16 c c c c c c c c4 r\fermata \bar "|." %98 FINIS
+	}
+}

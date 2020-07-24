@@ -274,3 +274,38 @@ OsannaClarinoI = {
 		c2^\critnote r r\fermata \bar "|." %63 FINIS
 	}
 }
+
+DonaClarinoI = {
+	\relative c' {
+		\clef treble
+		\key c \major \time 4/4 \tempoDona
+			\set Score.currentBarNumber = #64
+		R1*9 %72
+		r8 d'\fE d d e4 f
+		e r r2
+		R1 %75
+		r8 e e e d8. c16 \pao c4
+		d8 d d d e4 d
+		c r r8 c c c
+		c4 r r2
+		R1 %80
+		r8 d \pao c4 d r
+		r8 e e e f4 g
+		a \pao g g r
+		R1
+		r8 e e e d4 r %85
+		r8 e e e d4 \pao c
+		d r g f
+		e c8 c c4 r
+		r2 c4 d
+		e8 e e e d4 r %90
+		r2 g4 f
+		e8 e e e d4 r
+		g, r r2
+		g4 r r2
+		\tempoDonaB c4 r r2 %95
+		R1
+		\tempoDonaC c8 r c r c r c r
+		c4 c8 c c4 r\fermata \bar "|." %98 FINIS
+	}
+}
