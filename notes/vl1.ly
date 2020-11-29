@@ -502,11 +502,11 @@ EtResurrexitViolinoI = {
 		r h32( a h c) d( c h a) \appoggiatura a8 g4
 		R1*3
 		fis'32(\fE e fis g) a( g fis e) d( cis d e) fis( e d cis) h16 h'( a g) fis( e d cis) %170
-		d d'( cis h) a( e fis g) fis( d) e( h) d( cis) cis8\trill
+		d d'( cis h) a( e fis g) fis( d) h( e) d( cis) cis8\trill
 		d32( cis d e) fis( e fis g) a( g fis e d cis h a) h16( cis32 d e fis g a) h( a g fis) g( fis e d)
 		cis( a h cis d e fis g) a16-! a( g fis) e( fis32 g a h cis d) e( d cis h) cis( h a g)
-		fis( d e fis g a h cis) d16. fis,32 fis16. fis32 f16. f32 f16. f32 f16. f32 f16. f32
-		<< { \grace f8 e2 r } \\ { s4 \tempoMortuorum s2. } >> %175
+		fis( d e fis g a h cis) d16. d32 d16. d32 d16. f,32 f16. f32 f16. f32 f16. f32
+		<< { \grace f8 \oneVoice e2^\critnote r } \\ { s4 \tempoMortuorum s2. } >> %175
 		R1\fermataMarkup \bar "||" %176 finis
 	}
 }
@@ -516,7 +516,32 @@ EtVitamViolinoI = {
 		\clef treble
 		\key d \major \time 4/4 \tempoEtVitam
 			\set Score.currentBarNumber = #177
-		s1*31 \bar "|." %207 FINIS
+		R1*6 %182
+		r8 d'\fE cis fis r d h e
+		r cis a d~ d16 e d cis h4\trill
+		a r8 d\p h e r cis %185
+		a d r h g h g a~
+		a d, a' cis d d4 cis8
+		d16 fis[\f e d] e d cis e fis g fis e d cis h d
+		e fis e d cis h a8 h cis d16 fis e d
+		cis8 cis[ a d] r h g cis %190
+		r a fis h4 a gis8
+		a4 r16 a(\p h a) h4 r16 h( cis h)
+		cis4 r16 cis( d cis) d4 r16 d( e d)
+		e4 r16 e( fis e) fis g e fis d8 cis
+		h a g a4 d cis8 %195
+		d8 fis[\f e a] r fis d g
+		r e cis fis r d cis d
+		e cis d e cis d4 cis8
+		d a r16 \slurDashed a(\p b a) b4 r16 b( a b) \slurSolid
+		a4 r8 d h e r cis %200
+		a d r h g h g a~
+		a d, a' cis d4. cis8
+		d \noBeam fis~\fE fis16 e d cis h8 g'~ g16 fis e d
+		cis8 a'~ a16 g fis e d8 h'~ h16 a g fis
+		e d e g a g a h cis a d g, fis d' e, cis' %205
+		fis,32( e fis g) a( g fis e) d( cis d e) fis( e d cis) h16( cis32 d e fis g a) h( a g fis) g( fis e d)
+		cis16( e) fis( d') e, d' e, cis' \appoggiatura cis8 d4^\critnote r\fermata \bar "|." %207 finis
 	}
 }
 
@@ -524,8 +549,30 @@ SanctusViolinoI = {
 	\relative c' {
 		\clef treble
 		\key d \major \time 4/4 \tempoSanctus
-		s1*25 %25
-		r2 r8 d' d d
+		r16 d-!\fE fis-! a-! d-! fis-! a-! d-! r d,, g h d g h d
+		r d,, fis a d fis a d r cis,, e g cis e g cis
+		r d a fis d a fis d r d gis h d gis h d
+		cis a e cis a e cis a \tempoPleni r32 a'( h cis d e fis g) a( g fis e d cis h a)
+		fis'( d e fis g a h cis) d( cis h a g fis e d) h'( a g fis) g( fis e d) e( fis g fis e d cis h) %5
+		cis( a h cis d e fis g) a( d, e fis g a h cis) d d,,( e fis g a h c?) d g,( a h c? d e fis)
+		g( e fis g a h cis d) \slurDashed e16( g,) fis( d') \slurSolid \appoggiatura d8 cis4 a,8-.\pp a-.
+		h-. h-. h-. h-. cis-. cis-. cis-. cis-.
+		h-. h-. h-. h-. a-. a-. a-. a-.
+		a g fis e d' cis h a16 h %10
+		cis8 d4 cis8 d16 a\f h cis d( a fis d)
+		h'32 e,( fis g a h cis d) e16( h g e) cis'32 fis,( g a h cis d e) fis16( cis a fis)
+		d'32 g,( a h cis d e fis) g16( d h g) e'32 a,( h cis d e fis g) a16( e cis a)
+		fis( fis') fis( e) d( d') d( cis) cis( h) h( a) a( g) g( fis)
+		fis( e) e( d) cis( cis') cis( h) h( a) a( g) g( fis) fis( e) %15
+		e( d) d( cis) h( h') h( a) a( g) g( fis) fis( e) e( d)
+		cis32( d e d) cis16( h) a( a') a( g) fis d' h g fis d' e, cis'
+		\appoggiatura cis8 d4 a,8\pE a gis gis gis gis
+		fis fis fis fis e e e e
+		e d cis h' a g fis e16 fis %20
+		gis4 r8 d cis a'4 gis8
+		a4 r r2
+		R1*3 %25
+		r2 r8 d\fE d d
 		cis a fis'16 e d cis h8 e~ e16 d cis h
 		a8 h16 cis d e fis d e d cis h a8 h16 cis
 		d cis h a \appoggiatura a8 gis4\trill a r
