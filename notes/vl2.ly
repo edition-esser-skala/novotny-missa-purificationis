@@ -545,6 +545,15 @@ SanctusViolinoII = {
 	}
 }
 
+BenedictusViolinoII = {
+	\relative c' {
+		\clef treble
+		\key a \major \time 4/4 \tempoBenedictus
+		\override MultiMeasureRest.minimum-length = #40
+			R1*31 \bar "||" %31 finis
+	}
+}
+
 OsannaViolinoII = {
 	\relative c' {
 		\clef treble
