@@ -1,328 +1,84 @@
-\documentclass[parskip=full]{scrreprt}
+\documentclass{ees}
 
-\RedeclareSectionCommand[pagestyle=plain,afterskip=10pt plus 1pt]{chapter}
-\setkomafont{chapter}{\mdseries\headingfont\fontsize{40}{40}\selectfont\color{black!80}}
-\setkomafont{pageheadfoot}{\normalsize}
-
-\def\pnumbox#1{#1\hspace*{8cm}}
-\def\gobble#1{}
-\DeclareTOCStyleEntry[
-  indent=0pt,
-  beforeskip=0pt,
-  entryformat=\itshape,
-  entrynumberformat=\textcolor{oldred},
-  numwidth=2em,
-  linefill=\hfill,
-  pagenumberbox=\pnumbox,
-  pagenumberformat=\itshape
-]{tocline}{part}
-
-% use commented values if there are no parts
-\DeclareTOCStyleEntry[
-  indent=0pt,
-  beforeskip=0pt,
-  entrynumberformat=\textcolor{oldred},
-  numwidth=2em,
-  linefill=\hfill,
-  pagenumberbox=\pnumbox
-]{tocline}{section}
-
-\DeclareTOCStyleEntry[
-  indent=0pt,
-  beforeskip=-\parskip,
-  entrynumberformat=\gobble,
-  entryformat=\ltseries,
-  numwidth=2em,
-  linefill=\hfill,
-  pagenumberbox=\pnumbox,
-  pagenumberformat=\ltseries
-]{tocline}{subsection}
-
-\usepackage{polyglossia}
-\setdefaultlanguage{english}
-
-\usepackage{fontspec}
-
-\setmainfont{Source Sans Pro}[
-  ItalicFont = Source Sans Pro Italic,
-  BoldFont = Source Sans Pro Bold,
-  BoldItalicFont = Source Sans Pro Bold Italic,
-  FontFace = {lt}{n}{Source Sans Pro Light},
-  FontFace = {lt}{it}{Source Sans Pro Light Italic},
-  FontFace = {sb}{n}{Source Sans Pro Semibold},
-  FontFace = {sb}{it}{Source Sans Pro Semibold Italic},
-  Numbers = Proportional,
-  Ligatures = Common
-]
-\DeclareRobustCommand{\ltseries}{\fontseries{lt}\selectfont}
-\DeclareRobustCommand{\sbseries}{\fontseries{sb}\selectfont}
-\DeclareTextFontCommand{\textlt}{\ltseries}
-\DeclareTextFontCommand{\textsb}{\sbseries}
-
-\newfontfamily\headingfont{Fredericka the Great}
-
-\usepackage[pass]{geometry}
-\newgeometry{twoside,inner=20mm,outer=40mm,top=20mm,bottom=40mm}
-
-\usepackage{url}
-\urlstyle{same}
-
-\usepackage{microtype}
-\microtypesetup{verbose=silent}
-
-\usepackage{booktabs,array,longtable}
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
-
-\usepackage{graphicx}
-
-\usepackage{xcolor}
-\definecolor{oldred}{rgb}{.8313,0,0}
-
-\usepackage{pdfpages}
-
-\usepackage{scrlayer-scrpage}
-\pagestyle{scrheadings}
-\clearscrheadfoot
-\cfoot[\thepage]{\thepage}
-\pagenumbering{roman}
-
-\usepackage{enumitem}
-\setlist[description]{%
-  style=nextline,%
-  leftmargin=2em,%
-  first=\ltseries,%
-  font=\normalfont%
-}
-\def\lyrefitem#1{\item[\lyref{#1}]}
-
-
-\makeatletter
-
-\def\@firstofthree#1#2#3{#1}
-\def\@secondofthree#1#2#3{#2}
-\def\@thirdofthree#1#2#3{#3}
-\def\Dotfill{\leavevmode\cleaders\hb@xt@ .75em{\hss .\hss }\hfill \kern \z@}
-
-\def\lyrefnumber#1{\expandafter\@setref\csname r@#1\endcsname\@firstofthree{#1}}
-\def\lyreftitle#1{\expandafter\@setref\csname r@#1\endcsname\@secondofthree{#1}}
-\def\lyrefpage#1{\expandafter\@setref\csname r@#1\endcsname\@thirdofthree{#1}}
-
-\def\lyref#1{%
-  \begingroup%
-  \makebox[0pt][l]{\color{oldred}\lyrefnumber{#1}}\hspace*{2em}%
-  \lyreftitle{#1}\Dotfill\lyrefpage{#1}%
-  \endgroup%
-}
-\InputIfFileExists{../out/lilypond.ref}{}{\InputIfFileExists{../lilypond.ref}{}{}}
-
-
-\newcommand\fancytitlehead{
-	\headingfont%
-	\fontsize{80}{80}\selectfont\textcolor{black!80}{\@ifundefined{@shortname}{\@lastname}{\@shortname}.}\\[15pt]%
-	\fontsize{60}{60}\selectfont\@ifundefined{@shorttitle}{\@title}{\@shorttitle}.%
-}
-
-
-\def\firstname#1{\def\@firstname{#1}}
-\def\lastname#1{\def\@lastname{#1}}
-\def\shortname#1{\def\@shortname{#1}}
-\def\shorttitle#1{\def\@shorttitle{#1}}
-\def\namesuffix#1{\def\@namesuffix{#1}}
-\def\instrumentation#1{\def\@instrumentation{#1}}
-\def\parts#1{\def\@parts{#1}}
-
-\firstname{\relax}
-\lastname{\relax}
-\namesuffix{\relax}
-\instrumentation{\relax}
-\parts{\relax}
-
-
-\def\maketitle{%
-\begin{titlepage}%
-	\Large%
-	{\@titlehead}%
-	\vfill%
-	{\strut\@firstname}\\%
-	{\sbseries\color{oldred}\strut\@lastname}\\%
-	{\strut\@namesuffix}%
-	\vfill%
-	{\sbseries\@title}\\%
-	{\@subtitle}\\[\baselineskip]%
-	{\itshape\@instrumentation}%
-	\vfill%
-	{\itshape\@parts}\hspace*{\fill}\raisebox{0pt}[0pt][0pt]{\includegraphics{ees_logo}}%
-\end{titlepage}%
-}
-
-
-\newif\iftemplate\templatetrue
-\newif\ifprintreport\printreportfalse
-\directlua{
-scores = {
-  ottoni = "Clarino I, II in D\string\\newline Timpani in D–A",
-  vl1 = "Violino I",
-  vl2 = "Violino II",
-  vla = "Viola solo",
-  coro = "Coro",
-  org = "Organo",
-  b = "Bassi",
-  full_score = "Full Score"
-}
-
-last_arg = arg[\string#arg]
-texio.write("Last argument: " .. last_arg)
-if not (scores[last_arg] == nil) then
-  tex.print("\string\\def\string\\lypdfname{" .. last_arg .. "}")
-  tex.print("\string\\parts{" .. scores[last_arg] .. "}")
-  if (last_arg == "full_score") then
-    tex.print("\string\\printreporttrue")
-  end
-end
-}
-
-% uncomment if the full score is in landscape format
-\ifprintreport
-\geometry{landscape,outer=127mm}
-\fi
-
-\@ifundefined{lypdfname}{%
-  \templatefalse
-  \printreporttrue
-  \parts{Draft}
-}{\templatetrue}
-
-\makeatother
-
-
-
-
-
+\shorttitle{M. Purificationis}
 
 \begin{document}
-\frenchspacing
 
-\titlehead{\fancytitlehead}
-\firstname{Franz Nikolaus}
-\lastname{Novotný}
-\title{Missa Purificationis Sanctae Mariae}
-\shorttitle{M. Purificationis}
-\subtitle{(A-Ed A 110)}
-\instrumentation{S, A, T, B (solo), S, A, T, B (coro), 2 clno, timp, 2 vl, vla solo, b, org solo}
-\maketitle
+\eesTitlePage
 
+\eesCriticalReport{
+  1 & 25  & clno 2  & 1st \halfNote\ in \B1: e′8–\quaverRest–e′8–\quaverRest \\
+    & 26  & clno 2  & 2nd \quarterNote\ in \B1: e′4 \\
+    & 43  & vl 1    & grace note missing in \B1 \\
+    & 44  & vl 1    & grace note missing in \B1 \\
+    & 43  & A       & 5th \eighthNote\ in \B1: \sharp d′8 \\
+    & 79  & clno 2  & last \quarterNote\ in \B1: \crotchetRest \\
+    & 89  & clno 2  & 1st \halfNote\ in \B1: e′4–e′8–e′8 \\
+  \midrule
+  2 & 6   & clno 2  & 3rd \eighthNote\ in \B1: e′8 \\
+    & 25  & vl 1    & grace note missing in \B1 \\
+    & 30  & clno 2  & 2nd \quarterNote\ in \B1: c″4 \\
+    & 34  & clno 1  & 3rd \quarterNote\ in \B1: e″8–d″8 \\
+    & 40  & clno 2  & 3rd \quarterNote\ in \B1: e′4 \\
+    & 40  & vl 1    & grace note missing in \B1 \\
+    & 52  & S       & 3rd \halfNote\ in \B1: d′2 \\
+    & 52  & B       & 3rd \halfNote\ in \B1: d2 \\
+    & 63  & A       & 3rd \halfNote\ in \B1: e′2 \\
+    & 64  & vl 1    & 2nd \halfNote\ in \B1: d″4–f″4 \\
+    & 74  & vl 1    & 2nd \quarterNote\ in \B1: f′4 \\
+    & 75  & vl 1    & 1st \halfNote\ in \B1: d″4–f′4 \\
+    & 95  & org     & bar in \B1: d1–\halfNoteRest \\
+    & 135 & vl 1    & grace note missing in \B1 \\
+    & 173 & vl 2    & grace note missing in \B1 \\
+    & 175 & clno 1  & 2nd \halfNote\ in \B1: f″2 \\
+    & 176 & clno 2  & bar in \B1: g′2–\crotchetRest–e′4 \\
+    & 190 & B       & 6th \quarterNote\ in \B1: A4 \\
+    & 210 & A       & 1st \halfNote\ in \B1: a′2 \\
+    & 210 & B       & 2nd to 4th \halfNote\ in \B1: \sharp F2–G2–A2 \\
+    & 211 & clno 1  & bar in \B1: c″2–\halfNoteRest–\wholeNoteRest \\
+    & 211 & clno 2  & bar in \B1: e′2–\halfNoteRest–\wholeNoteRest \\
+    & 211 & timp    & bar in \B1: c1–\wholeNoteRest \\
+    & 211 & vl 1    & bar in \B1: d′′′2–\halfNoteRest–\wholeNoteRest \\
+    & 211 & vl 2    & bar in \B1: \sharp f″1–\wholeNoteRest \\
+  \midrule
+  3 & 3   & vl 1, 2 & 15th \sixteenthNote\ in \B1: a″16 \\
+    & 7   & vl 1, 2 & 6th \sixteenthNote\ in \B1: e″16 \\
+    & 8   & vl 2    & 15th \sixteenthNote\ in \B1: e″16 \\
+    & 9   & vl 1    & 15th \sixteenthNote\ in \B1: \sharp f″16 \\
+    & 19  & vl 1, 2 & 6th \sixteenthNote\ in \B1: a″16 \\
+    & 20  & T       & 2nd \quarterNote\ in \B1: \sharp f′16–\sharp f′8–\sharp f′16 \\
+    & 29  & vl 1, 2 & 6th \sixteenthNote\ in \B1: a″16 \\
+    & 70  & A       & 3rd \quarterNote\ in \B1: a′8–g′16–\sharp f′16 \\
+    & 101 & vl 1, 2 & bar in \B1: \quaverRest–g′8–\sharp c″8–g′8–\sharp f′8–\sharp c8 \\
+    & 107 & vla     & bar in \B1: d′4–\crotchetRest–\crotchetRest \\
+    & 159 & T       & 5th \eighthNote\ in \B1: b8 \\
+    & 173 & clno 2  & 2nd/3rd \quarterNote\ in \B1: g′4–\crotchetRest \\
+    & 174 & clno 1  & 2nd \halfNote\ in \B1: d″2 \\
+    & 175 & vl 1    & grace note missing in \B1 \\
+    & 204 & vl 2    & 6th \eighthNote\ in \B1: \sharp f″8 \\
+    & 205 & A       & 5th \eighthNote\ in \B1: e′8 \\
+    & 207 & vl 1    & grace note missing in \B1 \\
+  \midrule
+  4 & 18  & clno 1  & 1st \quarterNote\ in \B1: d″4 \\
+    & 25  & vl 2    & 3rd \quarterNote\ in \B1: \sharp f′8–d′8 \\
+    & 35  & timp    & 2nd \halfNote\ in \B1: \crotchetRest–G4 \\
+  \midrule
+  5 & 23  & vl 1    & 3rd \quarterNote\ in \B1: d′4 \\
+    & 63  & clno 1  & bar in \B1: c″1. \\
+    & 63  & clno 2  & bar in \B1: c′1. \\
+    & 63  & timp    & bar in \B1: c1. \\
+    & 63  & org     & bar in \B1: d1–\halfNoteRest \\
+  \midrule
+  6 & 10  & vl 2    & grace note missing in \B1 \\
+    & 31  & vl 2    & grace note missing in \B1 \\
+    & 53  & B       & 3rd \halfNote\ in \B1: a4–g4 \\
+    & 60  & vl 2    & grace note missing in \B1 \\
+    & 76  & clno 2  & last \quarterNote\ in \B1: g′4 \\
+    & 83  & clno 2  & 2nd/3rd \quarterNote\ in \B1: e″4–g′4 \\
+}
 
-\thispagestyle{empty}
+\eesToc{}
 
-\vspace*{\fill}
-
-\raisebox{-4mm}{\includegraphics{byncsaeu}}\hspace*{1em}Wolfgang Esser-Skala, 2020
-
-© 2020 by Wolfgang Esser-Skala. This edition is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit \url{http://creativecommons.org/licenses/by-nc-sa/4.0/}. 
-
-Music engraving by LilyPond 2.18.0 (\url{http://www.lilypond.org}).\\
-Front matter typeset with Source Sans Pro and Fredericka the Great.
-
-\textit{First version, November 2020}
-
-\vspace*{2cm}
-
-\ifprintreport
-\chapter*{Critical Report.}
-
-This edition bases upon a copy in the Dommusikarchiv Eisenstadt. The digital version of the manuscript is available at \url{http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/565.html} (siglum A 110).
-
-In general, this edition closely follows the manuscript. Any changes that were introduced by the editor are indicated by italic type (lyrics, dynamics and directions), parentheses (expressive marks and bass figures) or dashes (slurs and ties). Accidentals are used according to modern conventions. Asterisks denote changes that are clarified in the detailed remarks below.\footnote{Abbreviations: A, alto; B, bass; b, basses; clno, clarion; Ms, manuscript; org, organ; r, rest; S, soprano; T, tenor; timp,~timpani; vl, violin, vla, viola.}
-
-\bigskip
-
-\begin{longtable}{lll L{10cm}}
-	\toprule
-	\itshape Mov. & \itshape Bar & \itshape Staff & \itshape Note \\
-	\midrule \endhead
-	1 & 25  & clno 2  & 1st half of bar in Ms: e′8–r8–e′8–r8 \\
-	  & 26  & clno 2  & 2nd quarter in Ms: e′4 \\
-	  & 43  & vl 1    & grace note missing in Ms \\
-	  & 44  & vl 1    & grace note missing in Ms \\
-	  & 43  & A       & 5th eighth in Ms: dis′8 \\
-	  & 79  & clno 2  & last quarter in Ms: r4 \\
-	  & 89  & clno 2  & 1st half of bar in Ms: e′4–e′8–e′8 \\
-	2 & 6   & clno 2  & 3rd eighth in Ms: e′8 \\
-	  & 25  & vl 1    & grace note missing in Ms \\
-	  & 30  & clno 2  & 2nd quarter in Ms: c″4 \\
-	  & 34  & clno 1  & 3rd quarter in Ms: e″8–d″8 \\
-	  & 40  & clno 2  & 3rd quarter in Ms: e′4 \\
-	  & 40  & vl 1    & grace note missing in Ms \\
-	  & 52  & S       & 3rd half note in Ms: d′2 \\
-	  & 52  & B       & 3rd half note in Ms: d2 \\
-	  & 63  & A       & 3rd half note in Ms: e′2 \\
-	  & 64  & vl 1    & 2nd half note in Ms: d″4–f″4 \\
-	  & 74  & vl 1    & 2nd quarter in Ms: f′4 \\
-	  & 75  & vl 1    & 1st half note in Ms: d″4–f′4 \\
-	  & 95  & org     & bar in Ms: d1–r2 \\
-	  & 135 & vl 1    & grace note missing in Ms \\
-	  & 173 & vl 2    & grace note missing in Ms \\
-	  & 175 & clno 1  & 2nd half of bar in Ms: f″2 \\
-	  & 176 & clno 2  & bar in Ms: g′2–r4–e′4 \\
-	  & 190 & B       & 6th quarter in Ms: A4 \\
-	  & 210 & A       & 1st half note in Ms: a′2 \\
-	  & 210 & B       & 2nd to 4th half note in Ms: Fis2–G2–A2 \\
-	  & 211 & clno 1  & bar in Ms: c″2–r2–r1 \\
-	  & 211 & clno 2  & bar in Ms: e′2–r2–r1 \\
-	  & 211 & timp    & bar in Ms: c1–r1 \\
-	  & 211 & vl 1    & bar in Ms: d′′′2–r2–r1 \\
-	  & 211 & vl 2    & bar in Ms: fis″1–r1 \\
-	3 & 3   & vl 1, 2 & 15th sixteenth in Ms: a″16 \\
-	  & 7   & vl 1, 2 & 6th sixteenth in Ms: e″16 \\
-	  & 8   & vl 2    & 15th sixteenth in Ms: e″16 \\
-	  & 9   & vl 1    & 15th sixteenth in Ms: fis″16 \\
-	  & 19  & vl 1, 2 & 6th sixteenth in Ms: a″16 \\
-	  & 20  & T       & 2nd quarter in Ms: fis′16–fis′8–fis′16 \\
-	  & 29  & vl 1, 2 & 6th sixteenth in Ms: a″16 \\
-	  & 70  & A       & 3rd quarter in Ms: a′8–g′16–fis′16 \\
-	  & 101 & vl 1, 2 & bar in Ms: r8–g′8–cis″8–g′8–fis′8–cis8 \\
-	  & 107 & vla     & bar in Ms: d′4–r4–r4 \\
-	  & 159 & T       & 5th eighth in Ms: b8 \\
-	  & 173 & clno 2  & 2nd/3rd quarter in Ms: g′4–r4 \\
-	  & 174 & clno 1  & 2nd half note in Ms: d″2 \\
-	  & 175 & vl 1    & grace note missing in Ms \\
-	  & 204 & vl 2    & 6th eighth in Ms: fis″8 \\
-	  & 205 & A       & 5th eighth in Ms: e′8 \\
-	  & 207 & vl 1    & grace note missing in Ms \\
-	4 & 18  & clno 1  & 1st quarter in Ms: d″4 \\
-	  & 25  & vl 2    & 3rd quarter in Ms: fis′8–d′8 \\
-	  & 35  & timp    & 2nd half of bar in Ms: r4–G4 \\
-	5 & 23  & vl 1    & 3rd quarter in Ms: d′4 \\
-	  & 63  & clno 1  & bar in Ms: c″1. \\
-	  & 63  & clno 2  & bar in Ms: c′1. \\
-	  & 63  & timp    & bar in Ms: c1. \\
-	  & 63  & org     & bar in Ms: d1–r2 \\
-	6 & 10  & vl 2    & grace note missing in Ms \\
-	  & 31  & vl 2    & grace note missing in Ms \\
-	  & 53  & B       & 3rd half note in Ms: a4–g4 \\
-	  & 60  & vl 2    & grace note missing in Ms \\
-	  & 76  & clno 2  & last quarter in Ms: g′4 \\
-	  & 83  & clno 2  & 2nd/3rd quarter in Ms: e″4–g′4 \\
-	\bottomrule
-\end{longtable}
-
-
-This edition has been compiled and checked with utmost diligence. Nevertheless, errors and mistakes cannot be totally excluded. Please report any errors and mistakes to \url{wolfgang@esser-skala.at} or create an issue or pull request on the edition’s GitHub page \url{https://github.com/skafdasschaf/novotny-missa-purificationis}. Your help will be greatly appreciated.
-
-\bigskip
-\textit{Salzburg, November 2020\\
-Wolfgang Esser-Skala}
-
-\cleardoublepage
-\chapter*{Contents.}
-
-\InputIfFileExists{../out/lilypond.toc}{}{\InputIfFileExists{../lilypond.toc}{}{}}
-
-\cleardoublepage
-\fi
-
-\iftemplate
-\includepdf[pages=-]{../out/\lypdfname.pdf}
-\fi
+\eesScore
 
 \end{document}

@@ -1,17 +1,21 @@
-composer: Novotný, Franz Nikolaus
-title: Missa Purificationis Sanctae Mariae
-id: (A-Ed A 110)
+composer:
+  last: Novotný
+  first: Franz Nikolaus
+title: Missa Purificationis Sanctæ Mariæ
 genre: mass
-scoring: S, A, T, B (solo), S, A, T, B (coro), 2 clno (D), timp (D–A), 2 vl, vla solo, b, org solo
+scoring: S, A, T, B (solo), S, A, T, B (coro),\\2 clno (D), timp (D–A), 2 vl, vla solo, b, org solo
+license: cc-by-sa-4.0
 sources:
-  1:
+  B1:
     siglum: A-Ed
     shelfmark: A 110
-    type: manuscript copy
-    date: unknown
     rism: 600037908
     url: http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/565.html
-github: novotny-missa-purificationis
+    license: public domain
+    principal: true
+    notes: two pages missing between Violino I-13.jpg and Violino I-14.jpg in digital version at A-Ed
 imslp: Missa_Purificationis_Sanctae_Mariae_(Novotný,_Franz_Nikolaus)
-notes: two pages missing between Violino I-13.jpg and Violino I-14.jpg in digital version at A-Ed
-
+parts:
+  ottoni: Clarino I, II in D\\Timpani in D–A
+  vla: Viola solo
+  org: Organo solo
